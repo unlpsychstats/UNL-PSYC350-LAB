@@ -1,0 +1,886 @@
+/* ============================================================
+   ACCESSIBLE LAB SCHEDULE - Quarto Extension Styles
+   Restyled to match the site's UNL "Brite" theme:
+   2px black borders, offset shadows, cream/tint backgrounds,
+   scarlet/blue/orange/purple palette. All text/background
+   pairs meet WCAG 2.1 AA contrast (>= 4.5:1).
+   ============================================================ */
+
+/* Course identity colors come from the shared brand's --course-* variables. */
+
+/* ============================================================
+   SKIP WEEK STYLES (neutral site gray)
+   ============================================================ */
+.break-row {
+  background-color: var(--course-gray) !important;
+}
+
+.break-row .rt-td {
+  background-color: var(--course-gray) !important;
+  border-color: #343a40 !important;
+  color: #212529 !important;
+}
+
+.break-row .rt-td:nth-child(2) {
+  text-align: center !important;
+  font-size: 16px !important;
+}
+
+.break-row .rt-td i {
+  margin-right: 8px;
+}
+
+/* ============================================================
+   ACCESSIBILITY: Visually Hidden (Screen Reader Only)
+   ============================================================ */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* ============================================================
+   SKIP LINKS (in-flow, smaller)
+   ============================================================ */
+.skip-links {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--course-scarlet);
+  color: var(--course-white);
+  padding: 8px 16px;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  border: 2px solid var(--course-black);
+  border-radius: 6px;
+  box-shadow: 3px 3px 0 0 var(--course-black);
+  transition: left 0.1s ease;
+}
+
+.skip-link:focus {
+  left: 0;
+  position: relative;
+  display: inline-block;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  outline: 3px solid var(--course-black);
+  outline-offset: 2px;
+}
+
+/* ============================================================
+   DOWNLOAD BUTTONS
+   (theme scss already renders btn-outline-danger solid scarlet;
+    primary button restyled here to solid site blue)
+   ============================================================ */
+.download-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.download-buttons .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  font-size: 15px;
+  font-weight: 600;
+  border: 2px solid var(--course-black);
+  border-radius: 6px;
+  box-shadow: 3px 3px 0 0 var(--course-black);
+  text-decoration: none;
+  transition: background-color 0.15s ease, color 0.15s ease;
+  cursor: pointer;
+}
+
+.download-buttons .btn-outline-danger {
+  color: var(--course-white);
+  background: var(--course-scarlet);
+}
+
+.download-buttons .btn-outline-danger:hover {
+  background: var(--course-scarlet-dark);
+  color: var(--course-white);
+}
+
+.download-buttons .btn-outline-primary {
+  color: var(--course-white);
+  background: var(--course-lapis);
+}
+
+.download-buttons .btn-outline-primary:hover {
+  background: var(--course-lapis-dark);
+  color: var(--course-white);
+}
+
+.download-buttons .btn:focus {
+  outline: 3px solid var(--course-black);
+  outline-offset: 2px;
+}
+
+@media print {
+  .download-buttons {
+    display: none !important;
+  }
+}
+
+/* ============================================================
+   TABLE STYLES - RESPONSIVE
+   ============================================================ */
+.table-container {
+  margin-top: 8px;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.table-caption {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--course-dark-steel);
+}
+
+.lab-dates {
+  font-weight: normal;
+  font-size: 15px;
+  color: #343a40;
+}
+
+/* Reactable - fit to container, force no overflow */
+.lab-schedule {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.lab-schedule .rt-table {
+  width: 100% !important;
+  max-width: 100% !important;
+  table-layout: fixed !important;
+}
+
+.lab-schedule .ReactTable {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* Site-style header: light cream with heavy dark-steel rule,
+   matching the theme's thead styling */
+.lab-schedule .rt-thead {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: var(--course-site-surface);
+}
+
+.lab-schedule .rt-thead .rt-th {
+  color: var(--course-dark-steel);
+  font-weight: 700;
+  border-bottom: 4px solid var(--course-dark-steel) !important;
+}
+
+/* Ensure content wraps and doesn't overflow */
+.lab-schedule .rt-td,
+.lab-schedule .rt-th {
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  word-break: break-word !important;
+  white-space: normal !important;
+  overflow: hidden !important;
+  max-width: 100% !important;
+}
+
+/* Disable row hover effect */
+.lab-schedule .rt-tr:hover .rt-td {
+  background-color: inherit !important;
+}
+
+.lab-schedule .rt-tbody .rt-tr:hover {
+  background-color: inherit !important;
+}
+
+/* Lock break rows so hover never changes their color */
+.lab-schedule .break-row:hover,
+.lab-schedule .break-row:hover .rt-td,
+.lab-schedule .rt-tbody .rt-tr.break-row:hover,
+.lab-schedule .rt-tbody .rt-tr.break-row:hover .rt-td {
+  background-color: var(--course-gray) !important;
+  color: #212529 !important;
+}
+
+/* ============================================================
+   MOBILE: Card-based layout (stacked)
+   ============================================================ */
+@media (max-width: 767px) {
+  /* Force container to not overflow */
+  .table-container {
+    overflow: visible !important;
+  }
+
+  /* Hide table structure on mobile */
+  .lab-schedule .rt-table {
+    display: block !important;
+    table-layout: auto !important;
+    /* Override the theme's 800px min-width so cards fit the viewport */
+    min-width: 0 !important;
+  }
+
+  .lab-schedule .ReactTable {
+    display: block !important;
+    min-width: 0 !important;
+  }
+
+  .lab-schedule .reactable {
+    min-width: 0 !important;
+  }
+
+  /* Beat reactable's inline min-width/flex-basis (720px/320px) so
+     stacked cards actually fit the viewport */
+  .lab-schedule .rt-tbody,
+  .lab-schedule .rt-tr-group,
+  .lab-schedule .rt-tr,
+  .lab-schedule .rt-td,
+  .lab-schedule .rt-td-inner,
+  .lab-schedule .rt-text-content {
+    min-width: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: none !important;
+  }
+
+  /* Hide table header on mobile */
+  .lab-schedule .rt-thead {
+    display: none !important;
+  }
+
+  /* Make each row a brite-style card */
+  .lab-schedule .rt-tbody {
+    display: flex !important;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .lab-schedule .rt-tr {
+    display: flex !important;
+    flex-direction: column;
+    border: 2px solid var(--course-black);
+    border-radius: 8px;
+    box-shadow: 3px 3px 0 0 var(--course-black);
+    overflow: hidden;
+    background: var(--course-white);
+  }
+
+  .lab-schedule .rt-td {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 12px !important;
+    border: none !important;
+    border-bottom: 1px solid #dee2e6 !important;
+  }
+
+  .lab-schedule .rt-td:last-child {
+    border-bottom: none !important;
+  }
+
+  /* First cell (Lab & Dates) as card header */
+  .lab-schedule .rt-td:first-child {
+    background: #e9ecef !important;
+    font-weight: bold;
+    text-align: center !important;
+  }
+
+  /* Add labels before content on mobile */
+  .lab-schedule .rt-td:nth-child(2)::before {
+    content: "Topics & Activities";
+    display: block;
+    font-weight: 600;
+    font-size: 15px;
+    color: #343a40;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #dee2e6;
+  }
+
+  .lab-schedule .rt-td:nth-child(3)::before {
+    content: "Assignments Given";
+    display: block;
+    font-weight: 600;
+    font-size: 15px;
+    color: #343a40;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #dee2e6;
+  }
+
+  .lab-schedule .rt-td:nth-child(4)::before {
+    content: "Assignments Due";
+    display: block;
+    font-weight: 600;
+    font-size: 15px;
+    color: #343a40;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #dee2e6;
+  }
+
+  /* Break rows on mobile */
+  .lab-schedule .break-row {
+    background: var(--course-gray) !important;
+  }
+
+  .lab-schedule .break-row .rt-td {
+    background: var(--course-gray) !important;
+  }
+
+  .lab-schedule .break-row .rt-td:nth-child(2)::before,
+  .lab-schedule .break-row .rt-td:nth-child(3)::before,
+  .lab-schedule .break-row .rt-td:nth-child(4)::before {
+    display: none;
+  }
+
+  /* Hide empty cells in break rows */
+  .lab-schedule .break-row .rt-td:empty,
+  .lab-schedule .break-row .rt-td:first-child:empty {
+    display: none;
+  }
+
+  .topic-section {
+    padding: 8px !important;
+  }
+
+  .topic-list {
+    padding-left: 20px !important;
+  }
+
+  .assignment-item {
+    padding: 6px !important;
+  }
+
+  .legend-items {
+    flex-direction: column;
+  }
+
+  /* Pagination on mobile */
+  .lab-schedule .rt-pagination {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .lab-schedule .rt-table {
+    font-size: 15px;
+  }
+
+  .lab-schedule .rt-td,
+  .lab-schedule .rt-th {
+    padding: 10px 8px !important;
+  }
+}
+
+/* ============================================================
+   TOPIC SECTION STYLES
+   Brite cards: tinted background, 2px black border, offset
+   shadow. Section identity carried by badge (label + color),
+   never by color alone.
+   ============================================================ */
+.topic-section {
+  margin-bottom: 12px;
+  padding: 10px;
+  border: 2px solid var(--course-black);
+  border-radius: 6px;
+  box-shadow: 3px 3px 0 0 var(--course-black);
+}
+
+.topic-section-a {
+  background-color: var(--course-blueish-background);
+}
+
+.topic-section-a .topic-heading {
+  color: var(--course-lapis);
+}
+
+.topic-section-b {
+  background-color: #fdeed9;
+}
+
+.topic-section-b .topic-heading {
+  color: #7a3c00;
+}
+
+.topic-section-c {
+  background-color: #f7e8f5;
+}
+
+.topic-section-c .topic-heading {
+  color: var(--course-purple);
+}
+
+.topic-section-uncategorized {
+  background-color: var(--course-gray);
+}
+
+/* Links use the site's schedule link color (AA on every tint) */
+.topic-section a {
+  color: var(--course-lapis);
+}
+
+.topic-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.topic-heading > strong {
+  display: block;
+  min-width: 0;
+}
+
+.topic-heading > strong > i {
+  margin-right: 6px;
+}
+
+.section-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border: 2px solid var(--course-black);
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 15px;
+  flex-shrink: 0;
+}
+
+.topic-section-a .section-badge {
+  background: var(--course-lapis);
+  color: var(--course-white);
+}
+
+.topic-section-b .section-badge {
+  background: var(--course-orange);
+  color: var(--course-black);
+}
+
+.topic-section-c .section-badge {
+  background: var(--course-purple);
+  color: var(--course-white);
+}
+
+.topic-list {
+  margin: 0;
+  padding-left: 30px;
+  list-style: none;
+}
+
+.topic-list li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 4px;
+  line-height: 1.5;
+  color: #212529;
+}
+
+.topic-list li > i,
+.handouts-list li > i {
+  position: absolute;
+  top: .2em;
+  left: 0;
+  width: 18px;
+  text-align: center;
+}
+
+.topic-list.uncategorized {
+  padding-left: 0;
+  margin: 0;
+}
+
+.topic-list.uncategorized li {
+  color: #343a40;
+}
+
+.topic-list.uncategorized li:last-child {
+  margin-bottom: 0;
+}
+
+.topic-list.uncategorized a {
+  color: var(--course-lapis);
+}
+
+/* ============================================================
+   HANDOUTS SECTION STYLES
+   ============================================================ */
+.handouts-section {
+  margin-top: 16px;
+  padding: 10px;
+  background-color: #e9ecef;
+  border: 2px solid var(--course-black);
+  border-radius: 6px;
+  box-shadow: 3px 3px 0 0 var(--course-black);
+}
+
+.handouts-heading {
+  margin-bottom: 8px;
+  color: var(--course-dark-steel);
+  font-weight: 600;
+}
+
+.handouts-list {
+  margin: 0;
+  padding-left: 20px;
+  list-style: none;
+}
+
+.handouts-list li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 4px;
+  color: #212529;
+}
+
+.handouts-list a {
+  color: var(--course-lapis);
+}
+
+/* ============================================================
+   ASSIGNMENT STYLES
+   Type is carried by the badge label + color (not color alone).
+   ============================================================ */
+.assignments-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.assignment-item {
+  margin-bottom: 8px;
+  padding: 8px;
+  border: 2px solid var(--course-black);
+  border-radius: 6px;
+  box-shadow: 3px 3px 0 0 var(--course-black);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 6px;
+  color: #212529;
+}
+
+.assignment-weekly {
+  background-color: #f3e6f5;
+}
+
+.assignment-project {
+  background-color: #fff6d6;
+}
+
+.assignment-badge {
+  display: inline-block;
+  font-size: 10px;
+  padding: 2px 6px;
+  border: 2px solid var(--course-black);
+  border-radius: 3px;
+  font-weight: bold;
+  flex-shrink: 0;
+  margin-bottom: 4px;
+}
+
+.badge-weekly {
+  background-color: var(--course-purple);
+  color: var(--course-white);
+}
+
+.badge-project {
+  background-color: var(--course-yellow);
+  color: var(--course-black);
+}
+
+.assignment-text {
+  width: 100%;
+  line-height: 1.4;
+}
+
+.no-assignment {
+  color: #495057;
+  font-style: italic;
+}
+
+.no-assignment-item {
+  color: #495057;
+}
+
+/* ============================================================
+   LINK STYLES & FOCUS
+   ============================================================ */
+.lab-schedule a {
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+.lab-schedule a:hover {
+  text-decoration: underline;
+}
+
+.lab-schedule a:focus {
+  outline: 3px solid var(--course-black);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.lab-schedule a {
+  display: inline;
+  line-height: 1.5;
+}
+
+/* ============================================================
+   COLOR LEGEND STYLES
+   ============================================================ */
+.color-legend-details {
+  margin-top: 24px;
+  border: 2px solid var(--course-black);
+  border-radius: 8px;
+  box-shadow: 3px 3px 0 0 var(--course-black);
+  background: var(--course-site-surface);
+}
+
+.color-legend-details summary {
+  padding: 12px 16px;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.color-legend-details summary:focus {
+  outline: 3px solid var(--course-black);
+  outline-offset: 2px;
+}
+
+.legend-content {
+  padding: 16px;
+}
+
+.legend-section {
+  margin-bottom: 20px;
+}
+
+.legend-section h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: var(--course-dark-steel);
+}
+
+.legend-section p {
+  font-size: 15px;
+  color: #343a40;
+  margin-bottom: 12px;
+}
+
+.legend-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border: 2px solid var(--course-black);
+  border-radius: 6px;
+  box-shadow: 3px 3px 0 0 var(--course-black);
+  font-size: 15px;
+  color: #212529;
+}
+
+.topic-a-legend {
+  background: var(--course-blueish-background);
+}
+
+.topic-a-legend .legend-badge {
+  background: var(--course-lapis);
+  color: var(--course-white);
+}
+
+.topic-b-legend {
+  background: #fdeed9;
+}
+
+.topic-b-legend .legend-badge {
+  background: var(--course-orange);
+  color: var(--course-black);
+}
+
+.topic-c-legend {
+  background: #f7e8f5;
+}
+
+.topic-c-legend .legend-badge {
+  background: var(--course-purple);
+  color: var(--course-white);
+}
+
+.legend-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #000000;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.icon-legend-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 8px;
+}
+
+@media (min-width: 576px) {
+  .icon-legend-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.icon-legend-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+}
+
+.accessibility-note {
+  background: var(--course-blueish-background);
+  padding: 16px;
+  border: 2px solid var(--course-black);
+  border-radius: 8px;
+  box-shadow: 3px 3px 0 0 var(--course-black);
+}
+
+.accessibility-note h3 {
+  color: var(--course-lapis);
+}
+
+.accessibility-note ul {
+  margin: 8px 0 0 0;
+  padding-left: 20px;
+}
+
+.accessibility-note li {
+  margin-bottom: 4px;
+  font-size: 15px;
+}
+
+/* ============================================================
+   USER PREFERENCE MEDIA QUERIES
+   ============================================================ */
+@media (prefers-contrast: high) {
+  .lab-schedule a {
+    text-decoration: underline;
+  }
+
+  .topic-section,
+  .handouts-section,
+  .assignment-item,
+  .legend-item {
+    border-width: 3px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lab-schedule *,
+  .skip-link {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* ============================================================
+   PRINT STYLES
+   ============================================================ */
+@media print {
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .skip-links,
+  .color-legend-details summary {
+    display: none !important;
+  }
+
+  .color-legend-details {
+    display: block !important;
+    box-shadow: none !important;
+  }
+
+  .legend-content {
+    display: block !important;
+  }
+
+  .lab-schedule a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.75em;
+    color: #343a40;
+    word-break: break-all;
+  }
+
+  .lab-schedule a[href^="files/"]::after {
+    content: " [file]";
+    font-size: 0.75em;
+    color: #343a40;
+  }
+
+  .rt-tr {
+    page-break-inside: avoid;
+  }
+
+  .table-caption {
+    font-size: 1.5rem;
+  }
+
+  .topic-section,
+  .handouts-section,
+  .assignment-item,
+  .legend-item {
+    background: transparent !important;
+    box-shadow: none !important;
+    border: 2px solid var(--course-black) !important;
+  }
+
+  /* Print styles for break rows */
+  .break-row,
+  .break-row .rt-td {
+    background-color: var(--course-gray) !important;
+    color: #212529 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}

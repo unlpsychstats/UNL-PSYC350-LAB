@@ -1,0 +1,353 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "UNL PSYC350 Lab: Using Zotero to Streamline Citations & References",
+    "section": "",
+    "text": "Overview\nThis workbook and guide is intended to provide an overview of how to use Zotero for organizing and citing references in academic research for UNL PSYC 350 Lab students.",
+    "crumbs": [
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Overview",
+    "section": "",
+    "text": "1.1 What is Zotero?\nZotero is a free and open-source  citation manager designed to collect, store, share, organize and cite references.\nZotero works with various operating systems  or  or  and allows you to download references into a personalized library and then create properly formatted in-text citations and bibliographies.\nZotero also enables you to store all your PDFs, notes, and citation meta-data (i.e., information you include in the formatted citation) in the same centralized location (or synced across all your devices using a free online account).",
+    "crumbs": [
+      "Zotero Basics",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Overview</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#why-use-zotero",
+    "href": "intro.html#why-use-zotero",
+    "title": "1  Overview",
+    "section": "1.2 Why use Zotero?",
+    "text": "1.2 Why use Zotero?\nAny time we use information from an article, report, or other source, it is important to:\n\n give credit to others work\n add credibility to your work\n provide context for your work\n direct audience to other work\n\n\n\n\nIn other words, properly citing our sources plays an important role in the scientific writing process. But it also results in one of the most tedious tasks that is a part of writing: creating those citations and a reference page.\nPsychology, as well as a number of other fields, have largely adopted a very specific format for references called APA format. Unfortunately, there are hundreds of different kinds of sources, and each has a specific way to cite that source. It can be a nightmare to even find the right formatting for the source you have.\nFortunately, there are software packages that can assist us with this task!\nZotero is one such program (collectively referred to as reference managers). Zotero is not the first program of its kind; nor will it likely be the last. But as of the writing of this guide it is the most attractive (and free) option for academics and students to use.\nZotero is widely used. It is also free, open-source, and easy to use. Even better, there is a plugin for Microsoft Word and other word processers that makes creating citations and entire reference pages as easy as clicking a few buttons!\nIn this lab, we will use Zotero to learn about APA 7 formatting for our final project; but the program is versatile and can also be used in other classes!",
+    "crumbs": [
+      "Zotero Basics",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Overview</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#what-does-zotero-do",
+    "href": "intro.html#what-does-zotero-do",
+    "title": "1  Overview",
+    "section": "1.3 What does Zotero do?",
+    "text": "1.3 What does Zotero do?\nMost other citation managers require you to purchase licenses to use their features effectively. But Zotero is built and maintained by a community of people who believe in the value of open-source software. There are multiple benefits to this approach including:\n\nAll the source code is available on Github \nYou do not need institutional credentials to access your account or export your library\nHarnesses the power of the open-internet and an active world-wide user community that has created a range of plugins and add-ons to extend its functionality\nProvides license-free integration with word processes like LibreOffice, Microsoft Word, Google Docs, and RStudio\n\n\n\n\nZotero also enables you to store all your PDFs, notes, and citation meta-data (i.e., information you include in the formatted APA or Bluebook citation) in the same centralized location (or synced across all your devices using a free online account).\nThis guide walks you through how to set up Zotero and take advantage of its many features.",
+    "crumbs": [
+      "Zotero Basics",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Overview</span>"
+    ]
+  },
+  {
+    "objectID": "setup.html",
+    "href": "setup.html",
+    "title": "2  Getting Started",
+    "section": "",
+    "text": "2.1 Step 1: Download & Install Zotero\nThere are four things you want to do before you can use Zotero effectively:\nDownload Zotero HERE",
+    "crumbs": [
+      "Zotero Basics",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Getting Started</span>"
+    ]
+  },
+  {
+    "objectID": "setup.html#step-1-download-install-zotero",
+    "href": "setup.html#step-1-download-install-zotero",
+    "title": "2  Getting Started",
+    "section": "",
+    "text": "Download and install the program from the Zotero website\nCreate a Zotero account (required to sync across devices & use shared-library features)\n(Optional) Set-up & configure RStudio or Word integration\n(Optional) Install (preferred) Internet browser extension",
+    "crumbs": [
+      "Zotero Basics",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Getting Started</span>"
+    ]
+  },
+  {
+    "objectID": "setup.html#need-help",
+    "href": "setup.html#need-help",
+    "title": "2  Getting Started",
+    "section": "2.2 Need help?",
+    "text": "2.2 Need help?\nZotero has extensive online documentation that can help you with specific questions or issues.\nYou might also want to check out the Zotero Quick Start Guide. It likely has an answer to your question!\n\n\n\n\n\n\nIf for some reason you cannot or refuse to download the Zotero program, ZoteroBib offers a free in-browser solution to creating a bibliography.",
+    "crumbs": [
+      "Zotero Basics",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Getting Started</span>"
+    ]
+  },
+  {
+    "objectID": "using.html",
+    "href": "using.html",
+    "title": "3  Using Zotero",
+    "section": "",
+    "text": "3.1 Add a collection\nA collection is like a folder. You will want to create a new collection for each project or paper you are working on.",
+    "crumbs": [
+      "Zotero Basics",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Using Zotero</span>"
+    ]
+  },
+  {
+    "objectID": "using.html#add-an-item",
+    "href": "using.html#add-an-item",
+    "title": "3  Using Zotero",
+    "section": "3.2 Add an item",
+    "text": "3.2 Add an item\nAdding articles (or other items such as book chapters) to Zotero couldn’t be easier. Simply open Zotero, then drag and drop the pdf into “My Library” in the left panell. You can set up different “collections”, which is helpful to organize references by class assignment, for example, but this is not necessary unless you wish to do so.",
+    "crumbs": [
+      "Zotero Basics",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Using Zotero</span>"
+    ]
+  },
+  {
+    "objectID": "using.html#zotero-items",
+    "href": "using.html#zotero-items",
+    "title": "3  Using Zotero",
+    "section": "3.3 Zotero “Items”",
+    "text": "3.3 Zotero “Items”\nIn Zotero, an item is simply a kind of entry in your library. It may be an article pdf, a book chapter pdf, or even a web address. In your library (the left panell), you will see a list of all of the items you have saved in Zotero. The entry you see is just the info… to read the item, click on the drop-down arrow at the left of the item and it will display the pdf – double click this to open it in the PDF Reader. This is an important distinction – clicking the entry itself will display the related Metadata (see below), or information about the item. Clicking the pdf from the drop down will not show that metadata.",
+    "crumbs": [
+      "Zotero Basics",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Using Zotero</span>"
+    ]
+  },
+  {
+    "objectID": "using.html#metadata",
+    "href": "using.html#metadata",
+    "title": "3  Using Zotero",
+    "section": "3.4 Metadata",
+    "text": "3.4 Metadata\nMetadata is the term for the information about the item you are adding, for example a journal article has information associated with it which we need to create a reference – info such as the title of the paper, the author(s) name(s), the date it was published and the journal name. The good news is that when you add a new item, Zotero automatically searches for the metadata on the web. It is available roughly 90% of the time for articles published in the last 20 years or so. The rest of the time, it will have some, but not all, of the info.\nEditing Metadata is necessary when some, or all, of the item info is not automatically added to Zotero. Click the entry for the item in your library (see above), which displays the item’s metadata in the right-side panel. Clicking inside this panel allows you to enter info or in some cases, such as item type, to select from a drop-down menu.\n\n\n\n\n\n\nThis is the most important step of adding an item to your Zotero library. When you ask it to create a citation or reference page for you, it will pull the necessary info from this panel. If this info is absent or incorrect, the citation will also be incorrect!\n\n\n\nUsing the APA references handout(s), identify the correct type of item that you have (most often this is a journal article). Now, look to see what info is included in a citation for that item type – make sure that the corresponding fields in the metadata in Zotero are filled out and accurate!\n\n\n\n\n\n\nHere is another helpful resource for identifying what is needed for APA 7 APA Manual - 7th edition examples",
+    "crumbs": [
+      "Zotero Basics",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Using Zotero</span>"
+    ]
+  },
+  {
+    "objectID": "using.html#creating-citations",
+    "href": "using.html#creating-citations",
+    "title": "3  Using Zotero",
+    "section": "3.5 Creating Citations",
+    "text": "3.5 Creating Citations\nTo create individual citations, simply right click on the item’s entry in your library, select “Create Bibliography from Items…”, choose APA 7th edition, and copy to clipboard. You can now paste it into Word (or anywhere else). See this guide for more details\n\n\n\n\n\n\nStarting with Zotero 8, the Word/LibreOffice plugin uses a new unified citation dialog. You can search for items by title, creator, or year in List mode, or browse specific collections in Library mode. The old “red bar” and “classic” dialogs have been replaced by this single, more flexible interface.\n\n\n\nAgain, using the Word plugin is infinitely more efficient, you can find those instructions here: https://www.zotero.org/support/word_processor_plugin_usage",
+    "crumbs": [
+      "Zotero Basics",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Using Zotero</span>"
+    ]
+  },
+  {
+    "objectID": "using.html#creating-items-manually",
+    "href": "using.html#creating-items-manually",
+    "title": "3  Using Zotero",
+    "section": "3.6 Creating Items Manually",
+    "text": "3.6 Creating Items Manually\nWe can’t always find that PDF of an article we are looking for, sometimes it’s behind a paywall or it simply doesn’t exist on the web. Maybe you want to cite an encyclopedia, but can’t get the PDF of the whole thing, or even the entry… no problem. What we want to do here, is still be able to use Zotero to create the citation for us, so we will manually add an item to our library. In this case, the item won’t actually contain the PDF, but this will allow us to add the metadata by hand so that Zotero can create the citation.\n\n\n\n\n\n\nUse this guide featured below to create the item. And then, refer to the metadata sections above to add the relevant info.",
+    "crumbs": [
+      "Zotero Basics",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Using Zotero</span>"
+    ]
+  },
+  {
+    "objectID": "worksheets/in-class.html",
+    "href": "worksheets/in-class.html",
+    "title": "Part 1: Familiarize yourself with Zotero (Walk-through)",
+    "section": "",
+    "text": "Instructions\nDuring today’s lab you will need to use Zotero to complete the Lab 1 APA & Zotero Worksheet. You may use either the lab computers or install the program on your own personal device. For more information about how to install and setup Zotero go here.",
+    "crumbs": [
+      "Lab 1: APA Citations & Zotero Worksheet",
+      "[Part 1:]{.highlight-red} Familiarize yourself with Zotero (Walk-through)"
+    ]
+  },
+  {
+    "objectID": "worksheets/in-class.html#step-1-create-a-new-collection",
+    "href": "worksheets/in-class.html#step-1-create-a-new-collection",
+    "title": "Part 1: Familiarize yourself with Zotero (Walk-through)",
+    "section": "Step 1: Create a new collection",
+    "text": "Step 1: Create a new collection\nCreate a new collection in Zotero and name it [Your Name] APA Walk-Through\n\n\n\n\n\n\nZotero collections are like folders. Adding an item to a specific collection automatically adds it to your overall Zotero library. But you need to keep track of what items are in each collection for when you export your final references list!\n\n\n\n\n\nTo remove an item from a collection, right-click on item (middle panel) ➜ select Remove item from collection...",
+    "crumbs": [
+      "Lab 1: APA Citations & Zotero Worksheet",
+      "[Part 1:]{.highlight-red} Familiarize yourself with Zotero (Walk-through)"
+    ]
+  },
+  {
+    "objectID": "worksheets/in-class.html#step-2-find-a-source-and-add-the-item-to-your-collection",
+    "href": "worksheets/in-class.html#step-2-find-a-source-and-add-the-item-to-your-collection",
+    "title": "Part 1: Familiarize yourself with Zotero (Walk-through)",
+    "section": "Step 2: Find a source and add the item to your collection",
+    "text": "Step 2: Find a source and add the item to your collection\n\nUse Google scholar to find the 2024 journal article titled “ChatGPT is bullshit”\nDownload and save (locally) a  copy of the article (somewhere you can easily find it!)\nFind the  in your file manager. Now, drag & drop the  file directly into your [Your name] APA Walk-Through collection (in the left-hand panel within Zotero).\n\n\n\n\n\n\n\nZotero should have correctly identified this item as a journal article and automatically populated the information fields in the right-side panel with almost everything you need to create an APA 7 citation.\nBut you still need to review the details to make sure there are no errors! Programs freqently make errors!",
+    "crumbs": [
+      "Lab 1: APA Citations & Zotero Worksheet",
+      "[Part 1:]{.highlight-red} Familiarize yourself with Zotero (Walk-through)"
+    ]
+  },
+  {
+    "objectID": "worksheets/in-class.html#step-4-review-edit-article-metadata",
+    "href": "worksheets/in-class.html#step-4-review-edit-article-metadata",
+    "title": "Part 1: Familiarize yourself with Zotero (Walk-through)",
+    "section": "Step 4: Review & Edit article metadata",
+    "text": "Step 4: Review & Edit article metadata\n\nSelect (click on) the item you created in the middle panel. Look at the metadata information that appeared in the right-hand panel. Is everything correctly formatted for an APA 7 style journal article?\n\n\n\n\n\n\n\nAPA 7 style has very specific rules about capitalization. Generally, all titles should be in Sentence case rather than Title case meaning:\nThis would be correct\nBut This Is Very Incorrect\nThere is an option in Zotero to switch between these two options (next to the title metadata) but you always need to double check!\n\n\n\n\n\nThere are two items associated with this article in that middle-panel: the pdf and what is called a parent-item.\nYou need the parent-item because that is where you store the metadata. You can see what attachments are connected to an item by clicking on the arrow.\n\nUsing the Journal Reference Checklist handout or the table below, review and edit the item metadata to make sure that you have everything you need to cite the journal article in APA 7 style. If anything is missing, add it! If anything is improperly formatted, fix it!\n\n\n\n  Journal Handout \n\n\n\n\n\n\nTipHint\n\n\n\n\n\nThe Pages field should read: Article 38. Although APA typically asks for first-last page numbers, this journal uses article numbers instead.",
+    "crumbs": [
+      "Lab 1: APA Citations & Zotero Worksheet",
+      "[Part 1:]{.highlight-red} Familiarize yourself with Zotero (Walk-through)"
+    ]
+  },
+  {
+    "objectID": "worksheets/in-class.html#step-5-generate-the-apa-7-citation-using-zotero",
+    "href": "worksheets/in-class.html#step-5-generate-the-apa-7-citation-using-zotero",
+    "title": "Part 1: Familiarize yourself with Zotero (Walk-through)",
+    "section": "Step 5: Generate the APA 7 citation using Zotero",
+    "text": "Step 5: Generate the APA 7 citation using Zotero\nNow that you have confirmed all the information is properly entered, you are ready to ask Zotero to create your APA 7 citation. Give it a try!\n\n\n\n\n\n\nTipHint\n\n\n\n\n\n\nDid you select Sentence case instead of Title case for the Title? Remember that APA 7 requires you to only capitalize the first word of each sentence in the article title. Note that you also capitalize the first word after a colon: Like this.\n\n\n\n\n\nPaste the APA 7 citation below\nRight-click on the item (middle panel) ➜ Create Bibliography from Items… ➜ Select Citation Style: American Psychological Association (APA) 7th edition ➜ Copy to Clipboard\nThe APA 7 citation is:",
+    "crumbs": [
+      "Lab 1: APA Citations & Zotero Worksheet",
+      "[Part 1:]{.highlight-red} Familiarize yourself with Zotero (Walk-through)"
+    ]
+  },
+  {
+    "objectID": "worksheets/in-class.html#step-6-add-another-journal-article-manually",
+    "href": "worksheets/in-class.html#step-6-add-another-journal-article-manually",
+    "title": "Part 1: Familiarize yourself with Zotero (Walk-through)",
+    "section": "Step 6: Add another journal article manually",
+    "text": "Step 6: Add another journal article manually\nLet’s try to add another journal article to our same collection. Only, this time, we want to add a  that is more tricky for Zotero to handle.\n\nUse PsychInfo from the UNL Library databases to search for the classic 1975 journal article “Hindsight ≠ foresight: The effect of outcome knowledge on judgment under uncertainty”\nDownload, save and drag the  into your [Your name] APA Walk-Through collection in Zotero.\nReview the metadata in the right panel. Unlike the previous article, Zotero did not fully index the pdf automatically. This means we have to manually add in most of the information ourselves.\nOnce you have entered all the information you need, ask Zotero to generate your second citation and check it below!\n\n\n\n\n\n\n\nTipHint\n\n\n\n\n\nThe title contains a non-letter character (≠). Copy/paste from the PDF may not work. The title should read: Hindsight ≠ foresight: The effect of outcome knowledge on judgment under uncertainty\n\n\n\n\nPaste the APA 7 citation below\nThe APA 7 citation is:",
+    "crumbs": [
+      "Lab 1: APA Citations & Zotero Worksheet",
+      "[Part 1:]{.highlight-red} Familiarize yourself with Zotero (Walk-through)"
+    ]
+  },
+  {
+    "objectID": "worksheets/in-class.html#step-7-add-another-journal-article-manually",
+    "href": "worksheets/in-class.html#step-7-add-another-journal-article-manually",
+    "title": "Part 1: Familiarize yourself with Zotero (Walk-through)",
+    "section": "Step 7: Add another journal article manually",
+    "text": "Step 7: Add another journal article manually\nLet’s add another journal article to our collection. This time, I have found the  for you. You can download it by clicking below.\n  Download Article  \n\nAs before, save and drag this new  into your [Your name] APA Walk-Through collection in Zotero.\nThe  should appear in the middle panel. But this time, Zotero did not create a parent item for you. This means we have to create one before we can manually add in any metadata.\n\n\n\n\n\n\n\nTo create a parent item:\nRight-click on the item (middle panel) ➜ Create Parent Item...\n\n\n\nZotero right-click context menu with ‘Create Parent Item’ option highlighted\n\n\nNow select Manual Entry\n\n\n\nZotero dialog box for identifying a file with a field for DOI, ISBN, PMID, or arXiv ID, and a ‘Manual Entry’ button highlighted\n\n\n\n\n\n\nNow that you have a parent item, enter the metadata manually.\nOnce you have entered all the information you need, ask Zotero to generate your third citation and check it below!\n\n\n\n\n\n\n\nTipHint\n\n\n\n\n\nMake sure you have spelled all the author’s names correctly. If their last name begins with a lower-case letter, make sure that is reflected in Zotero.\n\n\n\n\nPaste the APA 7 citation below\nThe APA 7 citation is:",
+    "crumbs": [
+      "Lab 1: APA Citations & Zotero Worksheet",
+      "[Part 1:]{.highlight-red} Familiarize yourself with Zotero (Walk-through)"
+    ]
+  },
+  {
+    "objectID": "worksheets/in-class.html#step-8-adding-items-with-doi-magic",
+    "href": "worksheets/in-class.html#step-8-adding-items-with-doi-magic",
+    "title": "Part 1: Familiarize yourself with Zotero (Walk-through)",
+    "section": "Step 8: Adding items with DOI magic!",
+    "text": "Step 8: Adding items with DOI magic!\nYou can also add items into your [Your name] APA Walk-Through collection without a . One way to do this is to use the DOI identifier for a journal article. This is a unique number assigned to a specific article or other digital object (magazine, dataset, r-package, etc).\n\n\n\n\n\n\nThe icon to the right of the one where you add an item manually in Zotero, allows you to add via a DOI, ISBN (for books), etc. (via MAGIC-WAND-BUTTON!). Note that doing it this way will add the item, but NOT the PDF of it. However, it will still grab all of the metadata for you! This may be of help on the homework (hint hint).\n\n\n\n\nTry to add this article to your collection: 10.1177/0956797615572232\nReview & edit the metadata using the same process as before.\nOnce you have entered all the information you need, ask Zotero to generate your fourth citation and check it below!\n\n\nPaste the APA 7 citation below\nThe APA 7 citation is:",
+    "crumbs": [
+      "Lab 1: APA Citations & Zotero Worksheet",
+      "[Part 1:]{.highlight-red} Familiarize yourself with Zotero (Walk-through)"
+    ]
+  },
+  {
+    "objectID": "worksheets/in-class.html#step-9-more-practice-with-other-types-of-sources",
+    "href": "worksheets/in-class.html#step-9-more-practice-with-other-types-of-sources",
+    "title": "Part 1: Familiarize yourself with Zotero (Walk-through)",
+    "section": "Step 9: More Practice with Other types of sources",
+    "text": "Step 9: More Practice with Other types of sources\nYou can also use the magic wand feature with ISBNs (and other digital identifiers) to add a Book or a section of a book to your collection.\n\nAdd this book chapter titled “Juries compared with what? The need for a baseline and attention to real-world complexity” found here. Use the DOI number provided on that page to add this chapter (not the entire book) to to your [Your name] APA Walk-Through collection.\nReview the metadata in the right panel. Unlike with the previous entries, Zotero recognized that this is a book section and started to fill in the metadata accordingly. Using the Other sources handout included below, review and edit the metadata.\n\n\n\n  Other Sources Handout \n\n\n\n\n\n\nWhen you use the DOI for this chapter, Zotero will automatically record the ISBN: 978-1-4338-2704-4 978-1-4338-2782-2 which is the identifier for the entire book. But sometimes you can find a unique ISBN In many cases book chapters are assigned their own ISBNs.\n\n\n\n\nOnce you have entered all the information you need, ask Zotero to generate your second citation and check it below!\n\n\n\n\n\n\n\nTipHint\n\n\n\n\n\nMake sure you set the title to sentence case. Check that authors and editors are in the correct order.\n\n\n\n\nPaste the APA 7 citation below\nThe APA 7 citation is:\n\n\nUnfortunately, not all digital sources provide an ISBN or DOI number you can use with Zotero. Sometimes, you have to manually enter the information yourself (or use the Zotero browser connector).\nPractice using other types of source by adding this as a Newspaper article article.\n\n\n\n\n\n\nUse Newspaper article as the Item Type. For more details about how to cite this type of source, view the APA Website.\n\n\n\n\n\n\n\n\n\nTipHint\n\n\n\n\n\nUse Newspaper article as the Item Type. The author should read: Staff, T. O. (organizations as authors should be capitalized and entered in a single field).\n\n\n\n\nPaste the APA 7 citation below\nThe APA 7 citation is:",
+    "crumbs": [
+      "Lab 1: APA Citations & Zotero Worksheet",
+      "[Part 1:]{.highlight-red} Familiarize yourself with Zotero (Walk-through)"
+    ]
+  },
+  {
+    "objectID": "worksheets/in-class.html#step-10-generating-apa-7-style-report-and-references-page",
+    "href": "worksheets/in-class.html#step-10-generating-apa-7-style-report-and-references-page",
+    "title": "Part 1: Familiarize yourself with Zotero (Walk-through)",
+    "section": "Step 10: Generating APA 7 Style report and References page",
+    "text": "Step 10: Generating APA 7 Style report and References page\nNow that you have a complete collection of sources, Zotero makes it easy to generate an APA 7 style References page or a report.\nGo to your Lab 3 worksheet. Use the collection you created here [Your Name] APA Walk-Through to generate a reportTo create a report, right-click (ctrl-click on macOS) an item or a selection of items in the center pane and select “Generate Report from Selected Item(s)…”. You can also right-click a collection in the left column and select “Generate Report from Collection”. from this collection. Copy/paste the report into the worksheet.\n\n\n\n\n\n\nThis is not the same as a full reference section. But you can copy/paste the full report in the window that pops up.\n\n\n\nNow, go on to the next page to start Part 2.",
+    "crumbs": [
+      "Lab 1: APA Citations & Zotero Worksheet",
+      "[Part 1:]{.highlight-red} Familiarize yourself with Zotero (Walk-through)"
+    ]
+  },
+  {
+    "objectID": "worksheets/take-home.html",
+    "href": "worksheets/take-home.html",
+    "title": "Part 2: More practice with Zotero (Take-home)",
+    "section": "",
+    "text": "Instructions\nBelow are 8 items that need to be added to a new Zotero collection called [Your Name] APA Take-Home. For each item, you will need to identify which type of source it is and then create an entry with all the information needed for an APA 7 citation.",
+    "crumbs": [
+      "Lab 1: APA Citations & Zotero Worksheet",
+      "[Part 2:]{.highlight-red} More practice with Zotero (Take-home)"
+    ]
+  },
+  {
+    "objectID": "worksheets/take-home.html#item-1-this-journal-article-published-in-memory-cognition",
+    "href": "worksheets/take-home.html#item-1-this-journal-article-published-in-memory-cognition",
+    "title": "Part 2: More practice with Zotero (Take-home)",
+    "section": "Item 1 This journal article published in Memory & Cognition",
+    "text": "Item 1 This journal article published in Memory & Cognition\n\n\n\n\n\n\nTipHint\n\n\n\n\n\nIf you want to use the DOI with the magic wand, start at the number 10.xxx. Do not include https://doi.org/ at the beginning. Make sure you have the correct page numbers.\n\n\n\n\n  The APA 7 citation is:",
+    "crumbs": [
+      "Lab 1: APA Citations & Zotero Worksheet",
+      "[Part 2:]{.highlight-red} More practice with Zotero (Take-home)"
+    ]
+  },
+  {
+    "objectID": "worksheets/take-home.html#item-2-this-journal-article",
+    "href": "worksheets/take-home.html#item-2-this-journal-article",
+    "title": "Part 2: More practice with Zotero (Take-home)",
+    "section": "Item 2 This journal article",
+    "text": "Item 2 This journal article\n\n\n\n\n\n\nTipHint\n\n\n\n\n\nIf the journal article has an article number instead of a page range, include the word ‘Article’ and then the article number instead of the page range.\n\n\n\n\nThe APA 7 citation is:",
+    "crumbs": [
+      "Lab 1: APA Citations & Zotero Worksheet",
+      "[Part 2:]{.highlight-red} More practice with Zotero (Take-home)"
+    ]
+  },
+  {
+    "objectID": "worksheets/take-home.html#item-3-this-article-titled-chimpanzees-use-self-distraction-to-cope-with-impulsivity",
+    "href": "worksheets/take-home.html#item-3-this-article-titled-chimpanzees-use-self-distraction-to-cope-with-impulsivity",
+    "title": "Part 2: More practice with Zotero (Take-home)",
+    "section": "Item 3 This article titled Chimpanzees use self-distraction to cope with impulsivity",
+    "text": "Item 3 This article titled Chimpanzees use self-distraction to cope with impulsivity\n\n\n\n\n\n\nTipHint\n\n\n\n\n\nThis article is from the journal Biology Letters. The volume is 3 and the issue number is 6. The page range is 599–602.\n\n\n\n\nThe APA 7 citation is:",
+    "crumbs": [
+      "Lab 1: APA Citations & Zotero Worksheet",
+      "[Part 2:]{.highlight-red} More practice with Zotero (Take-home)"
+    ]
+  },
+  {
+    "objectID": "worksheets/take-home.html#item-4-doi-httpsdoi.org10.1126science.2658056",
+    "href": "worksheets/take-home.html#item-4-doi-httpsdoi.org10.1126science.2658056",
+    "title": "Part 2: More practice with Zotero (Take-home)",
+    "section": "Item 4 DOI: https://doi.org/10.1126/science.2658056",
+    "text": "Item 4 DOI: https://doi.org/10.1126/science.2658056\n\n\n\n\n\n\nTipHint\n\n\n\n\n\nThis is a classic article from the magazine Science. The volume number is 244 and the issue number is 4907. The page range is 933–938.\n\n\n\n\nThe APA 7 citation is:",
+    "crumbs": [
+      "Lab 1: APA Citations & Zotero Worksheet",
+      "[Part 2:]{.highlight-red} More practice with Zotero (Take-home)"
+    ]
+  },
+  {
+    "objectID": "worksheets/take-home.html#item-5-who-moved-my-cheese-isbn-978-0-399-14446-2-paperback-international-edition-march-4-1999",
+    "href": "worksheets/take-home.html#item-5-who-moved-my-cheese-isbn-978-0-399-14446-2-paperback-international-edition-march-4-1999",
+    "title": "Part 2: More practice with Zotero (Take-home)",
+    "section": "Item 5 Who Moved My Cheese? ISBN: 978-0-399-14446-2 (Paperback – International Edition, March 4, 1999)",
+    "text": "Item 5 Who Moved My Cheese? ISBN: 978-0-399-14446-2 (Paperback – International Edition, March 4, 1999)\n\n\n\n\n\n\nTipHint\n\n\n\n\n\nMake sure that you have the correct date information.\n\n\n\n\nThe APA 7 citation is:",
+    "crumbs": [
+      "Lab 1: APA Citations & Zotero Worksheet",
+      "[Part 2:]{.highlight-red} More practice with Zotero (Take-home)"
+    ]
+  },
+  {
+    "objectID": "worksheets/take-home.html#item-6-this-journal-article-with-many-authors",
+    "href": "worksheets/take-home.html#item-6-this-journal-article-with-many-authors",
+    "title": "Part 2: More practice with Zotero (Take-home)",
+    "section": "Item 6 This journal article with many authors",
+    "text": "Item 6 This journal article with many authors\n\n\n\n\n\n\nTipHint\n\n\n\n\n\nThis article has many authors. In APA 7th edition, list the first 19 authors followed by an ellipsis (…) and then the last author. The volume is 80 and the issue is 10.\n\n\n\n\nThe APA 7 citation is:",
+    "crumbs": [
+      "Lab 1: APA Citations & Zotero Worksheet",
+      "[Part 2:]{.highlight-red} More practice with Zotero (Take-home)"
+    ]
+  },
+  {
+    "objectID": "worksheets/take-home.html#item-7-inside-the-funhouse-mirror-factory-how-social-media-distorts-perceptions-of-norms-published-in-current-opinion-in-psychology",
+    "href": "worksheets/take-home.html#item-7-inside-the-funhouse-mirror-factory-how-social-media-distorts-perceptions-of-norms-published-in-current-opinion-in-psychology",
+    "title": "Part 2: More practice with Zotero (Take-home)",
+    "section": "Item 7 Inside the funhouse mirror factory: How social media distorts perceptions of norms published in Current Opinion in Psychology",
+    "text": "Item 7 Inside the funhouse mirror factory: How social media distorts perceptions of norms published in Current Opinion in Psychology\n\n\n\n\n\n\nTipHint\n\n\n\n\n\nYou won’t find first-last page numbers because this journal uses an article number. This number can be hard to find so we will help you out: it is the last number in the DOI URL, 101918. In the Zotero pages field, enter ‘Article 101918’.\n\n\n\n\nThe APA 7 citation is:",
+    "crumbs": [
+      "Lab 1: APA Citations & Zotero Worksheet",
+      "[Part 2:]{.highlight-red} More practice with Zotero (Take-home)"
+    ]
+  },
+  {
+    "objectID": "worksheets/take-home.html#item-8-this-magazine-article-about-the-science-of-melting-cheese",
+    "href": "worksheets/take-home.html#item-8-this-magazine-article-about-the-science-of-melting-cheese",
+    "title": "Part 2: More practice with Zotero (Take-home)",
+    "section": "Item 8 This magazine article about The science of melting cheese",
+    "text": "Item 8 This magazine article about The science of melting cheese\n\n\n\n\n\n\nTipHint\n\n\n\n\n\nYou only need to include the author for this magazine article. No need to list the editor.\n\n\n\n\nThe APA 7 citation is: \n\nNow that you have a second complete collection of sources, go back to your lab worksheet document.\nCreate an APA 7 style References section using your [Your Name] APA Take-Home collection. Follow the directions and copy/paste your properly formatted References list into your worksheet.\n\n\n\n\n\nZotero right-click context menu showing options to ‘Create Bibliography from Collection’ and ‘Generate Report from Collection’\n\n\nOnce you have completed both sections of the worksheet, submit your assignment to the Lab 1: APA References Assignment on Canvas.",
+    "crumbs": [
+      "Lab 1: APA Citations & Zotero Worksheet",
+      "[Part 2:]{.highlight-red} More practice with Zotero (Take-home)"
+    ]
+  }
+]

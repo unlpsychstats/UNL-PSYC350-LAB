@@ -1,0 +1,37 @@
+a.glossary {
+  color: var(--course-scarlet);
+  text-decoration: underline;
+  cursor: help;
+  position: relative;
+}
+
+/* only needed for popup = "click" */
+/* popup-definition */
+a.glossary .def {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  width: 200px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -100px;
+  background-color: var(--course-dark-gray);
+  color: var(--course-site-surface);
+  padding: 5px;
+  border-radius: 6px;
+}
+/* show on click */
+a.glossary:active .def {
+  display: inline-block;
+}
+/* triangle arrow */
+a.glossary:active .def::after {
+  content: ' ';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--course-dark-gray) transparent transparent transparent;
+}

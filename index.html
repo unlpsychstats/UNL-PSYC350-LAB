@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>PSYC 350 Lab</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./figures/icons/course_favicon.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-f80d041d52560d116700b62de5ed127e.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-5eb2ebf67b1b0ba7cd3f71a881ff5155.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-f80d041d52560d116700b62de5ed127e.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-7e4a6afe5dcdcd276bf0f444e1a44276.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-c9c16470d23e1a6b7287d78440c2a8e6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-7e4a6afe5dcdcd276bf0f444e1a44276.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/quarto-contrib/lab-schedule-2.0.0/lab-schedule.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="site_libs/core-js-2.5.3/shim.min.js"></script>
+<script src="site_libs/react-18.2.0/react.min.js"></script>
+<script src="site_libs/react-18.2.0/react-dom.min.js"></script>
+<script src="site_libs/reactwidget-2.0.0/react-tools.js"></script>
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<link href="site_libs/reactable-0.4.5/reactable.css" rel="stylesheet">
+<script src="site_libs/reactable-binding-0.4.5/reactable.js"></script>
+<link href="site_libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet">
+<link href="site_libs/tippyjs-3.2.0/themes/google.css" rel="stylesheet">
+<link href="site_libs/tippyjs-3.2.0/themes/light-border.css" rel="stylesheet">
+<link href="site_libs/tippyjs-3.2.0/themes/light.css" rel="stylesheet">
+<link href="site_libs/tippyjs-3.2.0/themes/translucent.css" rel="stylesheet">
+<script src="site_libs/tippyjs-3.2.0/tippy.all.min.js"></script>
+<script src="site_libs/tippy-binding-0.1.0/tippy.js"></script>
+
+
+<link rel="stylesheet" href="include/webex.css">
+<link rel="stylesheet" href="include/glossary.css">
+<meta property="og:title" content="PSYC 350 Lab">
+<meta property="og:image" content="https://unlpsychstats.github.io/UNL-PSYC350-LAB/images/learn-2d.png">
+<meta property="og:site_name" content="PSYC 350 Lab">
+<meta property="og:image:alt" content="">
+<meta property="og:image:height" content="160">
+<meta property="og:image:width" content="160">
+</head>
+
+<body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="site_libs/quarto-contrib/quarto-project/unl-psyc350-brand/logos/N-logo-white.svg" alt="Nebraska N" class="navbar-logo light-content">
+    <img src="site_libs/quarto-contrib/quarto-project/unl-psyc350-brand/logos/N-logo-white.svg" alt="Nebraska N" class="navbar-logo dark-content">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./syllabus.html"> 
+<span class="menu-text">Syllabus</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./schedule.html"> 
+<span class="menu-text">Schedule</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-labs" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Labs</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-labs">    
+        <li>
+    <a class="dropdown-item" href="./labs/lab00/index.html">
+ <span class="dropdown-text">Lab 00: Welcome</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./labs/lab01/index.html">
+ <span class="dropdown-text">Lab 01: APA Citations &amp; Zotero</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./labs/lab02/index.html">
+ <span class="dropdown-text">Lab 02: Operationalization &amp; Measurement</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./labs/lab03/index.html">
+ <span class="dropdown-text">Lab 03: Reading Research Articles</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./labs/lab04/index.html">
+ <span class="dropdown-text">Lab 04: Literature Reviews</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./labs/lab05/index.html">
+ <span class="dropdown-text">Lab 05: Project Planning</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./labs/lab06/index.html">
+ <span class="dropdown-text">Lab 06: Data Entry, Transforms &amp; Univariates</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./labs/lab07/index.html">
+ <span class="dropdown-text">Lab 07: Bivariate Analyses</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./labs/lab08/index.html">
+ <span class="dropdown-text">Lab 08: One-way ANOVAs</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./labs/lab09/index.html">
+ <span class="dropdown-text">Lab 09: Project Analyses</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./labs/lab10/index.html">
+ <span class="dropdown-text">Lab 10: Peer Review</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./labs/lab11/index.html">
+ <span class="dropdown-text">Lab 11: Multi-group Analyses</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./labs/lab12/index.html">
+ <span class="dropdown-text">Lab 12: Factorial Designs &amp; Analyses</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./labs/lab13/index.html">
+ <span class="dropdown-text">Lab 13: Multiple Regression</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-resources" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Resources</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-resources">    
+        <li>
+    <a class="dropdown-item" href="./project.html">
+ <span class="dropdown-text">Final Project</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./software.html">
+ <span class="dropdown-text">Software</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./lab-materials/handouts/index.html">
+ <span class="dropdown-text">Course Handouts</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://unlpsychstats.github.io/PSYC350-spss-handouts/">
+ <span class="dropdown-text">SPSS Handouts</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
+
+<nav aria-label="Skip links" class="skip-links">
+  <a href="#lab-schedule-table" class="skip-link">Skip to lab schedule</a>
+</nav>
+
+<!-- The weekly schedule is shared with the standalone schedule page. -->
+<div class="hero">
+<div class="hero-text">
+<p><span class="hero-kicker">University of Nebraska–Lincoln</span></p>
+<section id="psyc-350-lab" class="level1 hero-title">
+<h1 class="hero-title">PSYC 350 Lab</h1>
+<p><span class="hero-subtitle">Research Methods &amp; Data Analysis</span></p>
+<p><span class="hero-meta">Fall 2026 · Burnett 230</span></p>
+<p><a href="./syllabus.html" class="btn-primary btn" role="button"><i class="fa-solid fa-book-open" title="Syllabus" aria-hidden="true"></i> Syllabus &amp; Policies</a> <a href="https://canvas.unl.edu/courses/205040" class="btn-primary btn" role="button"><i class="fa-solid fa-graduation-cap" title="Canvas" aria-hidden="true"></i> Canvas</a></p>
+</section>
+</div>
+<div class="hero-art">
+<p><img src="images/learn-2d.png" class="img-fluid" alt=""></p>
+</div>
+</div>
+<div class="vspace">
+
+</div>
+<div class="home-schedule">
+<div class="lab-schedule">
+<div class="cell">
+<div class="cell-output-display">
+<div id="lab-schedule-table" role="region" aria-labelledby="table-caption" class="table-container">
+<h2 id="table-caption" class="table-caption anchored">Weekly Lab Schedule</h2>
+<p id="table-description" class="visually-hidden">This table shows the weekly lab schedule including topics, activities, handouts, and assignment information.</p>
+<div id="htmlwidget-b4ba986d1a8a14bffcaf" class="reactable html-widget" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-b4ba986d1a8a14bffcaf">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"lab_date":["<div><strong>Lab 1<\/strong><\/div>","<div><strong>Lab 2<\/strong><\/div>","<div><strong>Lab 3<\/strong><\/div>","<div><strong>Lab 4<\/strong><\/div>","<div><strong>Lab 5<\/strong><\/div>","<div><strong>Lab 6<\/strong><\/div>","<div><strong>Lab 7<\/strong><\/div>","<div><strong>Lab 8<\/strong><\/div>","<div><strong>Lab 9<\/strong><\/div>","<div><strong>Lab 10<\/strong><\/div>","<div><strong>Lab 11<\/strong><\/div>","<div><strong>Lab 12<\/strong><\/div>","<div><strong>Lab 13<\/strong><\/div>"],"topics_activities":["<div class=\"topic-section topic-section-a\" role=\"group\" aria-label=\"Section A\"><div class=\"topic-heading\"><span class=\"section-badge\" aria-hidden=\"true\">A<\/span><span class=\"visually-hidden\">Section A: <\/span><strong>Introduction to Psyc350 & why we do it this way!!<\/strong><\/div><ul class=\"topic-list\" role=\"list\"><li><i class=\"bi bi-filetype-html\" aria-hidden=\"true\" style=\"color: #e34c26;\"><\/i> <a href=\"labs/lab01/index.html\" title=\"Web page: Introduction to Psyc 350 Lab\">Introduction to Psyc 350 Lab<span class=\"visually-hidden\"> (Web page)<\/span><\/a><\/li><\/ul><\/div><div class=\"topic-section topic-section-b\" role=\"group\" aria-label=\"Section B\"><div class=\"topic-heading\"><span class=\"section-badge\" aria-hidden=\"true\">B<\/span><span class=\"visually-hidden\">Section B: <\/span><strong>Bibliographic Research & Zotero<\/strong><\/div><ul class=\"topic-list\" role=\"list\"><li><i class=\"bi bi-box-arrow-up-right\" aria-hidden=\"true\" style=\"color: var(--course-lapis);\"><\/i> <a href=\"https://unl.libguides.com/researchtools\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"External web page (opens in new tab): UNL Library Research Tools (start here)\">UNL Library Research Tools (start here)<span class=\"visually-hidden\"> (External web page (opens in new tab))<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-slides\" aria-hidden=\"true\" style=\"color: #ff6b35;\"><\/i> <a href=\"labs/lab01/slides/slides.pptx\" title=\"PowerPoint presentation: Powerpoint to guide you through library resources\">Powerpoint to guide you through library resources<span class=\"visually-hidden\"> (PowerPoint presentation)<\/span><\/a><\/li><li><i class=\"bi bi-box-arrow-up-right\" aria-hidden=\"true\" style=\"color: var(--course-lapis);\"><\/i> <a href=\"https://libguides.usc.edu/searching/boolean\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"External web page (opens in new tab): Boolean Searching (link to how-to guide online)\">Boolean Searching (link to how-to guide online)<span class=\"visually-hidden\"> (External web page (opens in new tab))<\/span><\/a><\/li><li class=\"no-link\"><i class=\"bi bi-info-circle\" aria-hidden=\"true\" style=\"color: var(--course-lapis);\"><\/i> <abbr title=\"American Psychological Association\">APA<\/abbr> Format and Style + Using Zotero<\/li><\/ul><\/div><div class=\"topic-section topic-section-c\" role=\"group\" aria-label=\"Section C\"><div class=\"topic-heading\"><span class=\"section-badge\" aria-hidden=\"true\">C<\/span><span class=\"visually-hidden\">Section C: <\/span><strong>Weekly Lab Assignment<\/strong><\/div><ul class=\"topic-list\" role=\"list\"><li><i class=\"bi bi-file-earmark-word\" aria-hidden=\"true\" style=\"color: #2b579a;\"><\/i> <a href=\"lab-materials/lab01/lab01_apa.docx\" title=\"Word document: Lab 01:  APA References Zotero Worksheet\">Lab 01:  <abbr title=\"American Psychological Association\">APA<\/abbr> References Zotero Worksheet<span class=\"visually-hidden\"> (Word document)<\/span><\/a><\/li><li><i class=\"bi bi-filetype-html\" aria-hidden=\"true\" style=\"color: #e34c26;\"><\/i> <a href=\"labs/lab01/zotero-basics/_book/index.html\" title=\"Web page: Click for Zotero & APA Workbook\">Click for Zotero & <abbr title=\"American Psychological Association\">APA<\/abbr> Workbook<span class=\"visually-hidden\"> (Web page)<\/span><\/a><\/li><\/ul><\/div><div class=\"handouts-section\" role=\"group\" aria-label=\"Handouts\"><div class=\"handouts-heading\"><i class=\"bi bi-folder\" aria-hidden=\"true\"><\/i> <strong>Handouts<\/strong><\/div><ul class=\"handouts-list\" role=\"list\"><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"lab-materials/handouts/apa-journal-reference-guide/apa-journal-reference-guide.pdf\" title=\"PDF document: APA Journal Article Reference Guide (PDF)\"><strong><abbr title=\"American Psychological Association\">APA<\/abbr> Journal Article Reference Guide (<abbr title=\"Portable Document Format\">PDF<\/abbr>)<\/strong><span class=\"visually-hidden\"> (PDF document)<\/span><\/a><\/li><li><i class=\"bi bi-filetype-html\" aria-hidden=\"true\" style=\"color: #e34c26;\"><\/i> <a href=\"lab-materials/handouts/apa-journal-reference-guide/apa-journal-reference-guide.html\" title=\"Web page: APA Journal Article Reference Guide (HTML)\"><strong><abbr title=\"American Psychological Association\">APA<\/abbr> Journal Article Reference Guide (HTML)<\/strong><span class=\"visually-hidden\"> (Web page)<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-word\" aria-hidden=\"true\" style=\"color: #2b579a;\"><\/i> <a href=\"lab-materials/lab01/files/B1.APA_journal_article_reference_formatting.docx\" title=\"Word document: Journal Article Reference Formatting (Word, editable)\"><strong>Journal Article Reference Formatting (Word, editable)<\/strong><span class=\"visually-hidden\"> (Word document)<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"lab-materials/handouts/apa-reference-examples/apa-reference-examples.pdf\" title=\"PDF document: APA In-text Citations and Reference Examples (PDF)\"><strong><abbr title=\"American Psychological Association\">APA<\/abbr> In-text Citations and Reference Examples (<abbr title=\"Portable Document Format\">PDF<\/abbr>)<\/strong><span class=\"visually-hidden\"> (PDF document)<\/span><\/a><\/li><li><i class=\"bi bi-filetype-html\" aria-hidden=\"true\" style=\"color: #e34c26;\"><\/i> <a href=\"lab-materials/handouts/apa-reference-examples/apa-reference-examples.html\" title=\"Web page: APA In-text Citations and Reference Examples (HTML)\"><strong><abbr title=\"American Psychological Association\">APA<\/abbr> In-text Citations and Reference Examples (HTML)<\/strong><span class=\"visually-hidden\"> (Web page)<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"lab-materials/lab01/files/B3.APA_student_paper.pdf\" title=\"PDF document: Student Paper Format\"><strong>Student Paper Format<\/strong><span class=\"visually-hidden\"> (PDF document)<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"lab-materials/lab01/files/B4.APA7_research_report_formatting.pdf\" title=\"PDF document: Research Report Format\"><strong>Research Report Format<\/strong><span class=\"visually-hidden\"> (PDF document)<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"lab-materials/handouts/apa-table-templates/apa-table-templates.pdf\" title=\"PDF document: APA Table Templates (PDF)\"><strong><abbr title=\"American Psychological Association\">APA<\/abbr> Table Templates (<abbr title=\"Portable Document Format\">PDF<\/abbr>)<\/strong><span class=\"visually-hidden\"> (PDF document)<\/span><\/a><\/li><li><i class=\"bi bi-filetype-html\" aria-hidden=\"true\" style=\"color: #e34c26;\"><\/i> <a href=\"lab-materials/handouts/apa-table-templates/apa-table-templates.html\" title=\"Web page: APA Table Templates (HTML)\"><strong><abbr title=\"American Psychological Association\">APA<\/abbr> Table Templates (HTML)<\/strong><span class=\"visually-hidden\"> (Web page)<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-word\" aria-hidden=\"true\" style=\"color: #2b579a;\"><\/i> <a href=\"lab-materials/lab01/files/B5.apa_table_templates.docx\" title=\"Word document: APA Table Templates (Word, editable)\"><strong><abbr title=\"American Psychological Association\">APA<\/abbr> Table Templates (Word, editable)<\/strong><span class=\"visually-hidden\"> (Word document)<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"lab-materials/lab01/files/B2.APA7_more_reference_formatting_examples.pdf\" title=\"PDF document: Other Sources Reference Format\"><strong>Other Sources Reference Format<\/strong><span class=\"visually-hidden\"> (PDF document)<\/span><\/a><\/li><\/ul><\/div>","<div class=\"topic-section topic-section-a\" role=\"group\" aria-label=\"Section A\"><div class=\"topic-heading\"><span class=\"section-badge\" aria-hidden=\"true\">A<\/span><span class=\"visually-hidden\">Section A: <\/span><strong>Getting started with Variables<\/strong><\/div><ul class=\"topic-list\" role=\"list\"><li><i class=\"bi bi-filetype-html\" aria-hidden=\"true\" style=\"color: #e34c26;\"><\/i> <a href=\"labs/lab02/index.html\" title=\"Web page: Identifying & understanding variables\">Identifying & understanding variables<span class=\"visually-hidden\"> (Web page)<\/span><\/a><\/li><\/ul><\/div><div class=\"topic-section topic-section-b\" role=\"group\" aria-label=\"Section B\"><div class=\"topic-heading\"><span class=\"section-badge\" aria-hidden=\"true\">B<\/span><span class=\"visually-hidden\">Section B: <\/span><strong>Weekly Lab Assignment<\/strong><\/div><ul class=\"topic-list\" role=\"list\"><li><i class=\"bi bi-file-earmark-word\" aria-hidden=\"true\" style=\"color: #2b579a;\"><\/i> <a href=\"lab-materials/lab02/lab02_variables.docx\" title=\"Word document: Lab 02: Operationalization & Measurement Worksheet\">Lab 02: Operationalization & Measurement Worksheet<span class=\"visually-hidden\"> (Word document)<\/span><\/a><\/li><\/ul><\/div>","<div class=\"topic-section topic-section-a\" role=\"group\" aria-label=\"Section A\"><div class=\"topic-heading\"><span class=\"section-badge\" aria-hidden=\"true\">A<\/span><span class=\"visually-hidden\">Section A: <\/span><strong>Critically Reading Research Reports<\/strong><\/div><ul class=\"topic-list\" role=\"list\"><li><i class=\"bi bi-filetype-html\" aria-hidden=\"true\" style=\"color: #e34c26;\"><\/i> <a href=\"labs/lab03/index.html\" title=\"Web page: Reading and Writing Research Reports\">Reading and Writing Research Reports<span class=\"visually-hidden\"> (Web page)<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"lab-materials/lab03/files/lab03_reading_slides.pdf\" title=\"PDF document: Reading and Writing Research Reports (pdf version)\">Reading and Writing Research Reports (pdf version)<span class=\"visually-hidden\"> (PDF document)<\/span><\/a><\/li><\/ul><\/div><div class=\"topic-section topic-section-b\" role=\"group\" aria-label=\"Section B\"><div class=\"topic-heading\"><span class=\"section-badge\" aria-hidden=\"true\">B<\/span><span class=\"visually-hidden\">Section B: <\/span><strong><i class=\"bi bi-file-earmark-word\" aria-hidden=\"true\" style=\"color: #2b579a;\"><\/i> <a href=\"lab-materials/lab03/files/lab03_apa_report_parts.docx\" title=\"Word document: Contents of an APA Report: What Info is Where?\">Contents of an <abbr title=\"American Psychological Association\">APA<\/abbr> Report: What Info is Where?<span class=\"visually-hidden\"> (Word document)<\/span><\/a><\/strong><\/div><ul class=\"topic-list\" role=\"list\"><li><i class=\"bi bi-file-earmark-word\" aria-hidden=\"true\" style=\"color: #2b579a;\"><\/i> <a href=\"lab-materials/lab03/files/lab03_random_assignment.docx\" title=\"Word document: Research Designs & Participant Assignment (Word, editable)\">Research Designs & Participant Assignment (Word, editable)<span class=\"visually-hidden\"> (Word document)<\/span><\/a><\/li><\/ul><\/div><div class=\"topic-section topic-section-c\" role=\"group\" aria-label=\"Section C\"><div class=\"topic-heading\"><span class=\"section-badge\" aria-hidden=\"true\">C<\/span><span class=\"visually-hidden\">Section C: <\/span><strong>Weekly Lab Assignment<\/strong><\/div><ul class=\"topic-list\" role=\"list\"><li><i class=\"bi bi-file-earmark-word\" aria-hidden=\"true\" style=\"color: #2b579a;\"><\/i> <a href=\"lab-materials/lab03/lab03_rcritique1.docx\" title=\"Word document: Research Critique #1\">Research Critique #1<span class=\"visually-hidden\"> (Word document)<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-word\" aria-hidden=\"true\" style=\"color: #2b579a;\"><\/i> <a href=\"lab-materials/lab03/lab03_rcritique2.docx\" title=\"Word document: Research Critique #2\">Research Critique #2<span class=\"visually-hidden\"> (Word document)<\/span><\/a><\/li><\/ul><\/div><div class=\"handouts-section\" role=\"group\" aria-label=\"Handouts\"><div class=\"handouts-heading\"><i class=\"bi bi-folder\" aria-hidden=\"true\"><\/i> <strong>Handouts<\/strong><\/div><ul class=\"handouts-list\" role=\"list\"><li><i class=\"bi bi-file-earmark-slides\" aria-hidden=\"true\" style=\"color: #ff6b35;\"><\/i> <a href=\"lab-materials/lab03/files/lab03_reading_slides.pptx\" title=\"PowerPoint presentation: Reading and Writing Research Reports slides (PowerPoint, editable)\"><strong>Reading and Writing Research Reports slides (PowerPoint, editable)<\/strong><span class=\"visually-hidden\"> (PowerPoint presentation)<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"lab-materials/handouts/reading-writing-handout/reading-writing-handout.pdf\" title=\"PDF document: Reading and Writing Research Reports (PDF)\"><strong>Reading and Writing Research Reports (<abbr title=\"Portable Document Format\">PDF<\/abbr>)<\/strong><span class=\"visually-hidden\"> (PDF document)<\/span><\/a><\/li><li><i class=\"bi bi-filetype-html\" aria-hidden=\"true\" style=\"color: #e34c26;\"><\/i> <a href=\"lab-materials/handouts/reading-writing-handout/reading-writing-handout.html\" title=\"Web page: Reading and Writing Research Reports (HTML)\"><strong>Reading and Writing Research Reports (HTML)<\/strong><span class=\"visually-hidden\"> (Web page)<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"lab-materials/handouts/critical-reading-elements/critical-reading-elements.pdf\" title=\"PDF document: Elements of a Critical Reading (PDF)\"><strong>Elements of a Critical Reading (<abbr title=\"Portable Document Format\">PDF<\/abbr>)<\/strong><span class=\"visually-hidden\"> (PDF document)<\/span><\/a><\/li><li><i class=\"bi bi-filetype-html\" aria-hidden=\"true\" style=\"color: #e34c26;\"><\/i> <a href=\"lab-materials/handouts/critical-reading-elements/critical-reading-elements.html\" title=\"Web page: Elements of a Critical Reading (HTML)\"><strong>Elements of a Critical Reading (HTML)<\/strong><span class=\"visually-hidden\"> (Web page)<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"lab-materials/handouts/validity-net-visual/validity-net-visual.pdf\" title=\"PDF document: Validity Net - Visual (PDF)\"><strong>Validity Net - Visual (<abbr title=\"Portable Document Format\">PDF<\/abbr>)<\/strong><span class=\"visually-hidden\"> (PDF document)<\/span><\/a><\/li><li><i class=\"bi bi-filetype-html\" aria-hidden=\"true\" style=\"color: #e34c26;\"><\/i> <a href=\"lab-materials/handouts/validity-net-visual/validity-net-visual.html\" title=\"Web page: Validity Net - Visual (HTML)\"><strong>Validity Net - Visual (HTML)<\/strong><span class=\"visually-hidden\"> (Web page)<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"lab-materials/handouts/validity-net-linear/validity-net-linear.pdf\" title=\"PDF document: Validity Net - Linear (PDF)\"><strong>Validity Net - Linear (<abbr title=\"Portable Document Format\">PDF<\/abbr>)<\/strong><span class=\"visually-hidden\"> (PDF document)<\/span><\/a><\/li><li><i class=\"bi bi-filetype-html\" aria-hidden=\"true\" style=\"color: #e34c26;\"><\/i> <a href=\"lab-materials/handouts/validity-net-linear/validity-net-linear.html\" title=\"Web page: Validity Net - Linear (HTML)\"><strong>Validity Net - Linear (HTML)<\/strong><span class=\"visually-hidden\"> (Web page)<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"lab-materials/handouts/allthewords-ans/allthewords-ans.pdf\" title=\"PDF document: Types of Research Validity - Answer Sheet (PDF)\"><strong>Types of Research Validity - Answer Sheet (<abbr title=\"Portable Document Format\">PDF<\/abbr>)<\/strong><span class=\"visually-hidden\"> (PDF document)<\/span><\/a><\/li><li><i class=\"bi bi-filetype-html\" aria-hidden=\"true\" style=\"color: #e34c26;\"><\/i> <a href=\"lab-materials/handouts/allthewords-ans/allthewords-ans.html\" title=\"Web page: Types of Research Validity - Answer Sheet (HTML)\"><strong>Types of Research Validity - Answer Sheet (HTML)<\/strong><span class=\"visually-hidden\"> (Web page)<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"lab-materials/handouts/random-assignment-exercise/random-assignment-exercise.pdf\" title=\"PDF document: Research Designs and Participant Assignment (PDF)\"><strong>Research Designs and Participant Assignment (<abbr title=\"Portable Document Format\">PDF<\/abbr>)<\/strong><span class=\"visually-hidden\"> (PDF document)<\/span><\/a><\/li><li><i class=\"bi bi-filetype-html\" aria-hidden=\"true\" style=\"color: #e34c26;\"><\/i> <a href=\"lab-materials/handouts/random-assignment-exercise/random-assignment-exercise.html\" title=\"Web page: Research Designs and Participant Assignment (HTML)\"><strong>Research Designs and Participant Assignment (HTML)<\/strong><span class=\"visually-hidden\"> (Web page)<\/span><\/a><\/li><\/ul><\/div>","<div class=\"topic-section topic-section-a\" role=\"group\" aria-label=\"Section A\"><div class=\"topic-heading\"><span class=\"section-badge\" aria-hidden=\"true\">A<\/span><span class=\"visually-hidden\">Section A: <\/span><strong>Scientific writing & synthesizing research<\/strong><\/div><ul class=\"topic-list\" role=\"list\"><li><i class=\"bi bi-filetype-html\" aria-hidden=\"true\" style=\"color: #e34c26;\"><\/i> <a href=\"labs/lab04/index.html\" title=\"Web page: How to Improve your Writing\">How to Improve your Writing<span class=\"visually-hidden\"> (Web page)<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-slides\" aria-hidden=\"true\" style=\"color: #ff6b35;\"><\/i> <a href=\"lab-materials/lab04/files/lab04_writing_slides.pptx\" title=\"PowerPoint presentation: How to Improve your Writing (PowerPoint, editable)\">How to Improve your Writing (PowerPoint, editable)<span class=\"visually-hidden\"> (PowerPoint presentation)<\/span><\/a><\/li><\/ul><\/div><div class=\"topic-section topic-section-b\" role=\"group\" aria-label=\"Section B\"><div class=\"topic-heading\"><span class=\"section-badge\" aria-hidden=\"true\">B<\/span><span class=\"visually-hidden\">Section B: <\/span><strong>Writing Literature Reviews & Research Proposals<\/strong><\/div><ul class=\"topic-list\" role=\"list\"><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"lab-materials/lab04/files/B1.apa_student_paper.pdf\" title=\"PDF document: APA Student Paper Guide\"><abbr title=\"American Psychological Association\">APA<\/abbr> Student Paper Guide<span class=\"visually-hidden\"> (PDF document)<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"lab-materials/lab04/files/B2.apa_avoid_plagiarism.pdf\" title=\"PDF document: APA Avoiding Plagiarism Guide\"><abbr title=\"American Psychological Association\">APA<\/abbr> Avoiding Plagiarism Guide<span class=\"visually-hidden\"> (PDF document)<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"lab-materials/lab04/files/B3.apa_student_checklist.pdf\" title=\"PDF document: APA Student Paper Checklist\"><abbr title=\"American Psychological Association\">APA<\/abbr> Student Paper Checklist<span class=\"visually-hidden\"> (PDF document)<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-word\" aria-hidden=\"true\" style=\"color: #2b579a;\"><\/i> <a href=\"lab-materials/lab04/files/B4.apa_table_templates.docx\" title=\"Word document: APA Table Templates (Word, editable)\"><abbr title=\"American Psychological Association\">APA<\/abbr> Table Templates (Word, editable)<span class=\"visually-hidden\"> (Word document)<\/span><\/a><\/li><\/ul><\/div><div class=\"topic-section topic-section-c\" role=\"group\" aria-label=\"Section C\"><div class=\"topic-heading\"><span class=\"section-badge\" aria-hidden=\"true\">C<\/span><span class=\"visually-hidden\">Section C: <\/span><strong>Weekly Lab Assignment<\/strong><\/div><ul class=\"topic-list\" role=\"list\"><li><i class=\"bi bi-file-earmark-word\" aria-hidden=\"true\" style=\"color: #2b579a;\"><\/i> <a href=\"lab-materials/lab04/files/lab04_litreview_DESCRIPTION.docx\" title=\"Word document: Literature Review Description\">Literature Review Description<span class=\"visually-hidden\"> (Word document)<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"lab-materials/lab04/files/lab04_article_01.pdf\" title=\"PDF document: Article 1 for literature review & proposal\">Article 1 for literature review & proposal<span class=\"visually-hidden\"> (PDF document)<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"lab-materials/lab04/files/lab04_article_02.pdf\" title=\"PDF document: Article 2 for literature review & proposal\">Article 2 for literature review & proposal<span class=\"visually-hidden\"> (PDF document)<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-word\" aria-hidden=\"true\" style=\"color: #2b579a;\"><\/i> <a href=\"lab-materials/lab04/lab04_litreview.docx\" title=\"Word document: Literature review & proposal worksheet\">Literature review & proposal worksheet<span class=\"visually-hidden\"> (Word document)<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-word\" aria-hidden=\"true\" style=\"color: #2b579a;\"><\/i> <a href=\"lab-materials/lab04/files/lab04_litreview_HINTS.docx\" title=\"Word document: Literature review & proposal HINTS sheet\">Literature review & proposal HINTS sheet<span class=\"visually-hidden\"> (Word document)<\/span><\/a><\/li><\/ul><\/div><div class=\"handouts-section\" role=\"group\" aria-label=\"Handouts\"><div class=\"handouts-heading\"><i class=\"bi bi-folder\" aria-hidden=\"true\"><\/i> <strong>Handouts<\/strong><\/div><ul class=\"handouts-list\" role=\"list\"><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"lab-materials/handouts/apa-table-templates/apa-table-templates.pdf\" title=\"PDF document: APA Table Templates (PDF)\"><strong><abbr title=\"American Psychological Association\">APA<\/abbr> Table Templates (<abbr title=\"Portable Document Format\">PDF<\/abbr>)<\/strong><span class=\"visually-hidden\"> (PDF document)<\/span><\/a><\/li><li><i class=\"bi bi-filetype-html\" aria-hidden=\"true\" style=\"color: #e34c26;\"><\/i> <a href=\"lab-materials/handouts/apa-table-templates/apa-table-templates.html\" title=\"Web page: APA Table Templates (HTML)\"><strong><abbr title=\"American Psychological Association\">APA<\/abbr> Table Templates (HTML)<\/strong><span class=\"visually-hidden\"> (Web page)<\/span><\/a><\/li><\/ul><\/div>","<div class=\"topic-section topic-section-a\" role=\"group\" aria-label=\"Section A\"><div class=\"topic-heading\"><span class=\"section-badge\" aria-hidden=\"true\">A<\/span><span class=\"visually-hidden\">Section A: <\/span><strong>Introduction to Research Project Data Sets and Project Planning<\/strong><\/div><ul class=\"topic-list\" role=\"list\"><li class=\"no-link\"><i class=\"bi bi-info-circle\" aria-hidden=\"true\" style=\"color: var(--course-lapis);\"><\/i> Project Materials<\/li><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"lab-materials/final-project/project-suggestions.pdf\" title=\"PDF document: Research Project Suggestions\">Research Project Suggestions<span class=\"visually-hidden\"> (PDF document)<\/span><\/a><\/li><li class=\"no-link\"><i class=\"bi bi-info-circle\" aria-hidden=\"true\" style=\"color: var(--course-lapis);\"><\/i> Self-Descriptive Survey Materials  (select one)<\/li><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"lab-materials/final-project/selfdescriptive_survey_materials/self-materials.pdf\" title=\"PDF document: Self-Descriptive Content & Methods\">Self-Descriptive Content & Methods<span class=\"visually-hidden\"> (PDF document)<\/span><\/a><\/li><li><i class=\"bi bi-clipboard-data\" aria-hidden=\"true\" style=\"color: #6610f2;\"><\/i> <a href=\"lab-materials/final-project/selfdescriptive_survey_materials/selfdescriptive_data.sav\" title=\"SPSS data file: Self-Descriptive Dataset (.sav)\">Self-Descriptive Dataset (.sav)<span class=\"visually-hidden\"> (SPSS data file)<\/span><\/a><\/li><li class=\"no-link\"><i class=\"bi bi-info-circle\" aria-hidden=\"true\" style=\"color: var(--course-lapis);\"><\/i> Interpersonal Survey Materials<\/li><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"lab-materials/final-project/interpersonal_survey_materials/inter-materials.pdf\" title=\"PDF document: Interpersonal Content & Methods\">Interpersonal Content & Methods<span class=\"visually-hidden\"> (PDF document)<\/span><\/a><\/li><li><i class=\"bi bi-clipboard-data\" aria-hidden=\"true\" style=\"color: #6610f2;\"><\/i> <a href=\"lab-materials/final-project/interpersonal_survey_materials/interpersonal_data.sav\" title=\"SPSS data file: Interpersonal Dataset (.sav)\">Interpersonal Dataset (.sav)<span class=\"visually-hidden\"> (SPSS data file)<\/span><\/a><\/li><\/ul><\/div><div class=\"topic-section topic-section-b\" role=\"group\" aria-label=\"Section B\"><div class=\"topic-heading\"><span class=\"section-badge\" aria-hidden=\"true\">B<\/span><span class=\"visually-hidden\">Section B: <\/span><strong>Final Project Pre-proposal (select  one)<\/strong><\/div><ul class=\"topic-list\" role=\"list\"><li><i class=\"bi bi-file-earmark-word\" aria-hidden=\"true\" style=\"color: #2b579a;\"><\/i> <a href=\"lab-materials/final-project/selfdescriptive_survey_materials/self-preproposal.docx\" title=\"Word document: Self-Descriptive Pre-proposal\">Self-Descriptive Pre-proposal<span class=\"visually-hidden\"> (Word document)<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-word\" aria-hidden=\"true\" style=\"color: #2b579a;\"><\/i> <a href=\"lab-materials/final-project/interpersonal_survey_materials/inter-preproposal.docx\" title=\"Word document: Interpersonal Pre-proposal\">Interpersonal Pre-proposal<span class=\"visually-hidden\"> (Word document)<\/span><\/a><\/li><\/ul><\/div><div class=\"topic-section topic-section-c\" role=\"group\" aria-label=\"Section C\"><div class=\"topic-heading\"><span class=\"section-badge\" aria-hidden=\"true\">C<\/span><span class=\"visually-hidden\">Section C: <\/span><strong>Finding references for your project<\/strong><\/div><ul class=\"topic-list\" role=\"list\"><li><i class=\"bi bi-file-earmark-word\" aria-hidden=\"true\" style=\"color: #2b579a;\"><\/i> <a href=\"lab-materials/lab05/lab05_litsearch.docx\" title=\"Word document: Research Project References & Literature Review Worksheet\">Research Project References & Literature Review Worksheet<span class=\"visually-hidden\"> (Word document)<\/span><\/a><\/li><\/ul><\/div>","<div class=\"topic-section topic-section-a\" role=\"group\" aria-label=\"Section A\"><div class=\"topic-heading\"><span class=\"section-badge\" aria-hidden=\"true\">A<\/span><span class=\"visually-hidden\">Section A: <\/span><strong>Data Entry & Univariate Stats<\/strong><\/div><ul class=\"topic-list\" role=\"list\"><li class=\"no-link\"><i class=\"bi bi-info-circle\" aria-hidden=\"true\" style=\"color: var(--course-lapis);\"><\/i> <abbr title=\"Statistical Package for the Social Sciences\">SPSS<\/abbr> Handouts<\/li><li class=\"no-link\"><i class=\"bi bi-info-circle\" aria-hidden=\"true\" style=\"color: var(--course-lapis);\"><\/i> About 'stats packages' for Psyc350 - You are not required to purchase <abbr title=\"Statistical Package for the Social Sciences\">SPSS<\/abbr> (or any statistical package) but you must ensure that you have 'working access' to the statistical package(s) you choose to use so that you consistently complete assignments in a timely fashion.<\/li><\/ul><\/div><div class=\"topic-section topic-section-b\" role=\"group\" aria-label=\"Section B\"><div class=\"topic-heading\"><span class=\"section-badge\" aria-hidden=\"true\">B<\/span><span class=\"visually-hidden\">Section B: <\/span><strong>Weekly Lab Assignment<\/strong><\/div><ul class=\"topic-list\" role=\"list\"><li><i class=\"bi bi-file-earmark-word\" aria-hidden=\"true\" style=\"color: #2b579a;\"><\/i> <a href=\"lab-materials/lab06/lab06_data_univariate.docx\" title=\"Word document: Data Entry & Univariate Stats worksheet\">Data Entry & Univariate Stats worksheet<span class=\"visually-hidden\"> (Word document)<\/span><\/a><\/li><li><i class=\"bi bi-filetype-html\" aria-hidden=\"true\" style=\"color: #e34c26;\"><\/i> <a href=\"labs/lab06/index.html\" title=\"Web page: Univariate stats hw checker\">Univariate stats hw checker<span class=\"visually-hidden\"> (Web page)<\/span><\/a><\/li><\/ul><\/div><div class=\"handouts-section\" role=\"group\" aria-label=\"Handouts\"><div class=\"handouts-heading\"><i class=\"bi bi-folder\" aria-hidden=\"true\"><\/i> <strong>Handouts<\/strong><\/div><ul class=\"handouts-list\" role=\"list\"><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"https://unlpsychstats.github.io/PSYC350-spss-handouts/A1.data_entry_spss_handout_simple.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"PDF document (opens in new tab): Data Entry\"><strong>Data Entry<\/strong><span class=\"visually-hidden\"> (PDF document (opens in new tab))<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"https://unlpsychstats.github.io/PSYC350-spss-handouts/A2.data_transform_spss_handout_simple.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"PDF document (opens in new tab): Compute & recode\"><strong>Compute & recode<\/strong><span class=\"visually-hidden\"> (PDF document (opens in new tab))<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"https://unlpsychstats.github.io/PSYC350-spss-handouts/A3.data_select_spss_handout_simple.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"PDF document (opens in new tab): Selecting Cases & Splitting Files\"><strong>Selecting Cases & Splitting Files<\/strong><span class=\"visually-hidden\"> (PDF document (opens in new tab))<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"https://unlpsychstats.github.io/PSYC350-spss-handouts/A4.univariates_stats_spss_handout_simple.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"PDF document (opens in new tab): Frequencies & Univariate Statistics\"><strong>Frequencies & Univariate Statistics<\/strong><span class=\"visually-hidden\"> (PDF document (opens in new tab))<\/span><\/a><\/li><\/ul><\/div>","<div class=\"topic-section topic-section-a\" role=\"group\" aria-label=\"Section A\"><div class=\"topic-heading\"><span class=\"section-badge\" aria-hidden=\"true\">A<\/span><span class=\"visually-hidden\">Section A: <\/span><strong>Bivariate Data Analysis<\/strong><\/div><ul class=\"topic-list\" role=\"list\"><li class=\"no-link\"><i class=\"bi bi-info-circle\" aria-hidden=\"true\" style=\"color: var(--course-lapis);\"><\/i> <abbr title=\"Statistical Package for the Social Sciences\">SPSS<\/abbr> Handouts<\/li><\/ul><\/div><div class=\"topic-section topic-section-b\" role=\"group\" aria-label=\"Section B\"><div class=\"topic-heading\"><span class=\"section-badge\" aria-hidden=\"true\">B<\/span><span class=\"visually-hidden\">Section B: <\/span><strong>Weekly Lab Assignment<\/strong><\/div><ul class=\"topic-list\" role=\"list\"><li><i class=\"bi bi-clipboard-data\" aria-hidden=\"true\" style=\"color: #6610f2;\"><\/i> <a href=\"labs/datasets/superman/superman_data.sav\" title=\"SPSS data file: superman_data.sav\">superman_data.sav<span class=\"visually-hidden\"> (SPSS data file)<\/span><\/a><\/li><li><i class=\"bi bi-clipboard-data\" aria-hidden=\"true\" style=\"color: #6610f2;\"><\/i> <a href=\"labs/datasets/hotones/hotones_data.sav\" title=\"SPSS data file: hotones_data.sav\">hotones_data.sav<span class=\"visually-hidden\"> (SPSS data file)<\/span><\/a><\/li><\/ul><\/div><div class=\"topic-section topic-section-uncategorized\" role=\"group\" aria-label=\"Additional topics and activities\"><ul class=\"topic-list uncategorized\" role=\"list\"><li><i class=\"bi bi-file-earmark-word\" aria-hidden=\"true\" style=\"color: #2b579a;\"><\/i> <a href=\"lab-materials/lab07/lab07_corr_chi.docx\" title=\"Word document\">Correlations & Chi-square worksheet<span class=\"visually-hidden\"> (Word document)<\/span><\/a><\/li><li><i class=\"bi bi-filetype-html\" aria-hidden=\"true\" style=\"color: #e34c26;\"><\/i> <a href=\"labs/lab07/index.html\" title=\"Web page\">Correlations & Chi-square hw checker<span class=\"visually-hidden\"> (Web page)<\/span><\/a><\/li><\/ul><\/div><div class=\"handouts-section\" role=\"group\" aria-label=\"Handouts\"><div class=\"handouts-heading\"><i class=\"bi bi-folder\" aria-hidden=\"true\"><\/i> <strong>Handouts<\/strong><\/div><ul class=\"handouts-list\" role=\"list\"><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"https://unlpsychstats.github.io/PSYC350-spss-handouts/A1.pearsons_correlation_spss_handout_simple.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"PDF document (opens in new tab): Pearson's Correlation\"><strong>Pearson's Correlation<\/strong><span class=\"visually-hidden\"> (PDF document (opens in new tab))<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"https://unlpsychstats.github.io/PSYC350-spss-handouts/A2.scatterplot_spss_handout_simple.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"PDF document (opens in new tab): Scatterplots\"><strong>Scatterplots<\/strong><span class=\"visually-hidden\"> (PDF document (opens in new tab))<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"https://unlpsychstats.github.io/PSYC350-spss-handouts/A3.2x2_chisquare_spss_handout_simple.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"PDF document (opens in new tab): 2x2 Pearson's Chi-square\"><strong>2x2 Pearson's Chi-square<\/strong><span class=\"visually-hidden\"> (PDF document (opens in new tab))<\/span><\/a><\/li><\/ul><\/div>","<div class=\"topic-section topic-section-a\" role=\"group\" aria-label=\"Section A\"><div class=\"topic-heading\"><span class=\"section-badge\" aria-hidden=\"true\">A<\/span><span class=\"visually-hidden\">Section A: <\/span><strong>Between Groups and Within-Groups One-Way <abbr title=\"Analysis of Variance\">ANOVA<\/abbr><\/strong><\/div><ul class=\"topic-list\" role=\"list\"><li class=\"no-link\"><i class=\"bi bi-info-circle\" aria-hidden=\"true\" style=\"color: var(--course-lapis);\"><\/i> <abbr title=\"Statistical Package for the Social Sciences\">SPSS<\/abbr> Handouts<\/li><li class=\"no-link\"><i class=\"bi bi-info-circle\" aria-hidden=\"true\" style=\"color: var(--course-lapis);\"><\/i> Choosing Analyses for Project<\/li><li><i class=\"bi bi-file-earmark-word\" aria-hidden=\"true\" style=\"color: #2b579a;\"><\/i> <a href=\"lab-materials/lab08/lab09_proj_rhprop.docx\" title=\"Word document: Practice Choosing Statistical Analyses Worksheet\">Practice Choosing Statistical Analyses Worksheet<span class=\"visually-hidden\"> (Word document)<\/span><\/a><\/li><\/ul><\/div><div class=\"topic-section topic-section-b\" role=\"group\" aria-label=\"Section B\"><div class=\"topic-heading\"><span class=\"section-badge\" aria-hidden=\"true\">B<\/span><span class=\"visually-hidden\">Section B: <\/span><strong>Weekly Lab Assignment<\/strong><\/div><ul class=\"topic-list\" role=\"list\"><li><i class=\"bi bi-clipboard-data\" aria-hidden=\"true\" style=\"color: #6610f2;\"><\/i> <a href=\"labs/datasets/superman_smes/superman_smes_data.sav\" title=\"SPSS data file: superman_smes_data.sav\">superman_smes_data.sav<span class=\"visually-hidden\"> (SPSS data file)<\/span><\/a><\/li><li><i class=\"bi bi-clipboard-data\" aria-hidden=\"true\" style=\"color: #6610f2;\"><\/i> <a href=\"labs/datasets/hotones/hotones_data.sav\" title=\"SPSS data file: hotones_data.sav\">hotones_data.sav<span class=\"visually-hidden\"> (SPSS data file)<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-word\" aria-hidden=\"true\" style=\"color: #2b579a;\"><\/i> <a href=\"lab-materials/lab08/lab08_anovas.docx\" title=\"Word document: ANOVA Worksheet\"><abbr title=\"Analysis of Variance\">ANOVA<\/abbr> Worksheet<span class=\"visually-hidden\"> (Word document)<\/span><\/a><\/li><li><i class=\"bi bi-filetype-html\" aria-hidden=\"true\" style=\"color: #e34c26;\"><\/i> <a href=\"labs/lab08/index.html\" title=\"Web page: ANOVA hw checker\"><abbr title=\"Analysis of Variance\">ANOVA<\/abbr> hw checker<span class=\"visually-hidden\"> (Web page)<\/span><\/a><\/li><\/ul><\/div><div class=\"handouts-section\" role=\"group\" aria-label=\"Handouts\"><div class=\"handouts-heading\"><i class=\"bi bi-folder\" aria-hidden=\"true\"><\/i> <strong>Handouts<\/strong><\/div><ul class=\"handouts-list\" role=\"list\"><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"https://unlpsychstats.github.io/PSYC350-spss-handouts/A1.2bganova_spss_handout_simple.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"PDF document (opens in new tab): 2BG ANOVA\"><strong>2BG <abbr title=\"Analysis of Variance\">ANOVA<\/abbr><\/strong><span class=\"visually-hidden\"> (PDF document (opens in new tab))<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"https://unlpsychstats.github.io/PSYC350-spss-handouts/A2.BG_graph_spss_handout_simple.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"PDF document (opens in new tab): 2BG Bar Graph\"><strong>2BG Bar Graph<\/strong><span class=\"visually-hidden\"> (PDF document (opens in new tab))<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"https://unlpsychstats.github.io/PSYC350-spss-handouts/A3.2wgf_spss_handout_simple.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"PDF document (opens in new tab): WG ANOVA\"><strong>WG <abbr title=\"Analysis of Variance\">ANOVA<\/abbr><\/strong><span class=\"visually-hidden\"> (PDF document (opens in new tab))<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"https://unlpsychstats.github.io/PSYC350-spss-handouts/A5.wgttest_subforF_handout_simple.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"PDF document (opens in new tab): WG t-test\"><strong>WG t-test<\/strong><span class=\"visually-hidden\"> (PDF document (opens in new tab))<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"https://unlpsychstats.github.io/PSYC350-spss-handouts/A4.WG_graph_spss_handout_simple.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"PDF document (opens in new tab): WG Bar Graph\"><strong>WG Bar Graph<\/strong><span class=\"visually-hidden\"> (PDF document (opens in new tab))<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"https://unlpsychstats.github.io/PSYC350-spss-handouts/A6.2wgt_spss_handout_simple.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"PDF document (opens in new tab): WG t-test (paired)\"><strong>WG t-test (paired)<\/strong><span class=\"visually-hidden\"> (PDF document (opens in new tab))<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"lab-materials/handouts/power-howto/power-howto.pdf\" title=\"PDF document: Effect Size and Sample Size How-To (PDF)\"><strong>Effect Size and Sample Size How-To (<abbr title=\"Portable Document Format\">PDF<\/abbr>)<\/strong><span class=\"visually-hidden\"> (PDF document)<\/span><\/a><\/li><li><i class=\"bi bi-filetype-html\" aria-hidden=\"true\" style=\"color: #e34c26;\"><\/i> <a href=\"lab-materials/handouts/power-howto/power-howto.html\" title=\"Web page: Effect Size and Sample Size How-To (HTML)\"><strong>Effect Size and Sample Size How-To (HTML)<\/strong><span class=\"visually-hidden\"> (Web page)<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"lab-materials/handouts/which-test-to-use/which-test-to-use.pdf\" title=\"PDF document: Which Test to Use? (PDF)\"><strong>Which Test to Use? (<abbr title=\"Portable Document Format\">PDF<\/abbr>)<\/strong><span class=\"visually-hidden\"> (PDF document)<\/span><\/a><\/li><li><i class=\"bi bi-filetype-html\" aria-hidden=\"true\" style=\"color: #e34c26;\"><\/i> <a href=\"lab-materials/handouts/which-test-to-use/which-test-to-use.html\" title=\"Web page: Which Test to Use? (HTML)\"><strong>Which Test to Use? (HTML)<\/strong><span class=\"visually-hidden\"> (Web page)<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-word\" aria-hidden=\"true\" style=\"color: #2b579a;\"><\/i> <a href=\"lab-materials/lab08/files/which_test_to_use.docx\" title=\"Word document: Which Test to Use? (Word, editable)\"><strong>Which Test to Use? (Word, editable)<\/strong><span class=\"visually-hidden\"> (Word document)<\/span><\/a><\/li><\/ul><\/div>","<div class=\"topic-section topic-section-b\" role=\"group\" aria-label=\"Section B\"><div class=\"topic-heading\"><span class=\"section-badge\" aria-hidden=\"true\">B<\/span><span class=\"visually-hidden\">Section B: <\/span><strong>Preparation to Complete Research Project Report<\/strong><\/div><ul class=\"topic-list\" role=\"list\"><li><i class=\"bi bi-file-earmark-word\" aria-hidden=\"true\" style=\"color: #2b579a;\"><\/i> <a href=\"lab-materials/lab09/lab09_proj_rhprop.docx\" title=\"Word document: Research Project Analysis Proposal\">Research Project Analysis Proposal<span class=\"visually-hidden\"> (Word document)<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-word\" aria-hidden=\"true\" style=\"color: #2b579a;\"><\/i> <a href=\"lab-materials/lab09/lab09_proj_rhprop.docx\" title=\"Word document: Research Project Analysis Proposal Worksheet\">Research Project Analysis Proposal Worksheet<span class=\"visually-hidden\"> (Word document)<\/span><\/a><\/li><li class=\"no-link\"><i class=\"bi bi-info-circle\" aria-hidden=\"true\" style=\"color: var(--course-lapis);\"><\/i> Research Project Analysis must be signed off by your lab instructor<\/li><\/ul><\/div><div class=\"topic-section topic-section-c\" role=\"group\" aria-label=\"Section C\"><div class=\"topic-heading\"><span class=\"section-badge\" aria-hidden=\"true\">C<\/span><span class=\"visually-hidden\">Section C: <\/span><strong>Work on Research Project Report (Resources)<\/strong><\/div><ul class=\"topic-list\" role=\"list\"><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"lab-materials/final-project/project-suggestions.pdf\" title=\"PDF document: Research Project Suggestions & FAQ (READ THIS)\">Research Project Suggestions & <abbr title=\"Frequently Asked Questions\">FAQ<\/abbr> (READ THIS)<span class=\"visually-hidden\"> (PDF document)<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-word\" aria-hidden=\"true\" style=\"color: #2b579a;\"><\/i> <a href=\"lab-materials/lab09/files/lab09_project_example.docx\" title=\"Word document: Example Project Report\">Example Project Report<span class=\"visually-hidden\"> (Word document)<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"lab-materials/lab09/files/B1.apa_student_paper.pdf\" title=\"PDF document: APA Student Paper Guide\"><abbr title=\"American Psychological Association\">APA<\/abbr> Student Paper Guide<span class=\"visually-hidden\"> (PDF document)<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"lab-materials/lab09/files/B2.apa_avoid_plagiarism.pdf\" title=\"PDF document: APA Avoiding Plagiarism Guide\"><abbr title=\"American Psychological Association\">APA<\/abbr> Avoiding Plagiarism Guide<span class=\"visually-hidden\"> (PDF document)<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"lab-materials/lab09/files/B3.apa_student_checklist.pdf\" title=\"PDF document: APA Student Paper Checklist\"><abbr title=\"American Psychological Association\">APA<\/abbr> Student Paper Checklist<span class=\"visually-hidden\"> (PDF document)<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-slides\" aria-hidden=\"true\" style=\"color: #ff6b35;\"><\/i> <a href=\"poster-slides/templates/POSTER_EXAMPLE.pptx\" title=\"PowerPoint presentation: Example Project Poster\">Example Project Poster<span class=\"visually-hidden\"> (PowerPoint presentation)<\/span><\/a><\/li><li><i class=\"bi bi-filetype-html\" aria-hidden=\"true\" style=\"color: #e34c26;\"><\/i> <a href=\"poster-slides/index.html\" title=\"Web page: How to Make a Poster Slides\">How to Make a Poster Slides<span class=\"visually-hidden\"> (Web page)<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-word\" aria-hidden=\"true\" style=\"color: #2b579a;\"><\/i> <a href=\"lab-materials/lab09/files/B4.apa_table_templates.docx\" title=\"Word document: APA Table Templates (Word, editable)\"><abbr title=\"American Psychological Association\">APA<\/abbr> Table Templates (Word, editable)<span class=\"visually-hidden\"> (Word document)<\/span><\/a><\/li><\/ul><\/div><div class=\"handouts-section\" role=\"group\" aria-label=\"Handouts\"><div class=\"handouts-heading\"><i class=\"bi bi-folder\" aria-hidden=\"true\"><\/i> <strong>Handouts<\/strong><\/div><ul class=\"handouts-list\" role=\"list\"><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"lab-materials/handouts/apa-table-templates/apa-table-templates.pdf\" title=\"PDF document: APA Table Templates (PDF)\"><strong><abbr title=\"American Psychological Association\">APA<\/abbr> Table Templates (<abbr title=\"Portable Document Format\">PDF<\/abbr>)<\/strong><span class=\"visually-hidden\"> (PDF document)<\/span><\/a><\/li><li><i class=\"bi bi-filetype-html\" aria-hidden=\"true\" style=\"color: #e34c26;\"><\/i> <a href=\"lab-materials/handouts/apa-table-templates/apa-table-templates.html\" title=\"Web page: APA Table Templates (HTML)\"><strong><abbr title=\"American Psychological Association\">APA<\/abbr> Table Templates (HTML)<\/strong><span class=\"visually-hidden\"> (Web page)<\/span><\/a><\/li><\/ul><\/div>","<div class=\"topic-section topic-section-uncategorized\" role=\"group\" aria-label=\"Additional topics and activities\"><ul class=\"topic-list uncategorized\" role=\"list\"><li><i class=\"bi bi-file-earmark-word\" aria-hidden=\"true\" style=\"color: #2b579a;\"><\/i> <a href=\"lab-materials/lab10/lab10_peerreview.docx\" title=\"Word document\">Peer review Intro Method Results Discussion<span class=\"visually-hidden\"> (Word document)<\/span><\/a><\/li><\/ul><\/div>","<div class=\"topic-section topic-section-a\" role=\"group\" aria-label=\"Section A\"><div class=\"topic-heading\"><span class=\"section-badge\" aria-hidden=\"true\">A<\/span><span class=\"visually-hidden\">Section A: <\/span><strong>Multiple-Group Data Coding & Analyses<\/strong><\/div><ul class=\"topic-list\" role=\"list\"><li class=\"no-link\"><i class=\"bi bi-info-circle\" aria-hidden=\"true\" style=\"color: var(--course-lapis);\"><\/i> <abbr title=\"Statistical Package for the Social Sciences\">SPSS<\/abbr> Handouts<\/li><li><i class=\"bi bi-file-earmark-word\" aria-hidden=\"true\" style=\"color: #2b579a;\"><\/i> <a href=\"lab-materials/lab11/files/B1.apa_table_templates.docx\" title=\"Word document: APA Table Templates (Word, editable)\"><abbr title=\"American Psychological Association\">APA<\/abbr> Table Templates (Word, editable)<span class=\"visually-hidden\"> (Word document)<\/span><\/a><\/li><\/ul><\/div><div class=\"topic-section topic-section-b\" role=\"group\" aria-label=\"Section B\"><div class=\"topic-heading\"><span class=\"section-badge\" aria-hidden=\"true\">B<\/span><span class=\"visually-hidden\">Section B: <\/span><strong>Weekly Lab Assignment<\/strong><\/div><ul class=\"topic-list\" role=\"list\"><li><i class=\"bi bi-clipboard-data\" aria-hidden=\"true\" style=\"color: #6610f2;\"><\/i> <a href=\"labs/datasets/jury/jury_data.sav\" title=\"SPSS data file: jury_data.sav (RH1 & RH2)\">jury_data.sav (RH1 & RH2)<span class=\"visually-hidden\"> (SPSS data file)<\/span><\/a><\/li><li><i class=\"bi bi-clipboard-data\" aria-hidden=\"true\" style=\"color: #6610f2;\"><\/i> <a href=\"labs/datasets/football/football_data.sav\" title=\"SPSS data file: football_data.sav (RH3)\">football_data.sav (RH3)<span class=\"visually-hidden\"> (SPSS data file)<\/span><\/a><\/li><li><i class=\"bi bi-clipboard-data\" aria-hidden=\"true\" style=\"color: #6610f2;\"><\/i> <a href=\"labs/datasets/tips/tips_data.sav\" title=\"SPSS data file: tips_data.sav (RH4)\">tips_data.sav (RH4)<span class=\"visually-hidden\"> (SPSS data file)<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-word\" aria-hidden=\"true\" style=\"color: #2b579a;\"><\/i> <a href=\"lab-materials/lab11/lab11_kgroup.docx\" title=\"Word document: Multi-Group Coding & Analyses worksheet\">Multi-Group Coding & Analyses worksheet<span class=\"visually-hidden\"> (Word document)<\/span><\/a><\/li><li><i class=\"bi bi-filetype-html\" aria-hidden=\"true\" style=\"color: #e34c26;\"><\/i> <a href=\"labs/lab11/index.html\" title=\"Web page: Multi-Group Analyses hw checker\">Multi-Group Analyses hw checker<span class=\"visually-hidden\"> (Web page)<\/span><\/a><\/li><\/ul><\/div><div class=\"handouts-section\" role=\"group\" aria-label=\"Handouts\"><div class=\"handouts-heading\"><i class=\"bi bi-folder\" aria-hidden=\"true\"><\/i> <strong>Handouts<\/strong><\/div><ul class=\"handouts-list\" role=\"list\"><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"https://unlpsychstats.github.io/PSYC350-spss-handouts/A1.kbgf_ph_spss_handout_simple.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"PDF document (opens in new tab): kBG ANOVA\"><strong>kBG <abbr title=\"Analysis of Variance\">ANOVA<\/abbr><\/strong><span class=\"visually-hidden\"> (PDF document (opens in new tab))<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"https://unlpsychstats.github.io/PSYC350-spss-handouts/A4.kwgf_spss_handout_simple.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"PDF document (opens in new tab): k-Group Within-Groups ANOVA\"><strong>k-Group Within-Groups <abbr title=\"Analysis of Variance\">ANOVA<\/abbr><\/strong><span class=\"visually-hidden\"> (PDF document (opens in new tab))<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"https://unlpsychstats.github.io/PSYC350-spss-handouts/A2.2xkchi_spss_handout_simple.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"PDF document (opens in new tab): 2 × k Chi-square\"><strong>2 × k Chi-square<\/strong><span class=\"visually-hidden\"> (PDF document (opens in new tab))<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-excel\" aria-hidden=\"true\" style=\"color: #217346;\"><\/i> <a href=\"lab-materials/lab11/files/A3.computator_131.xlsx\" title=\"Excel spreadsheet: Computator (Excel)\"><strong>Computator (Excel)<\/strong><span class=\"visually-hidden\"> (Excel spreadsheet)<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"lab-materials/handouts/apa-table-templates/apa-table-templates.pdf\" title=\"PDF document: APA Table Templates (PDF)\"><strong><abbr title=\"American Psychological Association\">APA<\/abbr> Table Templates (<abbr title=\"Portable Document Format\">PDF<\/abbr>)<\/strong><span class=\"visually-hidden\"> (PDF document)<\/span><\/a><\/li><li><i class=\"bi bi-filetype-html\" aria-hidden=\"true\" style=\"color: #e34c26;\"><\/i> <a href=\"lab-materials/handouts/apa-table-templates/apa-table-templates.html\" title=\"Web page: APA Table Templates (HTML)\"><strong><abbr title=\"American Psychological Association\">APA<\/abbr> Table Templates (HTML)<\/strong><span class=\"visually-hidden\"> (Web page)<\/span><\/a><\/li><\/ul><\/div>","<div class=\"topic-section topic-section-a\" role=\"group\" aria-label=\"Section A\"><div class=\"topic-heading\"><span class=\"section-badge\" aria-hidden=\"true\">A<\/span><span class=\"visually-hidden\">Section A: <\/span><strong>Factorial Design & Analysis<\/strong><\/div><ul class=\"topic-list\" role=\"list\"><li class=\"no-link\"><i class=\"bi bi-info-circle\" aria-hidden=\"true\" style=\"color: var(--course-lapis);\"><\/i> <abbr title=\"Statistical Package for the Social Sciences\">SPSS<\/abbr> Handouts<\/li><\/ul><\/div><div class=\"topic-section topic-section-b\" role=\"group\" aria-label=\"Section B\"><div class=\"topic-heading\"><span class=\"section-badge\" aria-hidden=\"true\">B<\/span><span class=\"visually-hidden\">Section B: <\/span><strong>Weekly Lab Assignment<\/strong><\/div><ul class=\"topic-list\" role=\"list\"><li><i class=\"bi bi-clipboard-data\" aria-hidden=\"true\" style=\"color: #6610f2;\"><\/i> <a href=\"labs/datasets/parent_child/parent_child_data.sav\" title=\"SPSS data file: parent_child_data.sav\">parent_child_data.sav<span class=\"visually-hidden\"> (SPSS data file)<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-word\" aria-hidden=\"true\" style=\"color: #2b579a;\"><\/i> <a href=\"lab-materials/lab12/lab12_fact.docx\" title=\"Word document: Factorial Analyses Worksheet\">Factorial Analyses Worksheet<span class=\"visually-hidden\"> (Word document)<\/span><\/a><\/li><li><i class=\"bi bi-filetype-html\" aria-hidden=\"true\" style=\"color: #e34c26;\"><\/i> <a href=\"labs/lab12/index.html\" title=\"Web page: Factorial Analyses hw checker\">Factorial Analyses hw checker<span class=\"visually-hidden\"> (Web page)<\/span><\/a><\/li><\/ul><\/div><div class=\"handouts-section\" role=\"group\" aria-label=\"Handouts\"><div class=\"handouts-heading\"><i class=\"bi bi-folder\" aria-hidden=\"true\"><\/i> <strong>Handouts<\/strong><\/div><ul class=\"handouts-list\" role=\"list\"><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"https://unlpsychstats.github.io/PSYC350-spss-handouts/A1.2x2bg_factorial_anova_spss_handout_simple.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"PDF document (opens in new tab): 2x2 BG ANOVA on SPSS\"><strong>2x2 BG <abbr title=\"Analysis of Variance\">ANOVA<\/abbr> on <abbr title=\"Statistical Package for the Social Sciences\">SPSS<\/abbr><\/strong><span class=\"visually-hidden\"> (PDF document (opens in new tab))<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"https://unlpsychstats.github.io/PSYC350-spss-handouts/A4.2x2mg_factorial_anova_spss_handout_simple.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"PDF document (opens in new tab): 2x2 MG ANOVA on SPSS\"><strong>2x2 MG <abbr title=\"Analysis of Variance\">ANOVA<\/abbr> on <abbr title=\"Statistical Package for the Social Sciences\">SPSS<\/abbr><\/strong><span class=\"visually-hidden\"> (PDF document (opens in new tab))<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-excel\" aria-hidden=\"true\" style=\"color: #217346;\"><\/i> <a href=\"lab-materials/lab12/files/A3.computator_131.xlsx\" title=\"Excel spreadsheet: Computator (Excel)\"><strong>Computator (Excel)<\/strong><span class=\"visually-hidden\"> (Excel spreadsheet)<\/span><\/a><\/li><li class=\"no-link\"><i class=\"bi bi-info-circle\" aria-hidden=\"true\" style=\"color: var(--course-lapis);\"><\/i> <strong>Factorial 'effect map'<\/strong><\/li><\/ul><\/div>","<div class=\"topic-section topic-section-a\" role=\"group\" aria-label=\"Section A\"><div class=\"topic-heading\"><span class=\"section-badge\" aria-hidden=\"true\">A<\/span><span class=\"visually-hidden\">Section A: <\/span><strong>Multiple Linear Regression<\/strong><\/div><ul class=\"topic-list\" role=\"list\"><li class=\"no-link\"><i class=\"bi bi-info-circle\" aria-hidden=\"true\" style=\"color: var(--course-lapis);\"><\/i> <abbr title=\"Statistical Package for the Social Sciences\">SPSS<\/abbr> Handouts<\/li><\/ul><\/div><div class=\"topic-section topic-section-b\" role=\"group\" aria-label=\"Section B\"><div class=\"topic-heading\"><span class=\"section-badge\" aria-hidden=\"true\">B<\/span><span class=\"visually-hidden\">Section B: <\/span><strong>Weekly Lab Assignment<\/strong><\/div><ul class=\"topic-list\" role=\"list\"><li><i class=\"bi bi-clipboard-data\" aria-hidden=\"true\" style=\"color: #6610f2;\"><\/i> <a href=\"labs/datasets/huskers/huskers_data.sav\" title=\"SPSS data file: huskers_data.sav\">huskers_data.sav<span class=\"visually-hidden\"> (SPSS data file)<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-word\" aria-hidden=\"true\" style=\"color: #2b579a;\"><\/i> <a href=\"lab-materials/lab13/lab13_mreg.docx\" title=\"Word document: Multiple Linear Regression Worksheet\">Multiple Linear Regression Worksheet<span class=\"visually-hidden\"> (Word document)<\/span><\/a><\/li><li><i class=\"bi bi-filetype-html\" aria-hidden=\"true\" style=\"color: #e34c26;\"><\/i> <a href=\"labs/lab13/index.html\" title=\"Web page: Multiple Regression hw checker\">Multiple Regression hw checker<span class=\"visually-hidden\"> (Web page)<\/span><\/a><\/li><\/ul><\/div><div class=\"handouts-section\" role=\"group\" aria-label=\"Handouts\"><div class=\"handouts-heading\"><i class=\"bi bi-folder\" aria-hidden=\"true\"><\/i> <strong>Handouts<\/strong><\/div><ul class=\"handouts-list\" role=\"list\"><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"https://unlpsychstats.github.io/PSYC350-spss-handouts/A1.multiple_regression_spss_handout_simple.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"PDF document (opens in new tab): Multiple Regression Example\"><strong>Multiple Regression Example<\/strong><span class=\"visually-hidden\"> (PDF document (opens in new tab))<\/span><\/a><\/li><li><i class=\"bi bi-file-earmark-pdf\" aria-hidden=\"true\" style=\"color: #dc3545;\"><\/i> <a href=\"https://unlpsychstats.github.io/PSYC350-spss-handouts/A2.regression_example_spss_handout_simple.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"PDF document (opens in new tab): Another Multiple Regression Example\"><strong>Another Multiple Regression Example<\/strong><span class=\"visually-hidden\"> (PDF document (opens in new tab))<\/span><\/a><\/li><\/ul><\/div>"],"assignments_given":["<ul class=\"assignments-list\" role=\"list\"><li class=\"assignment-item assignment-weekly\"><span class=\"assignment-badge badge-weekly\" role=\"status\"><span class=\"visually-hidden\">Assignment type: <\/span>WEEKLY<\/span><i class=\"bi bi-pencil-square\" aria-hidden=\"true\"><\/i> <span class=\"assignment-text\">Finish and submit your Lab 01 to your lab section's Canvas link before week 2<\/span><\/li><\/ul>","<ul class=\"assignments-list\" role=\"list\"><li class=\"assignment-item assignment-weekly\"><span class=\"assignment-badge badge-weekly\" role=\"status\"><span class=\"visually-hidden\">Assignment type: <\/span>WEEKLY<\/span><i class=\"bi bi-pencil-square\" aria-hidden=\"true\"><\/i> <span class=\"assignment-text\">Submit to your lab section before week 3: Lab 2: Operationalization & Measurement Worksheet<\/span><\/li><\/ul>","<ul class=\"assignments-list\" role=\"list\"><li class=\"assignment-item assignment-weekly\"><span class=\"assignment-badge badge-weekly\" role=\"status\"><span class=\"visually-hidden\">Assignment type: <\/span>WEEKLY<\/span><i class=\"bi bi-pencil-square\" aria-hidden=\"true\"><\/i> <span class=\"assignment-text\">Submit to your lab section before week 4: Research Critique #1 and Research Critique #2<\/span><\/li><\/ul>","<ul class=\"assignments-list\" role=\"list\"><li class=\"assignment-item assignment-weekly\"><span class=\"assignment-badge badge-weekly\" role=\"status\"><span class=\"visually-hidden\">Assignment type: <\/span>WEEKLY<\/span><i class=\"bi bi-pencil-square\" aria-hidden=\"true\"><\/i> <span class=\"assignment-text\">Submit to your lab section before week 5: Literature review & proposal worksheet (AFTER SUBMITTING CHECK THAT YOU CHOSE THE CORRECT FILE!)<\/span><\/li><\/ul>","<ul class=\"assignments-list\" role=\"list\"><li class=\"assignment-item assignment-project\"><span class=\"assignment-badge badge-project\" role=\"status\"><span class=\"visually-hidden\">Assignment type: <\/span>PROJECT<\/span><i class=\"bi bi-pencil-square\" aria-hidden=\"true\"><\/i> <span class=\"assignment-text\">Submit to your lab section before week 6: Research Project Pre-proposal (only the one corresponding to your dataset) and Research Project References & Literature Review Worksheet<\/span><\/li><\/ul>","<ul class=\"assignments-list\" role=\"list\"><li class=\"assignment-item assignment-weekly\"><span class=\"assignment-badge badge-weekly\" role=\"status\"><span class=\"visually-hidden\">Assignment type: <\/span>WEEKLY<\/span><i class=\"bi bi-pencil-square\" aria-hidden=\"true\"><\/i> <span class=\"assignment-text\">Submit to your lab section before week 7: Data entry & Univariate Stats worksheet<\/span><\/li><\/ul>","<ul class=\"assignments-list\" role=\"list\"><li class=\"assignment-item assignment-weekly\"><span class=\"assignment-badge badge-weekly\" role=\"status\"><span class=\"visually-hidden\">Assignment type: <\/span>WEEKLY<\/span><i class=\"bi bi-pencil-square\" aria-hidden=\"true\"><\/i> <span class=\"assignment-text\">Submit to your lab section before week 7: Correlations & Chi-square Worksheet<\/span><\/li><\/ul>","<ul class=\"assignments-list\" role=\"list\"><li class=\"assignment-item assignment-weekly\"><span class=\"assignment-badge badge-weekly\" role=\"status\"><span class=\"visually-hidden\">Assignment type: <\/span>WEEKLY<\/span><i class=\"bi bi-pencil-square\" aria-hidden=\"true\"><\/i> <span class=\"assignment-text\">Submit to your lab section before week 9: <abbr title=\"Analysis of Variance\">ANOVA<\/abbr> worksheet<\/span><\/li><\/ul>","<ul class=\"assignments-list\" role=\"list\"><li class=\"assignment-item assignment-project\"><span class=\"assignment-badge badge-project\" role=\"status\"><span class=\"visually-hidden\">Assignment type: <\/span>PROJECT<\/span><i class=\"bi bi-pencil-square\" aria-hidden=\"true\"><\/i> <span class=\"assignment-text\">Complete FULL DRAFT of Research Project Report (Intro Method Results Discussion)<\/span><\/li><\/ul>","<ul class=\"assignments-list\" role=\"list\"><li class=\"assignment-item assignment-project\"><span class=\"assignment-badge badge-project\" role=\"status\"><span class=\"visually-hidden\">Assignment type: <\/span>PROJECT<\/span><i class=\"bi bi-pencil-square\" aria-hidden=\"true\"><\/i> <span class=\"assignment-text\">Complete Research Project Report<\/span><\/li><\/ul>","<ul class=\"assignments-list\" role=\"list\"><li class=\"assignment-item assignment-weekly\"><span class=\"assignment-badge badge-weekly\" role=\"status\"><span class=\"visually-hidden\">Assignment type: <\/span>WEEKLY<\/span><i class=\"bi bi-pencil-square\" aria-hidden=\"true\"><\/i> <span class=\"assignment-text\">Multi-Group Coding & Analysis Worksheet<\/span><\/li><li class=\"assignment-item assignment-weekly\"><span class=\"assignment-badge badge-weekly\" role=\"status\"><span class=\"visually-hidden\">Assignment type: <\/span>WEEKLY<\/span><i class=\"bi bi-pencil-square\" aria-hidden=\"true\"><\/i> <span class=\"assignment-text\">Complete Research Project Report by the end of lab during the week of Nov 21<\/span><\/li><\/ul>","<ul class=\"assignments-list\" role=\"list\"><li class=\"assignment-item assignment-weekly\"><span class=\"assignment-badge badge-weekly\" role=\"status\"><span class=\"visually-hidden\">Assignment type: <\/span>WEEKLY<\/span><i class=\"bi bi-pencil-square\" aria-hidden=\"true\"><\/i> <span class=\"assignment-text\">Factorial Worksheet<\/span><\/li><\/ul>","<ul class=\"assignments-list\" role=\"list\"><li class=\"assignment-item assignment-project\"><span class=\"assignment-badge badge-project\" role=\"status\"><span class=\"visually-hidden\">Assignment type: <\/span>PROJECT<\/span><i class=\"bi bi-pencil-square\" aria-hidden=\"true\"><\/i> <span class=\"assignment-text\">Graded Research Project Reports will be returned<\/span><\/li><\/ul>"],"assignments_due":["<ul class=\"assignments-list\" role=\"list\"><li class=\"no-assignment-item\"><span aria-label=\"No assignments due this week\">None<\/span><\/li><\/ul>","<ul class=\"assignments-list\" role=\"list\"><li class=\"assignment-item assignment-weekly\"><span class=\"assignment-badge badge-weekly\" role=\"status\"><span class=\"visually-hidden\">Assignment type: <\/span>WEEKLY<\/span><i class=\"bi bi-calendar-check\" aria-hidden=\"true\"><\/i> <span class=\"assignment-text\">Lab 01:  <abbr title=\"American Psychological Association\">APA<\/abbr> References Zotero Worksheet<\/span><\/li><\/ul>","<ul class=\"assignments-list\" role=\"list\"><li class=\"assignment-item assignment-weekly\"><span class=\"assignment-badge badge-weekly\" role=\"status\"><span class=\"visually-hidden\">Assignment type: <\/span>WEEKLY<\/span><i class=\"bi bi-calendar-check\" aria-hidden=\"true\"><\/i> <span class=\"assignment-text\">Lab 02: Operationalization & Measurement Worksheet<\/span><\/li><\/ul>","<ul class=\"assignments-list\" role=\"list\"><li class=\"assignment-item assignment-weekly\"><span class=\"assignment-badge badge-weekly\" role=\"status\"><span class=\"visually-hidden\">Assignment type: <\/span>WEEKLY<\/span><i class=\"bi bi-calendar-check\" aria-hidden=\"true\"><\/i> <span class=\"assignment-text\">Lab 03: Research Critique #1 and Research Critique #2<\/span><\/li><\/ul>","<ul class=\"assignments-list\" role=\"list\"><li class=\"assignment-item assignment-weekly\"><span class=\"assignment-badge badge-weekly\" role=\"status\"><span class=\"visually-hidden\">Assignment type: <\/span>WEEKLY<\/span><i class=\"bi bi-calendar-check\" aria-hidden=\"true\"><\/i> <span class=\"assignment-text\">Lab 04: Literature Review worksheet<\/span><\/li><\/ul>","<ul class=\"assignments-list\" role=\"list\"><li class=\"assignment-item assignment-weekly\"><span class=\"assignment-badge badge-weekly\" role=\"status\"><span class=\"visually-hidden\">Assignment type: <\/span>WEEKLY<\/span><i class=\"bi bi-calendar-check\" aria-hidden=\"true\"><\/i> <span class=\"assignment-text\">Lab 05: Research Project References & Literature Review Worksheet<\/span><\/li><li class=\"assignment-item assignment-project\"><span class=\"assignment-badge badge-project\" role=\"status\"><span class=\"visually-hidden\">Assignment type: <\/span>PROJECT<\/span><i class=\"bi bi-calendar-check\" aria-hidden=\"true\"><\/i> <span class=\"assignment-text\">Research Project Pre-proposal (only the one corresponding to your dataset)<\/span><\/li><\/ul>","<ul class=\"assignments-list\" role=\"list\"><li class=\"assignment-item assignment-weekly\"><span class=\"assignment-badge badge-weekly\" role=\"status\"><span class=\"visually-hidden\">Assignment type: <\/span>WEEKLY<\/span><i class=\"bi bi-calendar-check\" aria-hidden=\"true\"><\/i> <span class=\"assignment-text\">Lab 06: Data entry & Univariate Stats worksheet<\/span><\/li><\/ul>","<ul class=\"assignments-list\" role=\"list\"><li class=\"assignment-item assignment-weekly\"><span class=\"assignment-badge badge-weekly\" role=\"status\"><span class=\"visually-hidden\">Assignment type: <\/span>WEEKLY<\/span><i class=\"bi bi-calendar-check\" aria-hidden=\"true\"><\/i> <span class=\"assignment-text\">Lab 07: Correlations & Chi-square worksheet<\/span><\/li><\/ul>","<ul class=\"assignments-list\" role=\"list\"><li class=\"assignment-item assignment-weekly\"><span class=\"assignment-badge badge-weekly\" role=\"status\"><span class=\"visually-hidden\">Assignment type: <\/span>WEEKLY<\/span><i class=\"bi bi-calendar-check\" aria-hidden=\"true\"><\/i> <span class=\"assignment-text\">Lab 08: <abbr title=\"Analysis of Variance\">ANOVA<\/abbr> worksheet<\/span><\/li><\/ul>","<ul class=\"assignments-list\" role=\"list\"><li class=\"assignment-item assignment-project\"><span class=\"assignment-badge badge-project\" role=\"status\"><span class=\"visually-hidden\">Assignment type: <\/span>PROJECT<\/span><i class=\"bi bi-calendar-check\" aria-hidden=\"true\"><\/i> <span class=\"assignment-text\">Complete DRAFT Research Project Report<\/span><\/li><\/ul>","<ul class=\"assignments-list\" role=\"list\"><li class=\"no-assignment-item\"><span aria-label=\"No assignments due this week\">None<\/span><\/li><\/ul>","<ul class=\"assignments-list\" role=\"list\"><li class=\"assignment-item assignment-weekly\"><span class=\"assignment-badge badge-weekly\" role=\"status\"><span class=\"visually-hidden\">Assignment type: <\/span>WEEKLY<\/span><i class=\"bi bi-calendar-check\" aria-hidden=\"true\"><\/i> <span class=\"assignment-text\">Lab 11: Multi-Group Coding & Analysis Worksheet<\/span><\/li><\/ul>","<ul class=\"assignments-list\" role=\"list\"><li class=\"assignment-item assignment-weekly\"><span class=\"assignment-badge badge-weekly\" role=\"status\"><span class=\"visually-hidden\">Assignment type: <\/span>WEEKLY<\/span><i class=\"bi bi-calendar-check\" aria-hidden=\"true\"><\/i> <span class=\"assignment-text\">Lab 12: Factorial Worksheet<\/span><\/li><li class=\"assignment-item assignment-weekly\"><span class=\"assignment-badge badge-weekly\" role=\"status\"><span class=\"visually-hidden\">Assignment type: <\/span>WEEKLY<\/span><i class=\"bi bi-calendar-check\" aria-hidden=\"true\"><\/i> <span class=\"assignment-text\">Lab 13: Multiple Regression Worksheet<\/span><\/li><li class=\"assignment-item assignment-project\"><span class=\"assignment-badge badge-project\" role=\"status\"><span class=\"visually-hidden\">Assignment type: <\/span>PROJECT<\/span><i class=\"bi bi-calendar-check\" aria-hidden=\"true\"><\/i> <span class=\"assignment-text\">Rewrites of Research Project Reports due<\/span><\/li><\/ul>"],"is_break":[false,false,false,false,false,false,false,false,false,false,false,false,false]},"columns":[{"id":"lab_date","name":"Lab","type":"character","html":true,"width":80,"style":{"fontWeight":"bold","verticalAlign":"top","fontSize":"16px"}},{"id":"topics_activities","name":"Topics, Activities & Handouts","type":"character","html":true,"minWidth":320,"style":{"verticalAlign":"top","fontSize":"16px"}},{"id":"assignments_given","name":"Take-Home Assignments Given This Week","type":"character","html":true,"minWidth":160,"style":{"verticalAlign":"top","whiteSpace":"normal","wordWrap":"break-word","fontSize":"16px"}},{"id":"assignments_due","name":"assignments_due","type":"character","header":{"name":"div","attribs":{"style":{"cursor":"help"}},"children":[{"name":"WidgetContainer","attribs":{"key":"08a881b87cc78b8bc881d9e6124331af"},"children":[{"name":"Fragment","attribs":[],"children":[{"name":"span","attribs":{"id":"htmlwidget-6cc66a09d66c68a1794d","width":"100%","height":"338px","className":"tippy html-widget html-fill-item"},"children":[]},{"name":"script","attribs":{"type":"application/json","data-for":"htmlwidget-6cc66a09d66c68a1794d"},"children":["{\"x\":{\"opts\":{\"content\":\"Submit to lab section in Canvas by 11:59pm the day before lab meeting\"},\"text\":\"Take-Home Assignments Due This Week\"},\"evals\":[],\"jsHooks\":[]}"]}]}]}]},"html":true,"minWidth":160,"style":{"verticalAlign":"top","whiteSpace":"normal","wordWrap":"break-word","fontSize":"16px"}},{"id":"is_break","name":"is_break","type":"logical","show":false}],"sortable":false,"resizable":true,"defaultPageSize":20,"bordered":true,"striped":true,"rowClassName":[null,null,null,null,null,null,null,null,null,null,null,null,null],"width":"100%","theme":{"stripedColor":"#f8f9fa","headerStyle":{"backgroundColor":"var(--course-site-surface)","fontWeight":"bold","fontSize":"16px","borderBottom":"4px solid var(--course-dark-steel)"},"cellStyle":{"fontSize":"16px","padding":"12px 8px"}},"dataKey":"7096cd54f02fca6fd1fbef2b6fa9aa22"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="download-buttons" role="group" aria-label="Download schedule">
+  <a href="schedule-pdf.pdf" class="btn btn-outline-danger btn-sm" download="schedule-pdf.pdf" role="button"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> Download PDF</a>
+</div>
+
+</main> <!-- /main -->
+<script>
+
+/* update total correct if #webex-total_correct exists */
+update_total_correct = function() {
+  console.log("webex: update total_correct");
+
+  var t = document.getElementsByClassName("webex-total_correct");
+  for (var i = 0; i < t.length; i++) {
+    p = t[i].parentElement;
+    var correct = p.getElementsByClassName("webex-correct").length;
+    var solvemes = p.getElementsByClassName("webex-solveme").length;
+    var radiogroups = p.getElementsByClassName("webex-radiogroup").length;
+    var selects = p.getElementsByClassName("webex-select").length;
+
+    t[i].innerHTML = correct + " of " + (solvemes + radiogroups + selects) + " correct";
+  }
+}
+
+/* webex-solution button toggling function */
+b_func = function() {
+  console.log("webex: toggle hide");
+
+  var cl = this.parentElement.classList;
+  if (cl.contains('open')) {
+    cl.remove("open");
+  } else {
+    cl.add("open");
+  }
+}
+
+/* check answers */
+check_func = function() {
+  console.log("webex: check answers");
+
+  var cl = this.parentElement.classList;
+  if (cl.contains('unchecked')) {
+    cl.remove("unchecked");
+    this.innerHTML = "Hide Answers";
+  } else {
+    cl.add("unchecked");
+    this.innerHTML = "Show Answers";
+  }
+}
+
+/* function for checking solveme answers */
+solveme_func = function(e) {
+  console.log("webex: check solveme");
+
+  var real_answers = JSON.parse(this.dataset.answer);
+  var my_answer = this.value;
+  var cl = this.classList;
+  if (cl.contains("ignorecase")) {
+    my_answer = my_answer.toLowerCase();
+  }
+  if (cl.contains("nospaces")) {
+    my_answer = my_answer.replace(/ /g, "")
+  }
+
+  if (my_answer == "") {
+    cl.remove("webex-correct");
+    cl.remove("webex-incorrect");
+  } else if (real_answers.includes(my_answer)) {
+    cl.add("webex-correct");
+    cl.remove("webex-incorrect");
+  } else {
+    cl.add("webex-incorrect");
+    cl.remove("webex-correct");
+  }
+
+  // match numeric answers within a specified tolerance
+  if(this.dataset.tol > 0){
+    var tol = JSON.parse(this.dataset.tol);
+    var matches = real_answers.map(x => Math.abs(x - my_answer) < tol)
+    if (matches.reduce((a, b) => a + b, 0) > 0) {
+      cl.add("webex-correct");
+    } else {
+      cl.remove("webex-correct");
+    }
+  }
+
+  // added regex bit
+  if (cl.contains("regex")){
+    answer_regex = RegExp(real_answers.join("|"))
+    if (answer_regex.test(my_answer)) {
+      cl.add("webex-correct");
+    }
+  }
+
+  update_total_correct();
+}
+
+/* function for checking select answers */
+select_func = function(e) {
+  console.log("webex: check select");
+
+  var cl = this.classList
+
+  /* add style */
+  cl.remove("webex-incorrect");
+  cl.remove("webex-correct");
+  if (this.value == "answer") {
+    cl.add("webex-correct");
+  } else if (this.value != "blank") {
+    cl.add("webex-incorrect");
+  }
+
+  update_total_correct();
+}
+
+/* function for checking radiogroups answers */
+radiogroups_func = function(e) {
+  console.log("webex: check radiogroups");
+
+  var checked_button = document.querySelector('input[name=' + this.id + ']:checked');
+  var cl = checked_button.parentElement.classList;
+  var labels = checked_button.parentElement.parentElement.children;
+
+  /* get rid of styles */
+  for (i = 0; i < labels.length; i++) {
+    labels[i].classList.remove("webex-incorrect");
+    labels[i].classList.remove("webex-correct");
+  }
+
+  /* add style */
+  if (checked_button.value == "answer") {
+    cl.add("webex-correct");
+  } else {
+    cl.add("webex-incorrect");
+  }
+
+  update_total_correct();
+}
+
+window.onload = function() {
+  console.log("webex onload");
+  /* set up solution buttons */
+  var buttons = document.getElementsByTagName("button");
+
+  for (var i = 0; i < buttons.length; i++) {
+    if (buttons[i].parentElement.classList.contains('webex-solution')) {
+      buttons[i].onclick = b_func;
+    }
+  }
+
+  var check_sections = document.getElementsByClassName("webex-check");
+  console.log("check:", check_sections.length);
+  for (var i = 0; i < check_sections.length; i++) {
+    check_sections[i].classList.add("unchecked");
+
+    let btn = document.createElement("button");
+    btn.innerHTML = "Show Answers";
+    btn.classList.add("webex-check-button");
+    btn.onclick = check_func;
+    check_sections[i].appendChild(btn);
+
+    let spn = document.createElement("span");
+    spn.classList.add("webex-total_correct");
+    check_sections[i].appendChild(spn);
+  }
+
+  /* set up webex-solveme inputs */
+  var solveme = document.getElementsByClassName("webex-solveme");
+
+  for (var i = 0; i < solveme.length; i++) {
+    /* make sure input boxes don't auto-anything */
+    solveme[i].setAttribute("autocomplete","off");
+    solveme[i].setAttribute("autocorrect", "off");
+    solveme[i].setAttribute("autocapitalize", "off");
+    solveme[i].setAttribute("spellcheck", "false");
+    solveme[i].value = "";
+
+    /* adjust answer for ignorecase or nospaces */
+    var cl = solveme[i].classList;
+    var real_answer = solveme[i].dataset.answer;
+    if (cl.contains("ignorecase")) {
+      real_answer = real_answer.toLowerCase();
+    }
+    if (cl.contains("nospaces")) {
+      real_answer = real_answer.replace(/ /g, "");
+    }
+    solveme[i].dataset.answer = real_answer;
+
+    /* attach checking function */
+    solveme[i].onkeyup = solveme_func;
+    solveme[i].onchange = solveme_func;
+
+    solveme[i].insertAdjacentHTML("afterend", " <span class='webex-icon'></span>")
+  }
+
+  /* set up radiogroups */
+  var radiogroups = document.getElementsByClassName("webex-radiogroup");
+  for (var i = 0; i < radiogroups.length; i++) {
+    radiogroups[i].onchange = radiogroups_func;
+  }
+
+  /* set up selects */
+  var selects = document.getElementsByClassName("webex-select");
+  for (var i = 0; i < selects.length; i++) {
+    selects[i].onchange = select_func;
+    selects[i].insertAdjacentHTML("afterend", " <span class='webex-icon'></span>")
+  }
+
+  update_total_correct();
+}
+
+</script>
+<script>
+
+// reactable-a11y.js — patch missing ARIA roles in reactable tables.
+// reactable emits role="table"/"rowgroup" containers but leaves rows and
+// cells without roles, which fails axe's aria-required-children rule
+// (WCAG 1.3.1). Adds the missing roles and watches for the async render.
+(function () {
+  function fixRoles(root) {
+    (root || document).querySelectorAll('.rt-thead').forEach(function (el) {
+      el.setAttribute('role', 'rowgroup');
+    });
+    (root || document).querySelectorAll('.rt-tr-group').forEach(function (el) {
+      if (!el.hasAttribute('role')) el.setAttribute('role', 'none');
+      // aria-live disqualifies the wrapper as a generic intermediate element,
+      // breaking the required table -> rowgroup -> row ownership chain
+      el.removeAttribute('aria-live');
+    });
+    (root || document).querySelectorAll('.rt-no-data').forEach(function (el) {
+      // hidden empty-state div with aria-live; not a valid table child
+      if (!el.hasAttribute('role')) el.setAttribute('role', 'none');
+      el.removeAttribute('aria-live');
+    });
+    (root || document).querySelectorAll('.rt-tr').forEach(function (el) {
+      if (!el.hasAttribute('role')) el.setAttribute('role', 'row');
+    });
+    (root || document).querySelectorAll('.rt-th').forEach(function (el) {
+      if (!el.hasAttribute('role')) el.setAttribute('role', 'columnheader');
+    });
+    (root || document).querySelectorAll('.rt-td').forEach(function (el) {
+      if (!el.hasAttribute('role')) el.setAttribute('role', 'cell');
+    });
+  }
+
+  // Run as soon as possible, not just on load
+  if (document.readyState !== 'loading') fixRoles();
+  else document.addEventListener('DOMContentLoaded', function () { fixRoles(); });
+  window.addEventListener('load', function () { fixRoles(); });
+
+  // reactable renders asynchronously; watch for it and re-apply
+  var observer = new MutationObserver(function (mutations) {
+    for (var i = 0; i < mutations.length; i++) {
+      if (mutations[i].addedNodes.length) { fixRoles(); break; }
+    }
+  });
+  observer.observe(document.documentElement, { childList: true, subtree: true });
+})();
+
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/unlpsychstats\.github\.io\/UNL-PSYC350-LAB\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Content © 2026 <br> All content licensed under a <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International license (CC BY-NC 4.0)</a></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Made with R and <a href="https://quarto.org/">Quarto</a><br> <a href="https://github.com/unlpsychstats/UNL-PSYC350-LAB">View the source at <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

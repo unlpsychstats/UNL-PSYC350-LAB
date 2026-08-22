@@ -1,0 +1,856 @@
+[
+  {
+    "objectID": "labs/lab13/index.html",
+    "href": "labs/lab13/index.html",
+    "title": "Lab 13: Multiple Regression",
+    "section": "",
+    "text": "Use a computer with SPSS and have the Lab 13 worksheet open."
+  },
+  {
+    "objectID": "labs/lab13/index.html#preparation",
+    "href": "labs/lab13/index.html#preparation",
+    "title": "Lab 13: Multiple Regression",
+    "section": "",
+    "text": "Use a computer with SPSS and have the Lab 13 worksheet open."
+  },
+  {
+    "objectID": "labs/lab13/index.html#lab-overview",
+    "href": "labs/lab13/index.html#lab-overview",
+    "title": "Lab 13: Multiple Regression",
+    "section": "Lab Overview",
+    "text": "Lab Overview\n\n\nLearning objectives\n\n\nPractice using SPSS to perform multiple linear regression.\nExplain how multiple regression extends bivariate regression to several predictors.\nInterpret model fit (R-squared and F) and individual predictor tests (b, beta, t)."
+  },
+  {
+    "objectID": "labs/lab13/index.html#lab-slides",
+    "href": "labs/lab13/index.html#lab-slides",
+    "title": "Lab 13: Multiple Regression",
+    "section": "Lab Slides",
+    "text": "Lab Slides\nOpen the Lab 13 slide deck in full screen"
+  },
+  {
+    "objectID": "labs/lab13/index.html#materials",
+    "href": "labs/lab13/index.html#materials",
+    "title": "Lab 13: Multiple Regression",
+    "section": "Materials to Download",
+    "text": "Materials to Download\n\n\nMultiple Linear RegressionWeekly Lab Assignment\n\n\n\nSPSS Handouts\nMultiple Regression Example  (PDF) (Opens in new tab)\nAnother Multiple Regression Example  (PDF) (Opens in new tab)\n\n\n\n\nhuskers_data.sav  (SPSS data file)\nMultiple Linear Regression Worksheet  (Word document)\nMultiple Regression hw checker  (Web page)"
+  },
+  {
+    "objectID": "labs/lab13/index.html#lab-activities",
+    "href": "labs/lab13/index.html#lab-activities",
+    "title": "Lab 13: Multiple Regression",
+    "section": "Lab Activities",
+    "text": "Lab Activities\n\nHomework Checker\nHow to use the Homework Checker!\n\nType your answer into each blank box. Round to 2 decimal places where appropriate.\nSelect your choice from the dropdown menu for interpretability\nThe box will turn green if your answer is correct\nThe box will turn red if your answer is incorrect - try again!\nDo not forget to take a screenshot of the correct answers to include on your lab worksheet!\n\n\nWalkthrough Answers\n\nRH1: Model Summary\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                 \n                R\n                R²\n                F\n                df1, df2\n                p\n                Does the model work?\n              \n        \n        \n        \n                \n                  Model Summary\n                  \n                  \n                  \n                  , \n                  \n                  YesNo\n                \n        \n      \n    \n\n\n\nRH1: Predictor Results\n\n\nClick here for significance key\n\nSignificance Key:\n\nns = p &gt; .05 (not significant)\n* = p &lt; .05\n** = p &lt; .01\n*** = p &lt; .001\n\nResult Categories:\n\na = Neither r nor b significant\nb = r & b both significant & same sign\nc = r significant but not b\nd = suppressor effect\n\n\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                Predictor\n                Type\n                r\n                r sig\n                b\n                b sig\n                Result\n              \n        \n        \n        \n                \n                  Nebraska rushing yards\n                  BinaryQuant\n                  \n                  ns******\n                  \n                  ns******\n                  abcd\n                \n                \n                  Nebraska passing yards\n                  BinaryQuant\n                  \n                  ns******\n                  \n                  ns******\n                  abcd\n                \n                \n                  Temperature at kickoff (Fahrenheit)\n                  BinaryQuant\n                  \n                  ns******\n                  \n                  ns******\n                  abcd\n                \n                \n                  Conference game (non-conference = 0, conference = 1)\n                  BinaryQuant\n                  \n                  ns******\n                  \n                  ns******\n                  abcd\n                \n                \n                  Home game (no = 0, yes = 1)\n                  BinaryQuant\n                  \n                  ns******\n                  \n                  ns******\n                  abcd\n                \n        \n      \n    \n\n\n\n\nYour Turn Answers\n\nRH2: Model Summary\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                 \n                R\n                R²\n                F\n                df1, df2\n                p\n                Does the model work?\n              \n        \n        \n        \n                \n                  Model Summary\n                  \n                  \n                  \n                  , \n                  \n                  YesNo\n                \n        \n      \n    \n\n\n\nRH2: Predictor Results\n\n\nClick here for significance key\n\nSignificance Key:\n\nns = p &gt; .05 (not significant)\n* = p &lt; .05\n** = p &lt; .01\n*** = p &lt; .001\n\nResult Categories:\n\na = Neither r nor b significant\nb = r & b both significant & same sign\nc = r significant but not b\nd = suppressor effect\n\n\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                Predictor\n                Type\n                r\n                r sig\n                b\n                b sig\n                Result\n              \n        \n        \n        \n                \n                  Opponent rushing yards\n                  BinaryQuant\n                  \n                  ns******\n                  \n                  ns******\n                  abcd\n                \n                \n                  Opponent passing yards\n                  BinaryQuant\n                  \n                  ns******\n                  \n                  ns******\n                  abcd\n                \n                \n                  Nebraska penalty yards\n                  BinaryQuant\n                  \n                  ns******\n                  \n                  ns******\n                  abcd\n                \n                \n                  Temperature at kickoff (Fahrenheit)\n                  BinaryQuant\n                  \n                  ns******\n                  \n                  ns******\n                  abcd\n                \n                \n                  Nebraska won (no = 0, yes = 1)\n                  BinaryQuant\n                  \n                  ns******\n                  \n                  ns******\n                  abcd\n                \n                \n                  Home game (no = 0, yes = 1)\n                  BinaryQuant\n                  \n                  ns******\n                  \n                  ns******\n                  abcd"
+  },
+  {
+    "objectID": "labs/lab11/index.html",
+    "href": "labs/lab11/index.html",
+    "title": "Lab 11: Multi-group Analyses",
+    "section": "",
+    "text": "Use a computer with SPSS and have the Lab 11 worksheet open."
+  },
+  {
+    "objectID": "labs/lab11/index.html#preparation",
+    "href": "labs/lab11/index.html#preparation",
+    "title": "Lab 11: Multi-group Analyses",
+    "section": "",
+    "text": "Use a computer with SPSS and have the Lab 11 worksheet open."
+  },
+  {
+    "objectID": "labs/lab11/index.html#lab-overview",
+    "href": "labs/lab11/index.html#lab-overview",
+    "title": "Lab 11: Multi-group Analyses",
+    "section": "Lab Overview",
+    "text": "Lab Overview\n\n\nLearning objectives\n\n\nPractice using SPSS to perform k-group One-Way ANOVAs and Chi-Square analyses.\nExplain how k-group tests extend two-group comparisons to three or more groups.\nInterpret omnibus k-group results and conduct post-hoc pairwise comparisons."
+  },
+  {
+    "objectID": "labs/lab11/index.html#lab-slides",
+    "href": "labs/lab11/index.html#lab-slides",
+    "title": "Lab 11: Multi-group Analyses",
+    "section": "Lab Slides",
+    "text": "Lab Slides\nOpen the Lab 11 slide deck in full screen"
+  },
+  {
+    "objectID": "labs/lab11/index.html#materials",
+    "href": "labs/lab11/index.html#materials",
+    "title": "Lab 11: Multi-group Analyses",
+    "section": "Materials to Download",
+    "text": "Materials to Download\n\n\nMultiple-Group Data Coding & AnalysesWeekly Lab Assignment\n\n\n\nSPSS Handouts\nAPA Table Templates (Word, editable)  (Word document)\nkBG ANOVA  (PDF) (Opens in new tab)\nk-Group Within-Groups ANOVA  (PDF) (Opens in new tab)\n2 × k Chi-square  (PDF) (Opens in new tab)\nComputator (Excel)  (Excel)\nAPA Table Templates (PDF)  (PDF)\nAPA Table Templates (HTML)  (Web page)\n\n\n\n\njury_data.sav (RH1 & RH2)  (SPSS data file)\nfootball_data.sav (RH3)  (SPSS data file)\ntips_data.sav (RH4)  (SPSS data file)\nMulti-Group Coding & Analyses worksheet  (Word document)\nMulti-Group Analyses hw checker  (Web page)"
+  },
+  {
+    "objectID": "labs/lab11/index.html#lab-activities",
+    "href": "labs/lab11/index.html#lab-activities",
+    "title": "Lab 11: Multi-group Analyses",
+    "section": "Lab Activities",
+    "text": "Lab Activities\n\nHomework Checker\nHow to use the Homework Checker!\n\nSelect or Type your answer into each blank box. Round to 2 decimal places where appropriate.\nThe box will turn green if your answer is correct\nThe box will turn red if your answer is incorrect - try again!\nDo not forget to take a screenshot of the correct answers to include on your lab worksheet!\n\n\nWalkthrough Answers\n\nEnter the descriptives and Omnibus F-test statistics for the Mock-Jury Study:\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                 \n                F\n                p\n                df (between)\n                df (within)\n                MSE\n                Do we need to perform LSD pairwise comparisons?\n              \n        \n        \n        \n                \n                  BG ANOVA: RH1\n                  \n                  \n                  \n                  \n                  \n                  No - a nonsignificant Omnibus F-testYes - significant Omnibus F-test\n                \n                \n                  \n                  N\n                  k\n                  average n\n                  \n                  \n                  \n                \n                \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                \n                \n                  \n                  Mean\n                  SD\n                  n\n                  \n                  \n                  \n                \n                \n                  Beautiful\n                  \n                  \n                  \n                  \n                  \n                  \n                \n                \n                  Average\n                  \n                  \n                  \n                  \n                  \n                  \n                \n                \n                  Unattractive\n                  \n                  \n                  \n                  \n                  \n                  \n                \n        \n      \n    \n\n\n\nEnter the post-hoc test for Mock-Jury Study:\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                 \n                  \n                   \n                    \n                     \n                      \n              \n        \n        \n        \n                \n                  LSDmmd\n                  \n                  \n                  \n                  \n                  \n                \n                \n                  \n                  Mean Difference\n                  LSD Result\n                  Type of Error\n                  Effect Size (r)\n                  Power Problem?\n                \n                \n                  Beautiful vs Average\n                  \n                  \n                  Type I & IIIType II\n                  \n                  No - rejecting H0: means there was sufficient powerNo - effect is \"too small to be interesting,\" (r &lt; .10)Yes - The effect is \"large enough to be interesting,\" (r &gt; .10)\n                \n                \n                  Beautiful vs Unattractive\n                  \n                  \n                  Type I & IIIType II\n                  \n                  No - rejecting H0: means there was sufficient powerNo - effect is \"too small to be interesting,\" (r &lt; .10)Yes - The effect is \"large enough to be interesting,\" (r &gt; .10)\n                \n                \n                  Average vs Unattractive\n                  \n                  \n                  Type I & IIIType II\n                  \n                  No - rejecting H0: means there was sufficient powerNo - effect is \"too small to be interesting,\" (r &lt; .10)Yes - The effect is \"large enough to be interesting,\" (r &gt; .10)\n                \n        \n      \n    \n\n\n\nEnter the descriptives and Omnibus X² for Mock-Jury Seriousness Study:\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                 \n                χ²\n                p\n                df\n                N\n                  \n                Do we need to perform pairwise comparisons?\n              \n        \n        \n        \n                \n                  Chi-Square: RH2\n                  \n                  \n                  \n                  \n                  \n                  No – a nonsignificant Omnibus χ² testYes – significant Omnibus χ² test\n                \n                \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                \n                \n                  Number of Beautiful in sample\n                  \n                  Number of Average in sample\n                  \n                  Number of Unattractive in sample\n                  \n                  \n                \n                \n                  Number of Serious in sample\n                  \n                  Number of Not Serious in sample\n                  \n                  \n                  \n                  \n                \n        \n      \n    \n\n\n\nEnter the post-hoc X² tests for Mock-Jury Seriousness Study:\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                 \n                  \n                   \n                    \n                     \n                      \n              \n        \n        \n        \n                \n                  χ² critical\n                  \n                  \n                  \n                  \n                  \n                \n                \n                  \n                  % Serious\n                  χ² Result\n                  Type of Error\n                  Effect Size (r)\n                  Power Problem?\n                \n                \n                  Beautiful vs Average\n                  % vs %\n                   \n                  Type I & IIIType II\n                  \n                  No - rejecting H0: means there was sufficient powerNo - effect is \"too small to be interesting,\" (r &lt; .10)Yes - The effect is \"large enough to be interesting,\" (r &gt; .10)\n                \n                \n                  Beautiful vs Unattractive\n                  % vs %\n                   \n                  Type I & IIIType II\n                  \n                  No - rejecting H0: means there was sufficient powerNo - effect is \"too small to be interesting,\" (r &lt; .10)Yes - The effect is \"large enough to be interesting,\" (r &gt; .10)\n                \n                \n                  Average vs Unattractive\n                  % vs %\n                   \n                  Type I & IIIType II\n                  \n                  No - rejecting H0: means there was sufficient powerNo - effect is \"too small to be interesting,\" (r &lt; .10)Yes - The effect is \"large enough to be interesting,\" (r &gt; .10)\n                \n        \n      \n    \n\n\n\n\nYour Turn Answers\n\nEnter the descriptives and Omnibus F-test statistics for Football Study:\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                 \n                F\n                p\n                df (between)\n                df (within)\n                MSE\n                Do we need to perform LSD pairwise comparisons?\n              \n        \n        \n        \n                \n                  BG ANOVA: RH3\n                  \n                  \n                  \n                  \n                  \n                  No - a nonsignificant Omnibus F-testYes - significant Omnibus F-test\n                \n                \n                  \n                  N\n                  k\n                  average n\n                  \n                  \n                  \n                \n                \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                \n                \n                  \n                  Mean\n                  SD\n                  n\n                  \n                  \n                  \n                \n                \n                  Control\n                  \n                  \n                  \n                  \n                  \n                  \n                \n                \n                  Football (no concussion)\n                  \n                  \n                  \n                  \n                  \n                  \n                \n                \n                  Football (concussion)\n                  \n                  \n                  \n                  \n                  \n                  \n                \n        \n      \n    \n\n\n\nEnter the post-hoc LSD Pairwise Comparisons for Football Study:\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                 \n                  \n                   \n                    \n                     \n                      \n              \n        \n        \n        \n                \n                  LSDmmd\n                  \n                  \n                  \n                  \n                  \n                \n                \n                  \n                  Mean Difference\n                  LSD Result\n                  Type of Error\n                  Effect Size (r)\n                  Power Problem?\n                \n                \n                  Control vs Football (no concussion)\n                  \n                  \n                  Type I & IIIType II\n                  \n                  No - rejecting H0: means there was sufficient powerNo - effect is \"too small to be interesting,\" (r &lt; .10)Yes - The effect is \"large enough to be interesting,\" (r &gt; .10)\n                \n                \n                  Control vs Football (concussion)\n                  \n                  \n                  Type I & IIIType II\n                  \n                  No - rejecting H0: means there was sufficient powerNo - effect is \"too small to be interesting,\" (r &lt; .10)Yes - The effect is \"large enough to be interesting,\" (r &gt; .10)\n                \n                \n                  Football (no concussion) vs Football (concussion)\n                  \n                  \n                  Type I & IIIType II\n                  \n                  No - rejecting H0: means there was sufficient powerNo - effect is \"too small to be interesting,\" (r &lt; .10)Yes - The effect is \"large enough to be interesting,\" (r &gt; .10)\n                \n        \n      \n    \n\n\n\nEnter the descriptives and Omnibus X² statistics for Tips-Joke Study:\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                 \n                χ²\n                p\n                df\n                N\n                  \n                Do we need to perform pairwise comparisons?\n              \n        \n        \n        \n                \n                  Chi-Square: RH4\n                  \n                  \n                  \n                  \n                  \n                  No – a nonsignificant Omnibus χ² testYes – significant Omnibus χ² test\n                \n                \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n                \n                \n                  Number of Advertisement in sample\n                  \n                  Number of Joke in sample\n                  \n                  Number of No Card in sample\n                  \n                  \n                \n                \n                  Number of No Tip in sample\n                  \n                  Number of Left Tip in sample\n                  \n                  \n                  \n                  \n                \n        \n      \n    \n\n\n\nEnter the post-hoc X² test for Tips-Joke Study:\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                 \n                  \n                   \n                    \n                     \n                      \n              \n        \n        \n        \n                \n                  χ² critical\n                  \n                  \n                  \n                  \n                  \n                \n                \n                  \n                  % Left Tip\n                  χ² Result\n                  Type of Error\n                  Effect Size (r)\n                  Power Problem?\n                \n                \n                  Advertisement vs Joke\n                  % vs %\n                   \n                  Type I & IIIType II\n                  \n                  No - rejecting H0: means there was sufficient powerNo - effect is \"too small to be interesting,\" (r &lt; .10)Yes - The effect is \"large enough to be interesting,\" (r &gt; .10)\n                \n                \n                  Advertisement vs No Card\n                  % vs %\n                   \n                  Type I & IIIType II\n                  \n                  No - rejecting H0: means there was sufficient powerNo - effect is \"too small to be interesting,\" (r &lt; .10)Yes - The effect is \"large enough to be interesting,\" (r &gt; .10)\n                \n                \n                  Joke vs No Card\n                  % vs %\n                   \n                  Type I & IIIType II\n                  \n                  No - rejecting H0: means there was sufficient powerNo - effect is \"too small to be interesting,\" (r &lt; .10)Yes - The effect is \"large enough to be interesting,\" (r &gt; .10)"
+  },
+  {
+    "objectID": "labs/lab09/index.html",
+    "href": "labs/lab09/index.html",
+    "title": "Lab 09: Project Analyses",
+    "section": "",
+    "text": "Use a computer with SPSS and have your project materials ready."
+  },
+  {
+    "objectID": "labs/lab09/index.html#preparation",
+    "href": "labs/lab09/index.html#preparation",
+    "title": "Lab 09: Project Analyses",
+    "section": "",
+    "text": "Use a computer with SPSS and have your project materials ready."
+  },
+  {
+    "objectID": "labs/lab09/index.html#lab-overview",
+    "href": "labs/lab09/index.html#lab-overview",
+    "title": "Lab 09: Project Analyses",
+    "section": "Lab Overview",
+    "text": "Lab Overview\n\n\nLearning objectives\n\n\nPractice selecting statistics and running project analyses.\nSelect an appropriate statistical test based on the research question and the types of variables involved.\nRun and report project analyses in APA format."
+  },
+  {
+    "objectID": "labs/lab09/index.html#lab-slides",
+    "href": "labs/lab09/index.html#lab-slides",
+    "title": "Lab 09: Project Analyses",
+    "section": "Lab Slides",
+    "text": "Lab Slides\nOpen the Lab 09 slide deck in full screen"
+  },
+  {
+    "objectID": "labs/lab09/index.html#materials",
+    "href": "labs/lab09/index.html#materials",
+    "title": "Lab 09: Project Analyses",
+    "section": "Lab Materials",
+    "text": "Lab Materials\n\n\nPreparation to Complete Research Project ReportWork on Research Project Report (Resources)\n\n\n\nResearch Project Analysis Proposal  (Word document)\nResearch Project Analysis Proposal Worksheet  (Word document)\nResearch Project Analysis must be signed off by your lab instructor\n\n\n\n\nResearch Project Suggestions & FAQ (READ THIS)  (PDF)\nExample Project Report  (Word document)\nAPA Student Paper Guide  (PDF)\nAPA Avoiding Plagiarism Guide  (PDF)\nAPA Student Paper Checklist  (PDF)\nExample Project Poster  (PowerPoint)\nHow to Make a Poster Slides  (Web page)\nAPA Table Templates (Word, editable)  (Word document)\nAPA Table Templates (PDF)  (PDF)\nAPA Table Templates (HTML)  (Web page)"
+  },
+  {
+    "objectID": "labs/lab09/index.html#lab-activities",
+    "href": "labs/lab09/index.html#lab-activities",
+    "title": "Lab 09: Project Analyses",
+    "section": "Lab Activities",
+    "text": "Lab Activities\nHow to use the Answer Checker!\n\nType your answer into each blank box. Round to 2 decimal places where appropriate.\nSelect your choice from the dropdown menu for interpretability\nThe box will turn green if your answer is correct\nThe box will turn red if your answer is incorrect - try again!\n\n\n1. Variable classification\n\nDecide whether each variable is qualitative (includes binary) or quantitative\n\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                Variable\n                Qualitative or Quantitative\n              \n        \n        \n        \n                \n                  Birth sex\n                  QualitativeQuantitative\n                \n                \n                  Greek\n                  QualitativeQuantitative\n                \n                \n                  FGPA\n                  QualitativeQuantitative\n                \n                \n                  SGPA\n                  QualitativeQuantitative\n                \n                \n                  Frnds\n                  QualitativeQuantitative\n                \n                \n                  Sfrnds\n                  QualitativeQuantitative\n                \n                \n                  Fevngs\n                  QualitativeQuantitative\n                \n                \n                  Sevngs\n                  QualitativeQuantitative\n                \n                \n                  Voted\n                  QualitativeQuantitative\n                \n        \n      \n    \n\n\n\n2. Univariate stats\n\n2. For each variable, tell the appropriate univariate descriptive statistics (mean & standard deviation vs. mode & # categories)\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                Variable\n                Appropriate Statistics\n              \n        \n        \n        \n                \n                  Birth sex\n                  Mean (SD)Mode (# of categories)\n                \n                \n                  Greek\n                  Mean (SD)Mode (# of categories)\n                \n                \n                  FGPA\n                  Mean (SD)Mode (# of categories)\n                \n                \n                  SGPA\n                  Mean (SD)Mode (# of categories)\n                \n                \n                  Frnds\n                  Mean (SD)Mode (# of categories)\n                \n                \n                  Sfrnds\n                  Mean (SD)Mode (# of categories)\n                \n                \n                  Fevngs\n                  Mean (SD)Mode (# of categories)\n                \n                \n                  Sevngs\n                  Mean (SD)Mode (# of categories)\n                \n                \n                  Voted\n                  Mean (SD)Mode (# of categories)\n                \n        \n      \n    \n\n\n\n\n3. Bivariate Analyses\n\nConsider which pairs of variables could be examined with which specific bivariate statistics\n\nA. Pearson’s Correlation – Tell me the variables for three correlations.\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                Correlation #\n                Variable 1\n                 \n                Variable 2\n              \n        \n        \n        \n                \n                  1\n                   Birth sex Frnds Sfrnds Fevngs Sevngs Voted Greek FGPA SGPA\n                  with\n                   Birth sex Frnds Sfrnds Fevngs Sevngs Voted Greek FGPA SGPA\n                \n                \n                  2\n                   Birth sex Frnds Sfrnds Fevngs Sevngs Voted Greek FGPA SGPA\n                  with\n                   Birth sex Frnds Sfrnds Fevngs Sevngs Voted Greek FGPA SGPA\n                \n                \n                  3\n                   Birth sex Frnds Sfrnds Fevngs Sevngs Voted Greek FGPA SGPA\n                  with\n                   Birth sex Frnds Sfrnds Fevngs Sevngs Voted Greek FGPA SGPA\n                \n        \n      \n    \n\n\nB. Pearson’s Chi Square -\nTell me the variables for 3 X² analyses.\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                Analysis #\n                Variable 1\n                 \n                Variable 2\n              \n        \n        \n        \n                \n                  1\n                   Birth sex Frnds Sfrnds Fevngs Sevngs Voted Greek FGPA SGPA\n                  with\n                   Birth sex Frnds Sfrnds Fevngs Sevngs Voted Greek FGPA SGPA\n                \n                \n                  2\n                   Birth sex Frnds Sfrnds Fevngs Sevngs Voted Greek FGPA SGPA\n                  with\n                   Birth sex Frnds Sfrnds Fevngs Sevngs Voted Greek FGPA SGPA\n                \n                \n                  3\n                   Birth sex Frnds Sfrnds Fevngs Sevngs Voted Greek FGPA SGPA\n                  with\n                   Birth sex Frnds Sfrnds Fevngs Sevngs Voted Greek FGPA SGPA\n                \n        \n      \n    \n\n\n\nC. BG ANOVA –\nTell me the variables for 3 BG ANOVAs (list the qualitative variable first)\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                ANOVA #\n                Qualitative Variable (IV)\n                 \n                Quantitative Variable (DV)\n              \n        \n        \n        \n                \n                  1\n                   Birth sex Frnds Sfrnds Fevngs Sevngs Voted Greek FGPA SGPA\n                  with\n                   Birth sex Frnds Sfrnds Fevngs Sevngs Voted Greek FGPA SGPA\n                \n                \n                  2\n                   Birth sex Frnds Sfrnds Fevngs Sevngs Voted Greek FGPA SGPA\n                  with\n                   Birth sex Frnds Sfrnds Fevngs Sevngs Voted Greek FGPA SGPA\n                \n                \n                  3\n                   Birth sex Frnds Sfrnds Fevngs Sevngs Voted Greek FGPA SGPA\n                  with\n                   Birth sex Frnds Sfrnds Fevngs Sevngs Voted Greek FGPA SGPA\n                \n        \n      \n    \n\n\n\nD. WG ANOVA –\nTell me the variables for 3 WG ANOVAs\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                ANOVA #\n                Quantitative Variable (DV1)\n                 \n                Quantitative Variable (DV2)\n              \n        \n        \n        \n                \n                  1\n                   Birth sex Frnds Sfrnds Fevngs Sevngs Voted Greek FGPA SGPA\n                  with\n                   Birth sex Frnds Sfrnds Fevngs Sevngs Voted Greek FGPA SGPA\n                \n                \n                  2\n                   Birth sex Frnds Sfrnds Fevngs Sevngs Voted Greek FGPA SGPA\n                  with\n                   Birth sex Frnds Sfrnds Fevngs Sevngs Voted Greek FGPA SGPA\n                \n                \n                  3\n                   Birth sex Frnds Sfrnds Fevngs Sevngs Voted Greek FGPA SGPA\n                  with\n                   Birth sex Frnds Sfrnds Fevngs Sevngs Voted Greek FGPA SGPA"
+  },
+  {
+    "objectID": "labs/lab07/index.html",
+    "href": "labs/lab07/index.html",
+    "title": "Lab 07: Bivariate Analyses",
+    "section": "",
+    "text": "Use a computer with SPSS and have the Lab 07 worksheet open."
+  },
+  {
+    "objectID": "labs/lab07/index.html#preparation",
+    "href": "labs/lab07/index.html#preparation",
+    "title": "Lab 07: Bivariate Analyses",
+    "section": "",
+    "text": "Use a computer with SPSS and have the Lab 07 worksheet open."
+  },
+  {
+    "objectID": "labs/lab07/index.html#lab-overview",
+    "href": "labs/lab07/index.html#lab-overview",
+    "title": "Lab 07: Bivariate Analyses",
+    "section": "Lab Overview",
+    "text": "Lab Overview\n\n\nLearning objectives\n\n\nPractice using SPSS to perform Pearson’s correlation and Chi-Square analyses.\nExplain what a bivariate analysis tests and how Pearson’s correlation and chi-square differ in the variables they relate.\nInterpret a correlation coefficient and a chi-square test, including direction, strength, and statistical significance."
+  },
+  {
+    "objectID": "labs/lab07/index.html#lab-slides",
+    "href": "labs/lab07/index.html#lab-slides",
+    "title": "Lab 07: Bivariate Analyses",
+    "section": "Lab Slides",
+    "text": "Lab Slides\nOpen the Lab 07 slide deck in full screen"
+  },
+  {
+    "objectID": "labs/lab07/index.html#materials",
+    "href": "labs/lab07/index.html#materials",
+    "title": "Lab 07: Bivariate Analyses",
+    "section": "Materials to Download",
+    "text": "Materials to Download\n\n\nBivariate Data AnalysisWeekly Lab AssignmentAdditional Materials\n\n\n\nSPSS Handouts\nPearson’s Correlation  (PDF) (Opens in new tab)\nScatterplots  (PDF) (Opens in new tab)\n2x2 Pearson’s Chi-square  (PDF) (Opens in new tab)\n\n\n\n\nsuperman_data.sav  (SPSS data file)\nhotones_data.sav  (SPSS data file)\n\n\n\n\nCorrelations & Chi-square worksheet  (Word document)\nCorrelations & Chi-square hw checker  (Web page)"
+  },
+  {
+    "objectID": "labs/lab07/index.html#lab-activities",
+    "href": "labs/lab07/index.html#lab-activities",
+    "title": "Lab 07: Bivariate Analyses",
+    "section": "Lab Activities",
+    "text": "Lab Activities\n\nHomework Checker\nHow to use the Homework Checker!\n\nType your answer into each blank box. Round to 2 decimal places where appropriate.\nThe box will turn green if your answer is correct\nThe box will turn red if your answer is incorrect - try again!\nDo not forget to take a screenshot of the correct answers to include on your lab worksheet!\n\n\nWalkthrough Answers\n\nEnter the descriptives and Pearson’s correlation statistics for RH1:\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                 \n                r\n                p\n                df\n                Reject or Retain?\n              \n        \n        \n        \n                \n                  Correlation: RH1\n                  \n                  \n                  \n                  Retain the H0 null hypothesisReject the H0 null hypothesis\n                \n                \n                  \n                  Mean\n                  SD\n                  N\n                  \n                \n                \n                  Variable 1: height_diff\n                  \n                  \n                  \n                  \n                \n                \n                  \n                  Mean\n                  SD\n                  N\n                  \n                \n                \n                  Variable 2: ldb_likes_thou\n                  \n                  \n                  \n                  \n                \n        \n      \n    \n\n\n\nEnter the frequencies and Pearson’s chi-square statistics for RH2:\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                 \n                χ²\n                p\n                df\n                Reject or Retain H0?\n              \n        \n        \n        \n                \n                  Chi-Square: RH2\n                  \n                  \n                  \n                  Retain the H0 null hypothesisReject the H0 null hypothesis\n                \n                \n                  \n                  n\n                  \n                  n\n                  \n                \n                \n                  Number of Under 6ft in the sample\n                  \n                  Number of Rotten in the sample\n                  \n                  \n                \n                \n                  Number of 6ft or taller in the sample\n                  \n                  Number of Fresh in the sample\n                  \n                  \n                \n        \n      \n    \n\n\n\n\nYour Turn Answers\n\nEnter the descriptives and Pearson’s correlation statistics for RH3:\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                 \n                r\n                p\n                df\n                Reject or Retain?\n              \n        \n        \n        \n                \n                  Correlation: RH3\n                  \n                  \n                  \n                  Retain the H0 null hypothesisReject the H0 null hypothesis\n                \n                \n                  \n                  Mean\n                  SD\n                  N\n                  \n                \n                \n                  Variable 1: total_SHU_mil\n                  \n                  \n                  \n                  \n                \n                \n                  \n                  Mean\n                  SD\n                  N\n                  \n                \n                \n                  Variable 2: views\n                  \n                  \n                  \n                  \n                \n        \n      \n    \n\n\n\nEnter the descriptives and Pearson’s correlation statistics for RH4:\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                 \n                r\n                p\n                df\n                Reject or Retain?\n              \n        \n        \n        \n                \n                  Correlation: RH4\n                  \n                  \n                  \n                  Retain the H0 null hypothesisReject the H0 null hypothesis\n                \n                \n                  \n                  Mean\n                  SD\n                  N\n                  \n                \n                \n                  Variable 1: total_SHU_mil\n                  \n                  \n                  \n                  \n                \n                \n                  \n                  Mean\n                  SD\n                  N\n                  \n                \n                \n                  Variable 2: engagement\n                  \n                  \n                  \n                  \n                \n        \n      \n    \n\n\n\nEnter the frequencies and Pearson’s chi-square statistics for RH5:\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                 \n                χ²\n                p\n                df\n                Reject or Retain H0?\n              \n        \n        \n        \n                \n                  Chi-Square: RH5\n                  \n                  \n                  \n                  Retain the H0 null hypothesisReject the H0 null hypothesis\n                \n                \n                  \n                  n\n                  \n                  n\n                  \n                \n                \n                  Number of Non-Actor in the sample\n                  \n                  Number of Less Popular in the sample\n                  \n                  \n                \n                \n                  Number of Actor in the sample\n                  \n                  Number of More Popular in the sample\n                  \n                  \n                \n        \n      \n    \n\n\n\nEnter the frequencies and Pearson’s chi-square statistics for RH6:\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                 \n                χ²\n                p\n                df\n                Reject or Retain H0?\n              \n        \n        \n        \n                \n                  Chi-Square: RH6\n                  \n                  \n                  \n                  Retain the H0 null hypothesisReject the H0 null hypothesis\n                \n                \n                  \n                  n\n                  \n                  n\n                  \n                \n                \n                  Number of Under 35 in the sample\n                  \n                  Number of Less Popular in the sample\n                  \n                  \n                \n                \n                  Number of 35 and Over in the sample\n                  \n                  Number of More Popular in the sample"
+  },
+  {
+    "objectID": "labs/lab05/index.html",
+    "href": "labs/lab05/index.html",
+    "title": "Lab 05: Project Planning",
+    "section": "",
+    "text": "Use a computer and have the Lab 05 worksheet open."
+  },
+  {
+    "objectID": "labs/lab05/index.html#preparation",
+    "href": "labs/lab05/index.html#preparation",
+    "title": "Lab 05: Project Planning",
+    "section": "",
+    "text": "Use a computer and have the Lab 05 worksheet open."
+  },
+  {
+    "objectID": "labs/lab05/index.html#lab-overview",
+    "href": "labs/lab05/index.html#lab-overview",
+    "title": "Lab 05: Project Planning",
+    "section": "Lab Overview",
+    "text": "Lab Overview\n\n\nLearning objectives\n\n\nDevelop a research question and testable hypotheses for the class research project.\nIdentify the variables, design, and analyses appropriate for answering the research question.\nCreate a plan for collecting and analyzing project data."
+  },
+  {
+    "objectID": "labs/lab05/index.html#lab-slides",
+    "href": "labs/lab05/index.html#lab-slides",
+    "title": "Lab 05: Project Planning",
+    "section": "Lab Slides",
+    "text": "Lab Slides\nOpen the Lab 05 slide deck in full screen"
+  },
+  {
+    "objectID": "labs/lab05/index.html#materials",
+    "href": "labs/lab05/index.html#materials",
+    "title": "Lab 05: Project Planning",
+    "section": "Lab Materials",
+    "text": "Lab Materials\n\n\nIntroduction to Research Project Data Sets and Project PlanningFinal Project Pre-proposal (select one)Finding references for your project\n\n\n\nProject Materials\nResearch Project Suggestions  (PDF)\nSelf-Descriptive Survey Materials (select one)\nSelf-Descriptive Content & Methods  (PDF)\nSelf-Descriptive Dataset (.sav)  (SPSS data file)\nInterpersonal Survey Materials\nInterpersonal Content & Methods  (PDF)\nInterpersonal Dataset (.sav)  (SPSS data file)\n\n\n\n\nSelf-Descriptive Pre-proposal  (Word document)\nInterpersonal Pre-proposal  (Word document)\n\n\n\n\nResearch Project References & Literature Review Worksheet  (Word document)"
+  },
+  {
+    "objectID": "labs/lab05/index.html#lab-activities",
+    "href": "labs/lab05/index.html#lab-activities",
+    "title": "Lab 05: Project Planning",
+    "section": "Lab Activities",
+    "text": "Lab Activities\n\nReview the final project datasets and materials.\nChoose a dataset and variables.\nComplete the Literature Search Worksheet."
+  },
+  {
+    "objectID": "labs/lab03/index.html",
+    "href": "labs/lab03/index.html",
+    "title": "Lab 03: Reading Research Articles",
+    "section": "",
+    "text": "Have the critique worksheets and reading materials ready."
+  },
+  {
+    "objectID": "labs/lab03/index.html#preparation",
+    "href": "labs/lab03/index.html#preparation",
+    "title": "Lab 03: Reading Research Articles",
+    "section": "",
+    "text": "Have the critique worksheets and reading materials ready."
+  },
+  {
+    "objectID": "labs/lab03/index.html#lab-overview",
+    "href": "labs/lab03/index.html#lab-overview",
+    "title": "Lab 03: Reading Research Articles",
+    "section": "Lab Overview",
+    "text": "Lab Overview\n\n\nLearning objectives\n\n\nRead, understand, and critically evaluate scientific journal articles in the field of psychology.\nIdentify the major sections of an APA-style research report and the information each section contains.\nSummarize and critique empirical research in writing."
+  },
+  {
+    "objectID": "labs/lab03/index.html#lab-slides",
+    "href": "labs/lab03/index.html#lab-slides",
+    "title": "Lab 03: Reading Research Articles",
+    "section": "Lab Slides",
+    "text": "Lab Slides\nOpen the Lab 03 slide deck in full screen"
+  },
+  {
+    "objectID": "labs/lab03/index.html#materials",
+    "href": "labs/lab03/index.html#materials",
+    "title": "Lab 03: Reading Research Articles",
+    "section": "Lab Materials",
+    "text": "Lab Materials\n\n\nCritically Reading Research ReportsContents of an APA Report: What Info is Where?Weekly Lab Assignment\n\n\n\nReading and Writing Research Reports  (Web page)\nReading and Writing Research Reports (pdf version)  (PDF)\nReading and Writing Research Reports slides (PowerPoint, editable)  (PowerPoint)\nReading and Writing Research Reports (PDF)  (PDF)\nReading and Writing Research Reports (HTML)  (Web page)\nElements of a Critical Reading (PDF)  (PDF)\nElements of a Critical Reading (HTML)  (Web page)\n\n\n\n\nResearch Designs & Participant Assignment (Word, editable)  (Word document)\nValidity Net - Visual (PDF)  (PDF)\nValidity Net - Visual (HTML)  (Web page)\nValidity Net - Linear (PDF)  (PDF)\nValidity Net - Linear (HTML)  (Web page)\nTypes of Research Validity - Answer Sheet (PDF)  (PDF)\nTypes of Research Validity - Answer Sheet (HTML)  (Web page)\nResearch Designs and Participant Assignment (PDF)  (PDF)\nResearch Designs and Participant Assignment (HTML)  (Web page)\n\n\n\n\nResearch Critique #1  (Word document)\nResearch Critique #2  (Word document)"
+  },
+  {
+    "objectID": "labs/lab03/index.html#lab-activities",
+    "href": "labs/lab03/index.html#lab-activities",
+    "title": "Lab 03: Reading Research Articles",
+    "section": "Lab Activities",
+    "text": "Lab Activities\n\nReview the APA reading materials.\nComplete Research Critique 1 in class.\nBegin Research Critique 2."
+  },
+  {
+    "objectID": "labs/lab01/take-home.html",
+    "href": "labs/lab01/take-home.html",
+    "title": "Take Home",
+    "section": "",
+    "text": "Below are 8 items that need to be added to a new Zotero collection called [Your Name] APA Take-Home. For each item, you will need to identify which type of source it is and then create an entry with all the information needed for an APA 7 citation."
+  },
+  {
+    "objectID": "labs/lab01/take-home.html#instructions",
+    "href": "labs/lab01/take-home.html#instructions",
+    "title": "Take Home",
+    "section": "",
+    "text": "Below are 8 items that need to be added to a new Zotero collection called [Your Name] APA Take-Home. For each item, you will need to identify which type of source it is and then create an entry with all the information needed for an APA 7 citation."
+  },
+  {
+    "objectID": "labs/lab01/take-home.html#item-1.-this-journal-article-published-in-memory-cognition",
+    "href": "labs/lab01/take-home.html#item-1.-this-journal-article-published-in-memory-cognition",
+    "title": "Take Home",
+    "section": "Item 1. This journal article published in Memory & Cognition",
+    "text": "Item 1. This journal article published in Memory & Cognition\n\n\n\n\n\n\nTipHint\n\n\n\n\n\nIf you want to use the DOI with the magic wandy thing, you need to start at the number 10.xxx. You do not include the https://doi.org/ at the beginning.\nAlso, make sure you have the correct page numbers.\n\n\n\n\n  The APA 7 citation is:"
+  },
+  {
+    "objectID": "labs/lab01/take-home.html#item-2.-this-journal-article",
+    "href": "labs/lab01/take-home.html#item-2.-this-journal-article",
+    "title": "Take Home",
+    "section": "Item 2. This journal article",
+    "text": "Item 2. This journal article\n\n\n\n\n\n\nTipHint\n\n\n\n\n\nIf the journal article has an article number instead of a page range, include the word “Article” and then the article number instead of the page range.\n\n\n\n\nThe APA 7 citation is:"
+  },
+  {
+    "objectID": "labs/lab01/take-home.html#item-3.-this-article-titled-chimpanzees-use-self-distraction-to-cope-with-impulsivity",
+    "href": "labs/lab01/take-home.html#item-3.-this-article-titled-chimpanzees-use-self-distraction-to-cope-with-impulsivity",
+    "title": "Take Home",
+    "section": "Item 3. This article titled Chimpanzees use self-distraction to cope with impulsivity",
+    "text": "Item 3. This article titled Chimpanzees use self-distraction to cope with impulsivity\n\nThe APA 7 citation is:"
+  },
+  {
+    "objectID": "labs/lab01/take-home.html#item-4.-doi-httpsdoi.org10.1126science.2658056",
+    "href": "labs/lab01/take-home.html#item-4.-doi-httpsdoi.org10.1126science.2658056",
+    "title": "Take Home",
+    "section": "Item 4. DOI: https://doi.org/10.1126/science.2658056",
+    "text": "Item 4. DOI: https://doi.org/10.1126/science.2658056\n\nThe APA 7 citation is:"
+  },
+  {
+    "objectID": "labs/lab01/take-home.html#item-5.-who-moved-my-cheese-isbn-978-0-399-14446-2-paperback-international-edition-march-4-1999",
+    "href": "labs/lab01/take-home.html#item-5.-who-moved-my-cheese-isbn-978-0-399-14446-2-paperback-international-edition-march-4-1999",
+    "title": "Take Home",
+    "section": "Item 5. Who Moved My Cheese? ISBN: 978-0-399-14446-2 (Paperback – International Edition, March 4, 1999)",
+    "text": "Item 5. Who Moved My Cheese? ISBN: 978-0-399-14446-2 (Paperback – International Edition, March 4, 1999)\n\n\n\n\n\n\nTipHint\n\n\n\n\n\nMake sure that you have the correct date information.\n\n\n\n\nThe APA 7 citation is:"
+  },
+  {
+    "objectID": "labs/lab01/take-home.html#item-6.-this-journal-article-with-many-authors",
+    "href": "labs/lab01/take-home.html#item-6.-this-journal-article-with-many-authors",
+    "title": "Take Home",
+    "section": "Item 6. This journal article with many authors",
+    "text": "Item 6. This journal article with many authors\n\nThe APA 7 citation is:"
+  },
+  {
+    "objectID": "labs/lab01/take-home.html#item-7.-inside-the-funhouse-mirror-factory-how-social-media-distorts-perceptions-of-norms-published-in-2024",
+    "href": "labs/lab01/take-home.html#item-7.-inside-the-funhouse-mirror-factory-how-social-media-distorts-perceptions-of-norms-published-in-2024",
+    "title": "Take Home",
+    "section": "Item 7. Inside the funhouse mirror factory: How social media distorts perceptions of norms published in 2024",
+    "text": "Item 7. Inside the funhouse mirror factory: How social media distorts perceptions of norms published in 2024\n\n\n\n\n\n\nTipHint\n\n\n\n\n\nYou won’t find first-last page numbers because this journal uses an article number.\nThis number can be hard to find so we will help you out, it is the last number in the DOI URL, 101918.\nIn the Zotero pages field, need to enter “Article 101918”\n\n\n\n\nThe APA 7 citation is:"
+  },
+  {
+    "objectID": "labs/lab01/take-home.html#item-8.-this-magazine-article-about-the-science-of-melting-cheese",
+    "href": "labs/lab01/take-home.html#item-8.-this-magazine-article-about-the-science-of-melting-cheese",
+    "title": "Take Home",
+    "section": "Item 8. This magazine article about The science of melting cheese",
+    "text": "Item 8. This magazine article about The science of melting cheese\n\n\n\n\n\n\nTipHint\n\n\n\n\n\nYou only need to include the author for this magazine article. No need to list the editor.\n\n\n\n\nThe APA 7 citation is: \n\nNow that you have a second complete collection of sources, go back to your lab worksheet document.\nCreate an APA 7 style References section using your [Your Name] APA Take-Home collection. Follow the directions and copy/paste your properly formatted References list into your worksheet.\n\n\n\n\n\nZotero “Create Bibliography” menu used to generate a formatted reference list from a collection\n\n\nOnce you have completed both sections of the worksheet, submit your assignment to the Lab 1: APA References Assignment on Canvas."
+  },
+  {
+    "objectID": "labs/lab01/in-class.html",
+    "href": "labs/lab01/in-class.html",
+    "title": "Walk-through",
+    "section": "",
+    "text": "During today’s lab you will need to use Zotero to complete the Lab 1 Worksheet (linked to below). You may use either the lab computers or install the program on your own personal device. For more information about how to install and setup Zotero go here.\n Download Lab 02 Wks"
+  },
+  {
+    "objectID": "labs/lab01/in-class.html#instructions",
+    "href": "labs/lab01/in-class.html#instructions",
+    "title": "Walk-through",
+    "section": "",
+    "text": "During today’s lab you will need to use Zotero to complete the Lab 1 Worksheet (linked to below). You may use either the lab computers or install the program on your own personal device. For more information about how to install and setup Zotero go here.\n Download Lab 02 Wks"
+  },
+  {
+    "objectID": "labs/lab01/in-class.html#step-1-create-a-new-collection",
+    "href": "labs/lab01/in-class.html#step-1-create-a-new-collection",
+    "title": "Walk-through",
+    "section": "Step 1: Create a new collection",
+    "text": "Step 1: Create a new collection\nCreate a new collection in Zotero and name it [Your Name] APA Walk-Through\n\n\n\n\n\n\nZotero collections are like folders. Adding an item to a specific collection automatically adds it to your overall Zotero library. But you need to keep track of what items are in each collection for when you export your final references list!\n\n\n\n\n\nTo remove an item from a collection, right-click on item (middle panel) ➜ select Remove item from collection..."
+  },
+  {
+    "objectID": "labs/lab01/in-class.html#step-2-find-a-source-and-add-the-item-to-your-collection",
+    "href": "labs/lab01/in-class.html#step-2-find-a-source-and-add-the-item-to-your-collection",
+    "title": "Walk-through",
+    "section": "Step 2: Find a source and add the item to your collection",
+    "text": "Step 2: Find a source and add the item to your collection\n\nUse Google scholar to find the 2024 journal article titled ChatGPT is bullshit\nDownload and save (locally) a  copy of the article (somewhere you can easily find it!)\nFind the  in your file manager. Now, drag & drop the  file directly into your [Your name] APA Walk-Through collection (in the left-hand panel within Zotero).\n\n\n\n\n\n\n\nNote\n\n\n\nZotero should have correctly identified this item as a journal article and automatically populated the information fields in the right-side panel with almost everything you need to create an APA 7 citation.\nBut you still need to review the details to make sure there are no errors! Programs freqently make errors!"
+  },
+  {
+    "objectID": "labs/lab01/in-class.html#step-4-review-edit-article-metadata",
+    "href": "labs/lab01/in-class.html#step-4-review-edit-article-metadata",
+    "title": "Walk-through",
+    "section": "Step 4: Review & Edit article metadata",
+    "text": "Step 4: Review & Edit article metadata\n\nSelect (click on) the item you created in the middle panel. Look at the metadata information that appeared in the right-hand panel. Is everything correctly formatted for an APA 7 style journal article?\n\n\n\n\n\n\n\nAPA 7 style has very specific rules about capitalization. Generally, all titles should be in Sentence case rather than Title case meaning:\nThis would be correct\nBut This Is Very Incorrect\nThere is an option in Zotero to switch between these two options (next to the title metadata) but you always need to double check!\n\n\n\n\n\nThere are two items associated with this article in that middle-panel: the pdf and what is called a parent-item.\nYou need the parent-item because that is where you store the metadata. You can see what attachments are connected to an item by clicking on the arrow.\n\nUsing the Journal Reference Checklist handout or the table below, review and edit the item metadata to make sure that you have everything you need to cite the journal article in APA 7 style. If anything is missing, add it! If anything is improperly formatted, fix it!\n\n\n\n  Journal Handout \n\n\n\n\n\n\nTipHint\n\n\n\n\n\nFor this article the Pages field should read: “Article 38”\nAlthough APA typically asks that you report the first-last page numbers, this journal uses article numbers instead of traditional pages.\nThis can be confusing! But all you need to do when you encounter a journal with article numbers like this is to enter “Article XX” into the Pages field in Zotero."
+  },
+  {
+    "objectID": "labs/lab01/in-class.html#step-5-generate-the-apa-7-citation-using-zotero",
+    "href": "labs/lab01/in-class.html#step-5-generate-the-apa-7-citation-using-zotero",
+    "title": "Walk-through",
+    "section": "Step 5: Generate the APA 7 citation using Zotero",
+    "text": "Step 5: Generate the APA 7 citation using Zotero\nNow that you have confirmed all the information is properly entered, you are ready to ask Zotero to create your APA 7 citation. Give it a try!\n\n\n\n\n\n\nTipHint\n\n\n\n\n\n\nDid you select Sentence case instead of Title case for the Title? Remember that APA 7 requires you to only capitalize the first word of each sentence in the article title. Note that you also capitalize the first word after a colon: Like this.\n\n\n\n\n\nPaste the APA 7 citation below\nRight-click on the item (middle panel) ➜ Create Bibliography from Item... ➜ Select Citation Style: American Psychological Association (APA) 7th edition ➜ Copy to Clipboard\nThe APA 7 citation is:"
+  },
+  {
+    "objectID": "labs/lab01/in-class.html#step-6-add-another-journal-article-manually",
+    "href": "labs/lab01/in-class.html#step-6-add-another-journal-article-manually",
+    "title": "Walk-through",
+    "section": "Step 6: Add another journal article manually",
+    "text": "Step 6: Add another journal article manually\nLet’s try to add another journal article to our same collection. Only, this time, we want to add a  that is more tricky for Zotero to handle.\n\nUse PsychInfo from the UNL Library databases to search for the classic 1975 journal article “Hindsight ≠ foresight: The effect of outcome knowledge on judgment under uncertainty”\nDownload, save and drag the  into your [Your name] APA Walk-Through collection in Zotero.\nReview the metadata in the right panel. Unlike the previous article, Zotero did not fully index the pdf automatically. This means we have to manually add in most of the information ourselves.\nOnce you have entered all the information you need, ask Zotero to generate your second citation and check it below!\n\n\n\n\n\n\n\nTipHint\n\n\n\n\n\nThis article has a non-letter character in the title. You can usually copy and paste from the PDF but that will not work in this case (likely an issue with the older PDF formatting). But you still need to make sure your title section in Zotero reads: Hindsight ≠ foresight: The effect of outcome knowledge on judgment under uncertainty\n\n\n\n\nPaste the APA 7 citation below\nThe APA 7 citation is:"
+  },
+  {
+    "objectID": "labs/lab01/in-class.html#step-7-add-another-journal-article-manually",
+    "href": "labs/lab01/in-class.html#step-7-add-another-journal-article-manually",
+    "title": "Walk-through",
+    "section": "Step 7: Add another journal article manually",
+    "text": "Step 7: Add another journal article manually\nLet’s add another journal article to our collection. This time, I have found the  for you. You can download it by clicking below.\n  Download Article  \n\nAs before, save and drag this new  into your [Your name] APA Walk-Through collection in Zotero.\nThe  should appear in the middle panel. But this time, Zotero did not create a parent item for you. This means we have to create one before we can manually add in any metadata.\n\n\n\n\n\n\n\nTo create a parent item:\nRight-click on the item (middle panel) ➜ Create Parent Item...\n\n\n\n\n\n\nNow select Manual Entry\n\n\n\n\n\n\n\n\n\nZotero context menu with “Create Parent Item…” highlightedZotero “Create Parent Item” dialog with “Manual Entry” option selected\nNow that you have a parent item, enter the metadata manually.\nOnce you have entered all the information you need, ask Zotero to generate your third citation and check it below!\n\n\n\n\n\n\n\nTipHint\n\n\n\n\n\nMake sure you have spelled all the author’s names correctly. If their last name begins with a lower-case letter, make sure that is reflected in Zotero.\n\n\n\n\nPaste the APA 7 citation below\nThe APA 7 citation is:"
+  },
+  {
+    "objectID": "labs/lab01/in-class.html#step-8-adding-items-with-doi-magic",
+    "href": "labs/lab01/in-class.html#step-8-adding-items-with-doi-magic",
+    "title": "Walk-through",
+    "section": "Step 8: Adding items with DOI magic!",
+    "text": "Step 8: Adding items with DOI magic!\nYou can also add items into your [Your name] APA Walk-Through collection without a . One way to do this is to use the DOI identifier for a journal article. This is a unique number assigned to a specific article or other digital object (magazine, dataset, r-package, etc).\n\n\n\n\n\n\nNote\n\n\n\nThe icon to the right of the one where you add an item manually in Zotero, allows you to add via a DOI, ISBN (for books), etc. (via MAGIC-WAND-BUTTON!). Note that doing it this way will add the item, but NOT the PDF of it. However, it will still grab all of the metadata for you! This may be of help on the homework (hint hint).\n\n\n\nTry to add this article to your collection: 10.1177/0956797615572232\nReview & edit the metadata using the same process as before.\nOnce you have entered all the information you need, ask Zotero to generate your third citation and check it below!\n\n\nPaste the APA 7 citation below\nThe APA 7 citation is:"
+  },
+  {
+    "objectID": "labs/lab01/in-class.html#step-9-more-practice-with-other-types-of-sources",
+    "href": "labs/lab01/in-class.html#step-9-more-practice-with-other-types-of-sources",
+    "title": "Walk-through",
+    "section": "Step 9: More Practice with Other types of sources",
+    "text": "Step 9: More Practice with Other types of sources\nYou can also use the magic wand feature with ISBNs (and other digital identifiers) to add a Book or a section of a book to your collection.\n\nAdd this book chapter titled Juries compared with what? The need for a baseline and attention to real-world complexity found here. Use the DOI number provided on that page to add this chapter (not the entire book) to to your [Your name] APA Walk-Through collection.\nReview the metadata in the right panel. Unlike with the previous entries, Zotero recognized that this is a book section and started to fill in the metadata accordingly. Using the Other sources handout included below, review and edit the metadata.\n\n\n\n  Other Sources Handout \n\n\n\n\n\n\nNote\n\n\n\nWhen you use the DOI for this chapter, Zotero will automatically record the ISBN: 978-1-4338-2704-4 978-1-4338-2782-2 which is the identifier for the entire book. But sometimes you can find a unique ISBN In many cases book chapters are assigned their own ISBNs.\n\n\n\nOnce you have entered all the information you need, ask Zotero to generate your second citation and check it below!\n\n\n\n\n\n\n\nTipHint\n\n\n\n\n\n\nMake sure you set the title to sentence case.\nAre the author(s) and editor(s) in the correct order?\n\n\n\n\n\nPaste the APA 7 citation below\nThe APA 7 citation is:\n\n\nUnfortunately, not all digital sources provide an ISBN or DOI number you can use with Zotero. Sometimes, you have to manually add in the information yourself (or use the Zotero browser connector).\nPractice using other types of source by adding this as a Newspaper article article.\n\n\n\n\n\n\nUse Newspaper article as the Item Type. For more details about how to cite this type of source, view the APA Website.\n\n\n\n\n\n\n\n\n\nTipHint\n\n\n\n\n\nOrganizations as authors should be capitalized appropriately and entered in a single field for Author.\n\n\n\n\nPaste the APA 7 citation below\nThe APA 7 citation is:"
+  },
+  {
+    "objectID": "labs/lab01/in-class.html#step-10-generating-apa-7-style-report-and-references-page",
+    "href": "labs/lab01/in-class.html#step-10-generating-apa-7-style-report-and-references-page",
+    "title": "Walk-through",
+    "section": "Step 10: Generating APA 7 Style report and References page",
+    "text": "Step 10: Generating APA 7 Style report and References page\nNow that you have a complete collection of sources, Zotero makes it easy to generate an APA 7 style References page or a report.\nGo to your Lab 1 worksheet. Use the collection you created here [Your Name] APA Walk-Through to generate a reportTo create a report, right-click (ctrl-click on macOS) an item or a selection of items in the center pane and select “Generate Report from Selected Item(s)…”. You can also right-click a collection in the left column and select “Generate Report from Collection”. from this collection. Copy/paste the report into the worksheet.\n\n\n\n\n\n\nThis is not the same as a full reference section. But you can copy/paste the full report in the window that pops up.\n\n\n\nNow, go on to the next page to start Part 2."
+  },
+  {
+    "objectID": "software.html",
+    "href": "software.html",
+    "title": "Software Used in This Course",
+    "section": "",
+    "text": "You only need a few tools for PSYC 350 Lab, and all of them are free or provided by the university."
+  },
+  {
+    "objectID": "software.html#spss",
+    "href": "software.html#spss",
+    "title": "Software Used in This Course",
+    "section": "SPSS",
+    "text": "SPSS\nSPSS is the statistical software we use for data analysis from Lab 06 onward. You do not need to buy it — SPSS is available to UNL students through campus computer labs and university remote access. If you are unsure how to reach it, ask your lab TA.\nStep-by-step SPSS handouts for every analysis we cover are linked from each week’s lab page (under Handouts & References) and from the weekly schedule. You can also browse them all in the SPSS Handouts book, which includes both styled and plain (screen-reader-friendly) PDF versions of each handout."
+  },
+  {
+    "objectID": "software.html#zotero",
+    "href": "software.html#zotero",
+    "title": "Software Used in This Course",
+    "section": "Zotero",
+    "text": "Zotero\nZotero is a free reference manager we use in Lab 01 to collect sources and build APA reference lists. Download the desktop app and the browser connector from zotero.org.\nThe course’s Zotero & APA workbook walks you through installation and everything you need for the Lab 01 worksheet."
+  },
+  {
+    "objectID": "software.html#canvas",
+    "href": "software.html#canvas",
+    "title": "Software Used in This Course",
+    "section": "Canvas",
+    "text": "Canvas\nCanvas is where you submit worksheets and project milestones and where your grades are posted. Take-home assignments are due in your lab section’s Canvas by 11:59pm the day before your lab meets."
+  },
+  {
+    "objectID": "software.html#computator",
+    "href": "software.html#computator",
+    "title": "Software Used in This Course",
+    "section": "Computator",
+    "text": "Computator\nThe Computator spreadsheets used in Labs 11–12 are linked from the weekly schedule and the relevant lab pages. Download the version for your lab before class."
+  },
+  {
+    "objectID": "software.html#this-website",
+    "href": "software.html#this-website",
+    "title": "Software Used in This Course",
+    "section": "This Website",
+    "text": "This Website\nThe weekly schedule, lab pages, and homework checkers all live here and work in any modern browser. The homework checkers turn green when your answer is correct — take a screenshot of your correct answers to attach to your worksheet."
+  },
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Weekly Lab Schedule",
+    "section": "",
+    "text": "Skip to lab schedule\n\n\n\n   Download PDF\n\n\n\n\n\nWeekly Lab Schedule\nThis table shows the weekly lab schedule including topics, activities, handouts, and assignment information."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "PSYC 350 Lab",
+    "section": "",
+    "text": "Skip to lab schedule\n\n\n\n\n\nUniversity of Nebraska–Lincoln\n\nPSYC 350 Lab\nResearch Methods & Data Analysis\nFall 2026 · Burnett 230\n Syllabus & Policies  Canvas\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeekly Lab Schedule\nThis table shows the weekly lab schedule including topics, activities, handouts, and assignment information.\n\n\n\n\n\n\n\n\n\n\n   Download PDF"
+  },
+  {
+    "objectID": "syllabus.html",
+    "href": "syllabus.html",
+    "title": "Lab Information",
+    "section": "",
+    "text": "Psychology Laboratory 350 Lab Meetings233/234 Burnett Hall Lab Research Methods & Data Analysis Office hours in 230 Burnett Hall\n\n\n\n Fall 2026   Burnett 230"
+  },
+  {
+    "objectID": "syllabus.html#psyc-350-lab-research-methods-data-analysis",
+    "href": "syllabus.html#psyc-350-lab-research-methods-data-analysis",
+    "title": "Lab Information",
+    "section": "",
+    "text": "Psychology Laboratory 350 Lab Meetings233/234 Burnett Hall Lab Research Methods & Data Analysis Office hours in 230 Burnett Hall\n\n\n\n Fall 2026   Burnett 230"
+  },
+  {
+    "objectID": "syllabus.html#welcome",
+    "href": "syllabus.html#welcome",
+    "title": "Lab Information",
+    "section": "Welcome!",
+    "text": "Welcome!\nThe purpose of this laboratory is to reinforce the information presented in lecture and to give you a chance to experience and practice many of those procedures and techniques. While the timing and approach to topic coverage will not be perfectly matched between lecture and lab, the content of the two is very close. Also, topics and techniques covered in successive laboratory meetings are often interrelated and dependent upon what you were to learn from the previous laboratory.\nThe policies (attendance, late attendance, preparedness, assignment completion, etc.) here are designed to encourage you to be prepared to fully participate and learn as much as possible form each laboratory and to get credit for everything that you’ve learned."
+  },
+  {
+    "objectID": "syllabus.html#objectives-strategies",
+    "href": "syllabus.html#objectives-strategies",
+    "title": "Lab Information",
+    "section": "Objectives & Strategies",
+    "text": "Objectives & Strategies\n\n\n\n\n\n\nNoteIn Psychology 350 you will learn about two important skill sets:\n\n\n\n\nthe ability to design, complete, interpret, and report empirical research to test hypotheses derived from Psychological theory or its application, and\nthe ability to critically evaluate research produced by others and to propose changes in the design, analysis, or interpretation of it.\n\n\n\n\nJustification\nYou might not be planning a career as a research psychologist, and many professional psychologists do not themselves contribute to the research literature. However, all psychologists must be competent “consumers” of the psychological research literature in their area of expertise, whether it is clinical, counseling, consulting, educational, law-psych, I/O, human resources, human factors, or some other area of psychology.\nAlso, most jobs held by professional psychologists require a substantial amount of data analytic skill and report writing ability, whether it is to document decision making, obtain funding, to provide evidence for the efficacy of service delivery, or to contribute to the professional literature. In addition, the ability to produce competent, theoretically relevant empirical research is usually the “ticket for admission” to a career as a professional psychologist.\nCompletion and presentation of your own independent research (say, an Honors Thesis or presentation/poster at a student research conference) is often helpful evidence that you can “do research” when applying to graduate school. Most Ph.D. programs require at least two empirical research projects–the Master’s thesis and the Ph.D. dissertation."
+  },
+  {
+    "objectID": "syllabus.html#classroom-climate",
+    "href": "syllabus.html#classroom-climate",
+    "title": "Lab Information",
+    "section": "Classroom Climate",
+    "text": "Classroom Climate\nWe have to be able to talk forthrightly about the topics of this class and to explore the history, current, and likely future approaches of our trade. Some obvious sensitive topics are the variables & labels we use to define our target populations and describe who is in our samples. In particular we have to be sure we are aware of the standards and preferences in our own research/application communities, as well as differences across communities.\nOur class will welcome students from multiple colleges and programs, not all of whom use either the same “descriptive categories” nor the same “labels” for those categories. And there will be several other sensitive parts (e.g., researcher motivations & bias). So, we must find, as a group, a balance between “comfort & coverage”. Be sure to let me know when/if we’re bumping up against one or the other. Showing empathy and compassion for each other can help. Listen to one another, be aware of other people’s needs, and cut each other slack.\nEveryone who attends this class is entitled to feel welcome and to feel safe from intimidation, insult, bullying, harassment, or discrimination of ANY sort and safe from unwelcome sexual contact or advances. We will consistently treat each other with respect and support. Both agreement and disagreement drive learning, understanding and successful application, and both are best done with mutual respect, patience and occasionally grace.\n\nEmphasis\nWith respect to design issues, we will pay special attention to the “rules of evidence” for the quantitative analysis of cause-and-effect relationships and the important differences between experimental and nonexperimental designs. With respect to data analytic issues, we will particularly pay attention the family of ordinary least-squares techniques that includes analysis of variance and linear regression. We will emphasize the pragmatics of hypothesis testing, data analysis and the communication of findings, at a level that is more like “driver’s education” and less like “mechanical engineering. ”As data collectors and data analysts, we have a particular obligation to avoid treating the data and results from our samples as “representing everybody”.\nIn particular, we need to avoid generalizing results from majority-dominated samples as if they were “universal” or “sufficient”. We must always ask, “From whom were the data sampled.” In fact, we will expand the usual meaning of “sampling” to include not only “who?” but also “where, when, and how?”\n\n\nGeneral Goals of the Laboratory\nBy the completion of this course students should be able to:\n\nFind existing literature on a topic in psychology, choose relevant articles or chapters, use that literature to write a review of that topic as a basis to propose novel research with specific hypotheses\nIdentify and evaluate the components of a research report or a summary of one, including the purpose and research hypotheses, the sampling and subject assignment procedures, manipulation and measurement procedures, and the statistical analyses & interpretations of those analyses\nGiven a research question and/or a set of data, to select, perform, and communicate the results of the appropriate statistical analysis (including the statistical null hypothesis) in written or oral form\nEmploy a computer statistical package to perform analyze of data, including a knowledge of the limitations of the package and how and when to augment that package with hand-calculated analyses\nCommunicate the purpose, hypotheses, procedures, data, analysis results and interpretations of a research project using the conventional written format and style (e.g., APA-style papers and posters)\nBecome familiar with the internet and other forms of “instructional technology” that are likely to be used during other courses during your education or in your research\n\n\n\nHow Psyc350 fits into ACE Outcome(s)\nSLO10: Generate a creative or scholarly product that requires broad knowledge, appropriate technical proficiency, information collection, synthesis, interpretation, presentation, and reflection. Research Paper: Students will submit a major research paper in which they introduce the topic by connecting their research to reports that have been published in the scientific literature, describe the research methods, report the results including appropriate statistical analyses, and discuss the implications of the findings in light of other research on that topic."
+  },
+  {
+    "objectID": "syllabus.html#reinforcements",
+    "href": "syllabus.html#reinforcements",
+    "title": "Lab Information",
+    "section": "Reinforcements",
+    "text": "Reinforcements\n\nWriting\nWriting will be reinforced by means of several reports submitted as required projects in the laboratory, and by the final research paper.\n\n\nMathematics and Statistics\nMathematics and Statistics will be reinforced throughout the semester as students learn to identify appropriate statistical tests to be used in specific research situations. Students will learn some of the mathematical groundwork for statistical tests, but more importantly they will learn the pros and cons of various tests and whether their assumptions are met in certain applications. Students will learn to compute statistical tests using common statistical software packages, and how to interpret the results.\n\n\nCritical Thinking\nCritical thinking will be reinforced by reading research reports to identify the authors’ research designs, evaluate the validity of their measurements, and critique the appropriateness of their conclusions in light of the data.\n\n\nImportant Details/Policies:\nThis laboratory requires a lot of work, and getting behind usually leads to getting further behind, and further, etc. So, work hard, ask questions, and keep up—it is the best way to succeed in this laboratory!\n\n\n\n\n\n\nNote\n\n\n\n\nYou cannot receive a passing grade in the class unless you complete all of the take-home laboratory assignments\nA “C” is the minimum grade for this course to count toward a Psychology major (a “C-” will not count and the course will have to be retaken).\nConsideration of “Withdraw” and” Incomplete” grades will be according to the guidelines provided in the Undergraduate Bulletin and the Schedule of Classes.\n\n\n\n\n\nLaboratory Schedule, Topics, and Assignments Responsibility Policy\nThe topics, materials, assignments, etc. for each laboratory meeting are given in your laboratory (assignment links) and lecture (materials) Canvas Courses . You are responsible for all material and assignments for each laboratory meeting, including all changes that are mentioned in lecture, in laboratory or emailed to you.\n\n\nLaboratory Attendance Policy\nYou must complete the laboratory section to receive credit for Psyc350. You are required to attend to all portions of each of the meetings of the specific laboratory section for which you enrolled.\nYou may not switch laboratory sections–you are to attend the section in which you enrolled.\n\n\nInclement Weather Policy\nThe UNL Inclement Weather policy can be found at: https://bf.unl.edu/policies/inclement-weather. If in-person classes are canceled, you will be notified of the instructional continuity plan for this class by Canvas notification and plans for proceeding with the laboratory will be explained at that time.\n\n\nLaboratory Late Attendance Policy\nPart of each laboratory meeting will likely involve the TA lecturing about and/or demonstrating topics and techniques. Many laboratory meetings involve students working together on in-laboratory exercises and assignments. You are expected to be on time for all laboratory meetings. If you have to be late, please contact your TA ahead of time.\n\n\nLaboratory Materials Policy\nThe instructional and assignment materials for each laboratory meeting are available in your Canvas Lab Course. Having them with you is important for your participation in the laboratory meeting. You are expected to have all the materials for that laboratory meeting with you at the beginning of each laboratory meeting, either as paper copies or, more likely, as digital copies that you can access.\n\n\nIn-Laboratory & Take-Home Laboratory Assignment Policy & Late Penalties\nYou should assume that all laboratory assignments are due by the laboratory meeting after they are assigned. You are expected to complete all the portions of each assignment and to submit the completed assignment electronically by the deadline set by the TA. If you are not sure when an assignment is due, ask your TA. Assignments turned in before the submission deadline will not be graded upon submission. Grading will not be begun before the submission date & time for each assignment.\nAn assignment that is submitted electronically on the date that it is due but after the time deadline set by the TA, will lose up to 10% of the value of the assignment and will lose an additional 10% for each weekday it is late. For example, consider an assignment due to be submitted Wednesday at 11:00am:\n\nthe assignment submitted before 11:00 AM is on-time\nan assignment submitted after 11:00 AM is late and would lose 10%, 3. an assignment submitted on Thursday would lose 20% and\nan assignment submitted on Monday would lose 40% (the late penalty is only applied to weekdays).\n\nIn-Laboratory & Take-Home Laboratory Assignment Grading Policy –Incomplete Assignments-\nOnly completed assignments will be graded. If you leave parts of an assignment blank or incomplete, your TA will not grade any of the assignment and will return the assignment to you with a grade of “0”. You should complete the assignment and submit it electronically. Late penalties apply for assignments returned because they were incomplete.\nFeedback on Graded In-Laboratory & Take-Home Laboratory Assignments\nFeedback on graded assignments will primarily identify the errors or mistakes that you made. The correct answers will not be provided by the TA. It is expected that you will consult the related handouts and identify the correct answer and rewrite your assignment. If you can’t figure things out from the related handouts you should email your TA or meet with your TA during their office hours for specific help. Your TA won’t give you the correct answer then either, but will direct you to the related handout and help you figure out what is the correct answer. The re-write option is provided as an opportunity for you learn and apply material that you either didn’t learn the first time or didn’t apply correctly. The goal is for you to use the information from the class meetings, laboratory meetings and various handouts to complete the exercise better and to get a higher grade. The important part is that you do the learning and the work, not the TA. The TA is there to facilitate your use and understanding of the material, but you have to do the learning and the work.\nRe-writes of Graded In-Laboratory & Take-Home Laboratory Assignments\nAny assignment may be re-written and the higher score will count toward your laboratory grade. Re-dos of take-home assignments will be due the laboratory meeting after the graded assignment is returned and will not be accepted after this time.\nTwo important things:\n•The late penalty for re-writes is the same as for submission of the original assignment. That is, a re-write that is submitted electronically on the date that it is due but after the time deadline set by the TA, will lose 10% of the value of the assignment and will lose an additional 10% foreach weekday it is late\n•Points lost because of late submission cannot be “recovered” by re-writing the assignment. Say you submitted an assignment the day after it is due, and the assignment was scored 80%. You would lose 20% for the late submission and would have a grade of 60% for the assignment. I you re-write the assignment and submit the re-write on time, the highest grade you could receive is 80% (100% for a perfect paper –20% for the original late submission).\nYou should do the very best you can on each assignment and submit the assignment on time. Use the re-write option only to “clean up” a few things that you misunderstood or misapplied. You should not adopt the strategy of doing a sub-par job on a take-home assignment and expect that you’ll “make up” the points on the re-write. There are several reasons for this. First, remember that incomplete assignments will be returned to you to complete before they are graded, and will usually end up being submitted late –costing you points. Second -the TAs will not give you the answers to the parts you got wrong –neither when grading the assignment nor if you email them or come meet with them during their office hours. Third, time will have passed between when you did the assignment and when you will get a chance to re-write it –making it harder to do a better job on the re-write than you did the first time. There will be additional new work assigned during the time you have to re-write earlier assignments.\nLaboratory Assignments& Laboratory Grade Policy\nYou will notice that there are many lab assignments, and so, no one assignment contributes very much to your overall Psyc350 grade. During particularly busy times of the semester you might be tempted to “ditch” an assignment or two and “take the 0”. However, I consider each Laboratory assignment to be important, and so… You can not receive a passing grade in this class unless you complete all of the take-home laboratory assignments.\nAcademic Honesty, Plagiarism, and “Working Together”\nYou are expected to provide appropriate citations and references for all information and ideas taken from others’ work. The first occasion of plagiarism, or any other form of cheating, by a student will result in an opportunity to re-write the assignment for credit. The second occasion of plagiarism or cheating by a student will result in a failing grade for that assignment, referral of the matter to the office of Student Life for possible action by the Judicial Board as provided for in the UNL Student Handbook. The policy for the laboratory is somewhat complicated by the nature of many laboratory assignments. You are strongly encouraged to work together on some parts of the laboratory homework assignments! Most of these assignments have two differentiable parts: a “working” part and a “writing” part. The working parts are usually some type of exercise or calculation for which there is a single correct answer. Naturally, those who work together will be expected to have the same answer –everybody who does the work correctly should have the same answer! Hopefully, the work will be somewhat independent, so that errors can be caught within the group. The writing parts are where you must be careful. For all writing parts of any homework and especially for the papers, you are expected to do your own writing for every part of every homework you turn in. Different students are expected to produce different writing.\nIndividual Needs Accommodation\nStudents with disabilities are encouraged to contact the instructor for a confidential discussion of their individual needs for academic accommodation. It is the policy of the University of Nebraska-Lincoln to provide flexible and individualized accommodation to students with documented disabilities that may affect their ability to fully participate in course activities or to meet course requirements. To receive accommodation services, students mustbe registered with the Services for Students with Disabilities (SSD) office, 132 Canfield Administration, 472-3787 voice or TTY.\nOne Last Thing\nAll of the laboratory sections and TAs are supervised by Dr. Manda Williamson. You are encouraged to contact her at any time during or after the semester with any suggestions or concerns about the laboratory materials, requirements, or any issues related to your laboratory classmates or TAs. You can contact her via email at mwilliamson3@unl.edu"
+  },
+  {
+    "objectID": "syllabus.html#grading",
+    "href": "syllabus.html#grading",
+    "title": "Lab Information",
+    "section": "Grading",
+    "text": "Grading\nYou can find descriptions for all the assignments on this site or on canvas. But the breakdown is as follows:\n\n\n\n\n\n\n\n\n\nAssignment\nPoints\nPercent\n\n\n\n\nPersonal Information Survey\n50\n5.0%\n\n\nSocial Annotations\n120\n12.0%\n\n\nLearning Checks\n120\n12.0%\n\n\nUnit Activities\n240\n24.0%\n\n\nExam 1\n115\n11.5%\n\n\nExam 2\n115\n11.5%\n\n\nGroup Poster Project\n240\n24.0%\n\n\nTotal\n1000\n—"
+  },
+  {
+    "objectID": "syllabus.html#grade-range",
+    "href": "syllabus.html#grade-range",
+    "title": "Lab Information",
+    "section": "Grade Range",
+    "text": "Grade Range\n\n\n\n\n\n\n\n\n\n\nGrade\nRange\nGrade\nRange\n\n\n\n\nA\n93–100%\nC\n73–76%\n\n\nA−\n90–92%\nC−\n70–72%\n\n\nB+\n87–89%\nD+\n67–69%\n\n\nB\n83–86%\nD\n63–66%\n\n\nB−\n80–82%\nD−\n60–62%\n\n\nC+\n77–79%\nF\n&lt; 60%"
+  },
+  {
+    "objectID": "project.html",
+    "href": "project.html",
+    "title": "Final Project",
+    "section": "",
+    "text": "Choose one dataset and use the corresponding materials below."
+  },
+  {
+    "objectID": "project.html#project-materials",
+    "href": "project.html#project-materials",
+    "title": "Final Project",
+    "section": "Project Materials",
+    "text": "Project Materials\n\nSelf-Descriptive SurveyInterpersonal SurveyShared Resources\n\n\n\n\n\n  PDF Open guide  Content and Methods \n\n\n  SPSS data Download data  Self-Descriptive Survey Dataset \n\n\n  Word Download worksheet  Self-Descriptive Pre-proposal \n\n\nNo matching items\n\n\n\n\n\n\n  PDF Open guide  Content and Methods \n\n\n  SPSS data Download data  Interpersonal Survey Dataset \n\n\n  Word Download worksheet  Interpersonal Pre-proposal \n\n\nNo matching items\n\n\n\n\n\n\n  PDF Open guide  Project Suggestions and FAQ \n\n\n  PDF Open rubric  Project Rubric \n\n\n  Word Download rubric  Editable Project Rubric \n\n\n  Word Download example  Example Project Report \n\n\n  PDF Open guide  APA Student Paper Guide \n\n\n  PDF Open guide  Avoiding Plagiarism \n\n\n  PDF Open checklist  APA Student Paper Checklist \n\n\n  PDF Open templates  APA Table Templates \n\n\n  Word Download templates  Editable APA Table Templates \n\n\n  Slides Open slides  Poster Guide Slides \n\n\n  PowerPoint Download template  Horizontal Poster Template \n\n\n  PowerPoint Download template  Square Poster Template \n\n\n  PowerPoint Download template  Vertical Poster Template \n\n\n  PowerPoint Download example  Example Poster \n\n\n  PDF Open guide  Using a PowerPoint Poster Template \n\n\nNo matching items"
+  },
+  {
+    "objectID": "project.html#project-milestones",
+    "href": "project.html#project-milestones",
+    "title": "Final Project",
+    "section": "Project Milestones",
+    "text": "Project Milestones\n\n\n\n\n\n\n\n\nWeek\nLab\nMilestone\n\n\n\n\nSep 22 - Sep 25\nLab 05\nGiven: Submit to your lab section before week 6: Research Project Pre-proposal (only the one corresponding to your dataset) and Research Project References & Literature Review Worksheet\n\n\nSep 29 - Oct 02\nLab 06\nDue: Research Project Pre-proposal (only the one corresponding to your dataset)\n\n\nOct 27 - Oct 30\nLab 09\nGiven: Complete FULL DRAFT of Research Project Report (Intro Method Results Discussion)\n\n\nNov 03 - Nov 06\nLab 10\nGiven: Complete Research Project Report\n\n\nNov 03 - Nov 06\nLab 10\nDue: Complete DRAFT Research Project Report\n\n\nNov 24 - Nov 27\nLab 13\nGiven: Graded Research Project Reports will be returned\n\n\nNov 24 - Nov 27\nLab 13\nDue: Rewrites of Research Project Reports due"
+  },
+  {
+    "objectID": "labs/lab00/index.html",
+    "href": "labs/lab00/index.html",
+    "title": "Lab 00: Welcome",
+    "section": "",
+    "text": "Welcome to PSYC 350 Lab. Start here before Lab 01."
+  },
+  {
+    "objectID": "labs/lab00/index.html#welcome",
+    "href": "labs/lab00/index.html#welcome",
+    "title": "Lab 00: Welcome",
+    "section": "",
+    "text": "Welcome to PSYC 350 Lab. Start here before Lab 01."
+  },
+  {
+    "objectID": "labs/lab00/index.html#course-information",
+    "href": "labs/lab00/index.html#course-information",
+    "title": "Lab 00: Welcome",
+    "section": "Course Information",
+    "text": "Course Information\n Syllabus  Schedule  Software"
+  },
+  {
+    "objectID": "labs/lab00/index.html#welcome-slides",
+    "href": "labs/lab00/index.html#welcome-slides",
+    "title": "Lab 00: Welcome",
+    "section": "Welcome Slides",
+    "text": "Welcome Slides\nOpen the welcome deck in full screen"
+  },
+  {
+    "objectID": "labs/lab01/index.html",
+    "href": "labs/lab01/index.html",
+    "title": "Lab 01: APA Citations & Zotero",
+    "section": "",
+    "text": "Use a laptop with Zotero installed, if possible."
+  },
+  {
+    "objectID": "labs/lab01/index.html#preparation",
+    "href": "labs/lab01/index.html#preparation",
+    "title": "Lab 01: APA Citations & Zotero",
+    "section": "",
+    "text": "Use a laptop with Zotero installed, if possible."
+  },
+  {
+    "objectID": "labs/lab01/index.html#lab-overview",
+    "href": "labs/lab01/index.html#lab-overview",
+    "title": "Lab 01: APA Citations & Zotero",
+    "section": "Lab Overview",
+    "text": "Lab Overview\n\n\nLearning objectives\n\n\nFormat APA-style references and in-text citations for common source types.\nBuild and organize a Zotero library by adding items and editing their metadata.\nGenerate APA-formatted citations and bibliographies from Zotero in your documents."
+  },
+  {
+    "objectID": "labs/lab01/index.html#lab-slides",
+    "href": "labs/lab01/index.html#lab-slides",
+    "title": "Lab 01: APA Citations & Zotero",
+    "section": "Lab Slides",
+    "text": "Lab Slides\nOpen the Lab 01 deck in full screen"
+  },
+  {
+    "objectID": "labs/lab01/index.html#materials",
+    "href": "labs/lab01/index.html#materials",
+    "title": "Lab 01: APA Citations & Zotero",
+    "section": "Materials to Download",
+    "text": "Materials to Download\n\n\nIntroduction to Psyc350 & why we do it this way!!Bibliographic Research & ZoteroWeekly Lab Assignment\n\n\n\nIntroduction to Psyc 350 Lab  (Web page)\n\n\n\n\nUNL Library Research Tools (start here)  (External link)\nPowerpoint to guide you through library resources  (PowerPoint)\nBoolean Searching (link to how-to guide online)  (External link)\nAPA Format and Style + Using Zotero\nAPA Journal Article Reference Guide (PDF)  (PDF)\nAPA Journal Article Reference Guide (HTML)  (Web page)\nJournal Article Reference Formatting (Word, editable)  (Word document)\nAPA In-text Citations and Reference Examples (PDF)  (PDF)\nAPA In-text Citations and Reference Examples (HTML)  (Web page)\nStudent Paper Format  (PDF)\nResearch Report Format  (PDF)\nAPA Table Templates (PDF)  (PDF)\nAPA Table Templates (HTML)  (Web page)\nAPA Table Templates (Word, editable)  (Word document)\nOther Sources Reference Format  (PDF)\n\n\n\n\nLab 01: APA References Zotero Worksheet  (Word document)\nClick for Zotero & APA Workbook  (Web page)"
+  },
+  {
+    "objectID": "labs/lab01/index.html#lab-activities",
+    "href": "labs/lab01/index.html#lab-activities",
+    "title": "Lab 01: APA Citations & Zotero",
+    "section": "Lab Activities",
+    "text": "Lab Activities\n\n In-Class Walk-through Take-Home Practice\n\n\n Open the In-Class Walk-through\n\n\n Open the Take-Home Practice"
+  },
+  {
+    "objectID": "labs/lab02/index.html",
+    "href": "labs/lab02/index.html",
+    "title": "Lab 02: Operationalization & Measurement",
+    "section": "",
+    "text": "Have the Lab 02 worksheet open while you use the slides."
+  },
+  {
+    "objectID": "labs/lab02/index.html#preparation",
+    "href": "labs/lab02/index.html#preparation",
+    "title": "Lab 02: Operationalization & Measurement",
+    "section": "",
+    "text": "Have the Lab 02 worksheet open while you use the slides."
+  },
+  {
+    "objectID": "labs/lab02/index.html#lab-overview",
+    "href": "labs/lab02/index.html#lab-overview",
+    "title": "Lab 02: Operationalization & Measurement",
+    "section": "Lab Overview",
+    "text": "Lab Overview\n\n\nLearning objectives\n\n\nDistinguish conceptual from operational definitions, give examples of each, and create simple operational definitions.\nDefine measurement and give several examples of measurement in psychology.\nDefine the concept of a variable, distinguish quantitative from categorical variables, and identify how measurement affects interpretation and generalization."
+  },
+  {
+    "objectID": "labs/lab02/index.html#materials",
+    "href": "labs/lab02/index.html#materials",
+    "title": "Lab 02: Operationalization & Measurement",
+    "section": "Materials to Download",
+    "text": "Materials to Download\n\n\nGetting started with VariablesWeekly Lab Assignment\n\n\n\nIdentifying & understanding variables  (Web page)\n\n\n\n\nLab 02: Operationalization & Measurement Worksheet  (Word document)"
+  },
+  {
+    "objectID": "labs/lab02/index.html#lab-slides",
+    "href": "labs/lab02/index.html#lab-slides",
+    "title": "Lab 02: Operationalization & Measurement",
+    "section": "Lab Slides",
+    "text": "Lab Slides\nOpen the Lab 02 slide deck in full screen"
+  },
+  {
+    "objectID": "labs/lab02/index.html#lab-activities",
+    "href": "labs/lab02/index.html#lab-activities",
+    "title": "Lab 02: Operationalization & Measurement",
+    "section": "Lab Activities",
+    "text": "Lab Activities\n\nWalk-through\nIn-class practice\nTake-home practice"
+  },
+  {
+    "objectID": "labs/lab04/index.html",
+    "href": "labs/lab04/index.html",
+    "title": "Lab 04: Literature Reviews",
+    "section": "",
+    "text": "Use a computer and have the Lab 04 worksheet open."
+  },
+  {
+    "objectID": "labs/lab04/index.html#preparation",
+    "href": "labs/lab04/index.html#preparation",
+    "title": "Lab 04: Literature Reviews",
+    "section": "",
+    "text": "Use a computer and have the Lab 04 worksheet open."
+  },
+  {
+    "objectID": "labs/lab04/index.html#lab-overview",
+    "href": "labs/lab04/index.html#lab-overview",
+    "title": "Lab 04: Literature Reviews",
+    "section": "Lab Overview",
+    "text": "Lab Overview\n\n\nLearning objectives\n\n\nRead, understand, and critically evaluate scientific journal articles in the field of psychology.\nForm logical analytical arguments based in scientific literature.\nCommunicate written ideas at an undergraduate level, including writing an APA style formatted paper."
+  },
+  {
+    "objectID": "labs/lab04/index.html#lab-slides",
+    "href": "labs/lab04/index.html#lab-slides",
+    "title": "Lab 04: Literature Reviews",
+    "section": "Lab Slides",
+    "text": "Lab Slides\nOpen the Lab 04 slide deck in full screen"
+  },
+  {
+    "objectID": "labs/lab04/index.html#materials",
+    "href": "labs/lab04/index.html#materials",
+    "title": "Lab 04: Literature Reviews",
+    "section": "Materials to Download",
+    "text": "Materials to Download\n\n\nScientific writing & synthesizing researchWriting Literature Reviews & Research ProposalsWeekly Lab Assignment\n\n\n\nHow to Improve your Writing  (Web page)\nHow to Improve your Writing (PowerPoint, editable)  (PowerPoint)\n\n\n\n\nAPA Student Paper Guide  (PDF)\nAPA Avoiding Plagiarism Guide  (PDF)\nAPA Student Paper Checklist  (PDF)\nAPA Table Templates (Word, editable)  (Word document)\nAPA Table Templates (PDF)  (PDF)\nAPA Table Templates (HTML)  (Web page)\n\n\n\n\nLiterature Review Description  (Word document)\nArticle 1 for literature review & proposal  (PDF)\nArticle 2 for literature review & proposal  (PDF)\nLiterature review & proposal worksheet  (Word document)\nLiterature review & proposal HINTS sheet  (Word document)"
+  },
+  {
+    "objectID": "labs/lab04/index.html#lab-activities",
+    "href": "labs/lab04/index.html#lab-activities",
+    "title": "Lab 04: Literature Reviews",
+    "section": "Lab Activities",
+    "text": "Lab Activities\n\nReview the writing and literature-review materials.\nBegin the Literature Review Worksheet."
+  },
+  {
+    "objectID": "labs/lab06/index.html",
+    "href": "labs/lab06/index.html",
+    "title": "Lab 06: Data Entry, Transforms & Univariates",
+    "section": "",
+    "text": "Use a computer with SPSS and have the Lab 06 worksheet open."
+  },
+  {
+    "objectID": "labs/lab06/index.html#preparation",
+    "href": "labs/lab06/index.html#preparation",
+    "title": "Lab 06: Data Entry, Transforms & Univariates",
+    "section": "",
+    "text": "Use a computer with SPSS and have the Lab 06 worksheet open."
+  },
+  {
+    "objectID": "labs/lab06/index.html#lab-overview",
+    "href": "labs/lab06/index.html#lab-overview",
+    "title": "Lab 06: Data Entry, Transforms & Univariates",
+    "section": "Lab Overview",
+    "text": "Lab Overview\n\n\nLearning objectives\n\n\nDevelop the fundamental skills needed to use SPSS\nLearn how to enter data, perform transformations, and recode variables\nPractice running univariate statistics"
+  },
+  {
+    "objectID": "labs/lab06/index.html#lab-slides",
+    "href": "labs/lab06/index.html#lab-slides",
+    "title": "Lab 06: Data Entry, Transforms & Univariates",
+    "section": "Lab Slides",
+    "text": "Lab Slides\nOpen the Lab 06 slide deck in full screen"
+  },
+  {
+    "objectID": "labs/lab06/index.html#materials",
+    "href": "labs/lab06/index.html#materials",
+    "title": "Lab 06: Data Entry, Transforms & Univariates",
+    "section": "Materials to Download",
+    "text": "Materials to Download\n\n\nData Entry & Univariate StatsWeekly Lab Assignment\n\n\n\nSPSS Handouts\nAbout ‘stats packages’ for Psyc350 - You are not required to purchase SPSS (or any statistical package) but you must ensure that you have ‘working access’ to the statistical package(s) you choose to use so that you consistently complete assignments in a timely fashion.\nData Entry  (PDF) (Opens in new tab)\nCompute & recode  (PDF) (Opens in new tab)\nSelecting Cases & Splitting Files  (PDF) (Opens in new tab)\nFrequencies & Univariate Statistics  (PDF) (Opens in new tab)\n\n\n\n\nData Entry & Univariate Stats worksheet  (Word document)\nUnivariate stats hw checker  (Web page)"
+  },
+  {
+    "objectID": "labs/lab06/index.html#lab-activities",
+    "href": "labs/lab06/index.html#lab-activities",
+    "title": "Lab 06: Data Entry, Transforms & Univariates",
+    "section": "Lab Activities",
+    "text": "Lab Activities\n\nHomework Checker\nHow to use the Homework Checker!\n\nType your answer into each blank box. Round to 2 decimal places where appropriate.\nSelect your choice from the dropdown menu for interpretability\nThe box will turn green if your answer is correct\nThe box will turn red if your answer is incorrect - try again!\nFor this practice question, try entering the values shown below to see the green check marks\n\n\nHere is a practice question to help you understand how to use the answer checker:\nExample Variable: sample_var\nMean: 5.25, SD: 2.1, SEM: 0.66\nMean:  | SD:  | SEM: \nIs the mean interpretable? No - this is a label, not a variableYes - this is a quantitative variableYes - this is a binary variableNo - this is a multiple-category variable\n\n\nWalk-through Answers\nEnter the mean, standard deviation, sample size, and standard error for each variable:\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                Variable\n                Mean\n                SD\n                SEM\n                Interpretable?\n              \n        \n        \n        \n                \n                  num\n                  \n                  \n                  \n                  No - this is a label, not a variableYes - this is a quantitative variableYes - this is a binary variableNo - this is a multiple-category variable\n                \n                \n                  year\n                  \n                  \n                  \n                  No - this is a label, not a variableYes - this is a quantitative variableYes - this is a binary variableNo - this is a multiple-category variable\n                \n                \n                  clark_height\n                  \n                  \n                  \n                  No - this is a label, not a variableYes - this is a quantitative variableYes - this is a binary variableNo - this is a multiple-category variable\n                \n                \n                  lois_height\n                  \n                  \n                  \n                  No - this is a label, not a variableYes - this is a quantitative variableYes - this is a binary variableNo - this is a multiple-category variable\n                \n                \n                  clark_height_in\n                  \n                  \n                  \n                  No - this is a label, not a variableYes - this is a quantitative variableYes - this is a binary variableNo - this is a multiple-category variable\n                \n                \n                  lois_height_in\n                  \n                  \n                  \n                  No - this is a label, not a variableYes - this is a quantitative variableYes - this is a binary variableNo - this is a multiple-category variable\n                \n                \n                  height_diff\n                  \n                  \n                  \n                  No - this is a label, not a variableYes - this is a quantitative variableYes - this is a binary variableNo - this is a multiple-category variable\n                \n                \n                  type\n                  \n                  \n                  \n                  No - this is a label, not a variableYes - this is a quantitative variableYes - this is a binary variableNo - this is a multiple-category variable\n                \n                \n                  clark_grp\n                  \n                  \n                  \n                  No - this is a label, not a variableYes - this is a quantitative variableYes - this is a binary variableNo - this is a multiple-category variable\n                \n                \n                  height_gap\n                  \n                  \n                  \n                  No - this is a label, not a variableYes - this is a quantitative variableYes - this is a binary variableNo - this is a multiple-category variable\n                \n        \n      \n    \n\n\n\nTake-Home Answers\nEnter the mean, standard deviation, sample size, and standard error for each variable:\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                Variable\n                Mean\n                SD\n                SEM\n                Interpretable?\n              \n        \n        \n        \n                \n                  rt_critics_score\n                  \n                  \n                  \n                  No - this is a label, not a variableYes - this is a quantitative variableYes - this is a binary variableNo - this is a multiple-category variable\n                \n                \n                  rt_critics_count\n                  \n                  \n                  \n                  No - this is a label, not a variableYes - this is a quantitative variableYes - this is a binary variableNo - this is a multiple-category variable\n                \n                \n                  rt_audience_score\n                  \n                  \n                  \n                  No - this is a label, not a variableYes - this is a quantitative variableYes - this is a binary variableNo - this is a multiple-category variable\n                \n                \n                  rt_audience_count\n                  \n                  \n                  \n                  No - this is a label, not a variableYes - this is a quantitative variableYes - this is a binary variableNo - this is a multiple-category variable\n                \n                \n                  ldb_likes\n                  \n                  \n                  \n                  No - this is a label, not a variableYes - this is a quantitative variableYes - this is a binary variableNo - this is a multiple-category variable\n                \n                \n                  ldb_scores\n                  \n                  \n                  \n                  No - this is a label, not a variableYes - this is a quantitative variableYes - this is a binary variableNo - this is a multiple-category variable\n                \n                \n                  rt_avg\n                  \n                  \n                  \n                  No - this is a label, not a variableYes - this is a quantitative variableYes - this is a binary variableNo - this is a multiple-category variable\n                \n                \n                  rt_diff\n                  \n                  \n                  \n                  No - this is a label, not a variableYes - this is a quantitative variableYes - this is a binary variableNo - this is a multiple-category variable\n                \n                \n                  tomatometer\n                  \n                  \n                  \n                  No - this is a label, not a variableYes - this is a quantitative variableYes - this is a binary variableNo - this is a multiple-category variable\n                \n                \n                  popular\n                  \n                  \n                  \n                  No - this is a label, not a variableYes - this is a quantitative variableYes - this is a binary variableNo - this is a multiple-category variable"
+  },
+  {
+    "objectID": "labs/lab08/index.html",
+    "href": "labs/lab08/index.html",
+    "title": "Lab 08: One-way ANOVAs",
+    "section": "",
+    "text": "Use a computer with SPSS and have the Lab 08 worksheet open."
+  },
+  {
+    "objectID": "labs/lab08/index.html#preparation",
+    "href": "labs/lab08/index.html#preparation",
+    "title": "Lab 08: One-way ANOVAs",
+    "section": "",
+    "text": "Use a computer with SPSS and have the Lab 08 worksheet open."
+  },
+  {
+    "objectID": "labs/lab08/index.html#lab-overview",
+    "href": "labs/lab08/index.html#lab-overview",
+    "title": "Lab 08: One-way ANOVAs",
+    "section": "Lab Overview",
+    "text": "Lab Overview\n\n\nLearning objectives\n\n\nPractice using SPSS to perform BG and WG One-way ANOVAs.\nExplain when a one-way ANOVA is appropriate and distinguish between-groups from within-groups designs.\nInterpret an omnibus F-test and follow up a significant result with post-hoc comparisons."
+  },
+  {
+    "objectID": "labs/lab08/index.html#lab-slides",
+    "href": "labs/lab08/index.html#lab-slides",
+    "title": "Lab 08: One-way ANOVAs",
+    "section": "Lab Slides",
+    "text": "Lab Slides\nOpen the Lab 08 slide deck in full screen"
+  },
+  {
+    "objectID": "labs/lab08/index.html#materials",
+    "href": "labs/lab08/index.html#materials",
+    "title": "Lab 08: One-way ANOVAs",
+    "section": "Materials to Download",
+    "text": "Materials to Download\n\n\nBetween Groups and Within-Groups One-Way ANOVAWeekly Lab Assignment\n\n\n\nSPSS Handouts\nChoosing Analyses for Project\nPractice Choosing Statistical Analyses Worksheet  (Word document)\n2BG ANOVA  (PDF) (Opens in new tab)\n2BG Bar Graph  (PDF) (Opens in new tab)\nWG ANOVA  (PDF) (Opens in new tab)\nWG t-test  (PDF) (Opens in new tab)\nWG Bar Graph  (PDF) (Opens in new tab)\nWG t-test (paired)  (PDF) (Opens in new tab)\nEffect Size and Sample Size How-To (PDF)  (PDF)\nEffect Size and Sample Size How-To (HTML)  (Web page)\nWhich Test to Use? (PDF)  (PDF)\nWhich Test to Use? (HTML)  (Web page)\nWhich Test to Use? (Word, editable)  (Word document)\n\n\n\n\nsuperman_smes_data.sav  (SPSS data file)\nhotones_data.sav  (SPSS data file)\nANOVA Worksheet  (Word document)\nANOVA hw checker  (Web page)"
+  },
+  {
+    "objectID": "labs/lab08/index.html#lab-activities",
+    "href": "labs/lab08/index.html#lab-activities",
+    "title": "Lab 08: One-way ANOVAs",
+    "section": "Lab Activities",
+    "text": "Lab Activities\n\nHomework Checker\nHow to use the Homework Checker!\n\nType your answer into each blank box. Round to 2 decimal places where appropriate.\nSelect your choice from the dropdown menu for interpretability\nThe box will turn green if your answer is correct\nThe box will turn red if your answer is incorrect - try again!\nDo not forget to take a screenshot of the correct answers to include on your lab worksheet!\n\n\nWalkthrough Answers\n\nEnter the descriptives and F-test statistics for RH1:\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                 \n                Type\n                  \n                   \n                    \n                     \n              \n        \n        \n        \n                \n                  ANOVA Type: RH1\n                  Between-Groups (BG)Within-Groups (WG)\n                  \n                  \n                  \n                  \n                \n                \n                  \n                  F\n                  p\n                  df(between)\n                  df(within)\n                  MSE\n                \n                \n                  BG ANOVA: RH1\n                  \n                  \n                  \n                  \n                  \n                \n                \n                  \n                  Reject or Retain H0?\n                  \n                  \n                  \n                  \n                \n                \n                  Decision:\n                  Retain the H0 null hypothesisReject the H0 null hypothesis\n                  \n                  \n                  \n                  \n                \n                \n                  \n                  Mean\n                  SD\n                  n\n                  \n                  \n                \n                \n                  Minimal/Average\n                  \n                  \n                  \n                  \n                  \n                \n                \n                  Big\n                  \n                  \n                  \n                  \n                  \n                \n        \n      \n    \n\n\n\nEnter the descriptives and F-test statistics for RH2:\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                 \n                Type\n                  \n                   \n                    \n                     \n              \n        \n        \n        \n                \n                  ANOVA Type: RH2\n                  Between-Groups (BG)Within-Groups (WG)\n                  \n                  \n                  \n                  \n                \n                \n                  \n                  F\n                  p\n                  df(effect)\n                  df(error)\n                  MSE\n                \n                \n                  WG ANOVA: RH2\n                  \n                  \n                  \n                  \n                  \n                \n                \n                  \n                  Reject or Retain H0?\n                  \n                  \n                  \n                  \n                \n                \n                  Decision:\n                  Retain the H0 null hypothesisReject the H0 null hypothesis\n                  \n                  \n                  \n                  \n                \n                \n                  \n                  Mean\n                  SD\n                  n\n                  \n                  \n                \n                \n                  Emotional Impact\n                  \n                  \n                  \n                  \n                  \n                \n                \n                  Aesthetic Appeal\n                  \n                  \n                  \n                  \n                  \n                \n        \n      \n    \n\n\n\n\nYour Turn Answers\n\nEnter the descriptives and F-test statistics for RH3:\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                 \n                Type\n                  \n                   \n                    \n                     \n              \n        \n        \n        \n                \n                  ANOVA Type: RH3\n                  Between-Groups (BG)Within-Groups (WG)\n                  \n                  \n                  \n                  \n                \n                \n                  \n                  F\n                  p\n                  df(effect)\n                  df(error)\n                  MSE\n                \n                \n                  WG ANOVA: RH3\n                  \n                  \n                  \n                  \n                  \n                \n                \n                  \n                  Reject or Retain H0?\n                  \n                  \n                  \n                  \n                \n                \n                  Decision:\n                  Retain the H0 null hypothesisReject the H0 null hypothesis\n                  \n                  \n                  \n                  \n                \n                \n                  \n                  Mean\n                  SD\n                  n\n                  \n                  \n                \n                \n                  First Sauce (millions SHU)\n                  \n                  \n                  \n                  \n                  \n                \n                \n                  Tenth Sauce (millions SHU)\n                  \n                  \n                  \n                  \n                  \n                \n        \n      \n    \n\n\n\nEnter the descriptives and F-test statistics for RH4:\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                 \n                Type\n                  \n                   \n                    \n                     \n              \n        \n        \n        \n                \n                  ANOVA Type: RH4\n                  Between-Groups (BG)Within-Groups (WG)\n                  \n                  \n                  \n                  \n                \n                \n                  \n                  F\n                  p\n                  df(between)\n                  df(within)\n                  MSE\n                \n                \n                  BG ANOVA: RH4\n                  \n                  \n                  \n                  \n                  \n                \n                \n                  \n                  Reject or Retain H0?\n                  \n                  \n                  \n                  \n                \n                \n                  Decision:\n                  Retain the H0 null hypothesisReject the H0 null hypothesis\n                  \n                  \n                  \n                  \n                \n                \n                  \n                  Mean\n                  SD\n                  n\n                  \n                  \n                \n                \n                  Non-Actor\n                  \n                  \n                  \n                  \n                  \n                \n                \n                  Actor\n                  \n                  \n                  \n                  \n                  \n                \n        \n      \n    \n\n\n\nEnter the descriptives and F-test statistics for RH5:\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                 \n                Type\n                  \n                   \n                    \n                     \n              \n        \n        \n        \n                \n                  ANOVA Type: RH5\n                  Between-Groups (BG)Within-Groups (WG)\n                  \n                  \n                  \n                  \n                \n                \n                  \n                  F\n                  p\n                  df(effect)\n                  df(error)\n                  MSE\n                \n                \n                  WG ANOVA: RH5\n                  \n                  \n                  \n                  \n                  \n                \n                \n                  \n                  Reject or Retain H0?\n                  \n                  \n                  \n                  \n                \n                \n                  Decision:\n                  Retain the H0 null hypothesisReject the H0 null hypothesis\n                  \n                  \n                  \n                  \n                \n                \n                  \n                  Mean\n                  SD\n                  n\n                  \n                  \n                \n                \n                  Comments (thousands)\n                  \n                  \n                  \n                  \n                  \n                \n                \n                  Likes (thousands)\n                  \n                  \n                  \n                  \n                  \n                \n        \n      \n    \n\n\n\nEnter the descriptives and F-test statistics for RH6:\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                 \n                Type\n                  \n                   \n                    \n                     \n              \n        \n        \n        \n                \n                  ANOVA Type: RH6\n                  Between-Groups (BG)Within-Groups (WG)\n                  \n                  \n                  \n                  \n                \n                \n                  \n                  F\n                  p\n                  df(between)\n                  df(within)\n                  MSE\n                \n                \n                  BG ANOVA: RH6\n                  \n                  \n                  \n                  \n                  \n                \n                \n                  \n                  Reject or Retain H0?\n                  \n                  \n                  \n                  \n                \n                \n                  Decision:\n                  Retain the H0 null hypothesisReject the H0 null hypothesis\n                  \n                  \n                  \n                  \n                \n                \n                  \n                  Mean\n                  SD\n                  n\n                  \n                  \n                \n                \n                  Under 35\n                  \n                  \n                  \n                  \n                  \n                \n                \n                  35 and Over"
+  },
+  {
+    "objectID": "labs/lab10/index.html",
+    "href": "labs/lab10/index.html",
+    "title": "Lab 10: Peer Review",
+    "section": "",
+    "text": "Bring two printed copies of your completed project."
+  },
+  {
+    "objectID": "labs/lab10/index.html#preparation",
+    "href": "labs/lab10/index.html#preparation",
+    "title": "Lab 10: Peer Review",
+    "section": "",
+    "text": "Bring two printed copies of your completed project."
+  },
+  {
+    "objectID": "labs/lab10/index.html#lab-overview",
+    "href": "labs/lab10/index.html#lab-overview",
+    "title": "Lab 10: Peer Review",
+    "section": "Lab Overview",
+    "text": "Lab Overview\n\n\nLearning objectives\n\n\nProvide constructive, specific feedback on a peer’s APA-style research report.\nEvaluate the organization, argument, and APA formatting of a research report draft.\nUse peer feedback to revise and strengthen your own research report."
+  },
+  {
+    "objectID": "labs/lab10/index.html#lab-slides",
+    "href": "labs/lab10/index.html#lab-slides",
+    "title": "Lab 10: Peer Review",
+    "section": "Lab Slides",
+    "text": "Lab Slides\nOpen the Lab 10 slide deck in full screen"
+  },
+  {
+    "objectID": "labs/lab10/index.html#materials",
+    "href": "labs/lab10/index.html#materials",
+    "title": "Lab 10: Peer Review",
+    "section": "Lab Materials",
+    "text": "Lab Materials\n\n\nAdditional Materials\n\n\n\nPeer review Intro Method Results Discussion  (Word document)"
+  },
+  {
+    "objectID": "labs/lab10/index.html#lab-activities",
+    "href": "labs/lab10/index.html#lab-activities",
+    "title": "Lab 10: Peer Review",
+    "section": "Lab Activities",
+    "text": "Lab Activities\n\nExchange drafts with a classmate.\nReview the paper’s structure and content.\nReturn the signed feedback to the author."
+  },
+  {
+    "objectID": "labs/lab12/index.html",
+    "href": "labs/lab12/index.html",
+    "title": "Lab 12: Factorial Designs & Analyses",
+    "section": "",
+    "text": "Use a computer with SPSS and have the Lab 12 worksheet open."
+  },
+  {
+    "objectID": "labs/lab12/index.html#preparation",
+    "href": "labs/lab12/index.html#preparation",
+    "title": "Lab 12: Factorial Designs & Analyses",
+    "section": "",
+    "text": "Use a computer with SPSS and have the Lab 12 worksheet open."
+  },
+  {
+    "objectID": "labs/lab12/index.html#lab-overview",
+    "href": "labs/lab12/index.html#lab-overview",
+    "title": "Lab 12: Factorial Designs & Analyses",
+    "section": "Lab Overview",
+    "text": "Lab Overview\n\n\nLearning objectives\n\n\nPractice using SPSS to perform factorial ANOVAs.\nExplain main effects and interactions in factorial designs.\nInterpret interaction patterns from line graphs and factorial ANOVA output."
+  },
+  {
+    "objectID": "labs/lab12/index.html#lab-slides",
+    "href": "labs/lab12/index.html#lab-slides",
+    "title": "Lab 12: Factorial Designs & Analyses",
+    "section": "Lab Slides",
+    "text": "Lab Slides\nOpen the Lab 12 slide deck in full screen"
+  },
+  {
+    "objectID": "labs/lab12/index.html#materials",
+    "href": "labs/lab12/index.html#materials",
+    "title": "Lab 12: Factorial Designs & Analyses",
+    "section": "Materials to Download",
+    "text": "Materials to Download\n\n\nFactorial Design & AnalysisWeekly Lab Assignment\n\n\n\nSPSS Handouts\n2x2 BG ANOVA on SPSS  (PDF) (Opens in new tab)\n2x2 MG ANOVA on SPSS  (PDF) (Opens in new tab)\nComputator (Excel)  (Excel)\nFactorial ‘effect map’\n\n\n\n\nparent_child_data.sav  (SPSS data file)\nFactorial Analyses Worksheet  (Word document)\nFactorial Analyses hw checker  (Web page)"
+  },
+  {
+    "objectID": "labs/lab12/index.html#lab-activities",
+    "href": "labs/lab12/index.html#lab-activities",
+    "title": "Lab 12: Factorial Designs & Analyses",
+    "section": "Lab Activities",
+    "text": "Lab Activities\n\nHomework Checker\nHow to use the Homework Checker!\n\nType your answer into each blank box. Round to 2 decimal places where appropriate.\nSelect your choice from the dropdown menu for interpretability\nThe box will turn green if your answer is correct\nThe box will turn red if your answer is incorrect - try again!\nDo not forget to take a screenshot of the correct answers to include on your lab worksheet!\n\n\nWalkthrough Answers\n\nEnter the descriptives and F-test statistics for RH1:\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                 \n                F\n                p\n                df (between)\n                df (within)\n                MSE\n                Do we need to perform LSD pairwise comparisons?\n              \n        \n        \n        \n                \n                  Interaction: Family Type x Treatment Status\n                  \n                  \n                  \n                  \n                  \n                  No - a nonsignificant interactionYes - significant interaction\n                \n                \n                  \n                  # of conditions\n                  average n\n                  df error\n                  MSe\n                  LSDmmd\n                  \n                \n                \n                  Components for LSDmmd:\n                  \n                  \n                  \n                  \n                  \n                  \n                \n                \n                  \n                  F\n                  p\n                  df (between)\n                  df (within)\n                  MSE\n                  \n                \n                \n                  Main Effect: Family Type\n                  \n                  \n                  \n                  \n                  \n                  \n                \n                \n                  \n                  F\n                  p\n                  df (between)\n                  df (within)\n                  MSE\n                  \n                \n                \n                  Main Effect: Treatment Status\n                  \n                  \n                  \n                  \n                  \n                  \n                \n        \n      \n    \n\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                 \n                No Treatment\n                Treatment\n                EMM\n              \n        \n        \n        \n                \n                  2-Parent Family\n                  \n                  \n                  \n                \n                \n                  Mother-Only Family\n                  \n                  \n                  \n                \n                \n                  EMM\n                  \n                  \n                  \n                \n        \n      \n    \n\n\n\n\nYour Turn Answers\n\nEnter the descriptives and F-test statistics for RH2:\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                 \n                F\n                p\n                df (between)\n                df (within)\n                MSE\n                Do we need to perform LSD pairwise comparisons?\n              \n        \n        \n        \n                \n                  Interaction: Mother's Age Group x Child's Age Group\n                  \n                  \n                  \n                  \n                  \n                  No - a nonsignificant interactionYes - significant interaction\n                \n                \n                  \n                  # of conditions\n                  average n\n                  df error\n                  MSe\n                  LSDmmd\n                  \n                \n                \n                  Components for LSDmmd:\n                  \n                  \n                  \n                  \n                  \n                  \n                \n                \n                  \n                  F\n                  p\n                  df (between)\n                  df (within)\n                  MSE\n                  \n                \n                \n                  Main Effect: Mother's Age Group\n                  \n                  \n                  \n                  \n                  \n                  \n                \n                \n                  \n                  F\n                  p\n                  df (between)\n                  df (within)\n                  MSE\n                  \n                \n                \n                  Main Effect: Child's Age Group\n                  \n                  \n                  \n                  \n                  \n                  \n                \n        \n      \n    \n\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                 \n                2-3 Years Old\n                4-5 Years Old\n                EMM\n              \n        \n        \n        \n                \n                  18-27 Years Old\n                  \n                  \n                  \n                \n                \n                  28-35 Years Old\n                  \n                  \n                  \n                \n                \n                  EMM\n                  \n                  \n                  \n                \n        \n      \n    \n\n\n\nEnter the descriptives and F-test statistics for RH3:\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                 \n                F\n                p\n                df (between)\n                df (within)\n                MSE\n                Do we need to perform LSD pairwise comparisons?\n              \n        \n        \n        \n                \n                  Interaction: Treatment Status x Child's Age Group\n                  \n                  \n                  \n                  \n                  \n                  No - a nonsignificant interactionYes - significant interaction\n                \n                \n                  \n                  # of conditions\n                  average n\n                  df error\n                  MSe\n                  LSDmmd\n                  \n                \n                \n                  Components for LSDmmd:\n                  \n                  \n                  \n                  \n                  \n                  \n                \n                \n                  \n                  F\n                  p\n                  df (between)\n                  df (within)\n                  MSE\n                  \n                \n                \n                  Main Effect: Treatment Status\n                  \n                  \n                  \n                  \n                  \n                  \n                \n                \n                  \n                  F\n                  p\n                  df (between)\n                  df (within)\n                  MSE\n                  \n                \n                \n                  Main Effect: Child's Age Group\n                  \n                  \n                  \n                  \n                  \n                  \n                \n        \n      \n    \n\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                 \n                2-3 Years Old\n                4-5 Years Old\n                EMM\n              \n        \n        \n        \n                \n                  No Treatment\n                  \n                  \n                  \n                \n                \n                  Treatment\n                  \n                  \n                  \n                \n                \n                  EMM"
+  }
+]
