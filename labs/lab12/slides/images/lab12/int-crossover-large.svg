@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" viewBox="0 0 440 290">
+  <title id="title">Crossover interaction</title>
+  <desc id="desc">Two lines for groups A1 and A2 cross between conditions B1 and B2.</desc>
+  <rect width="440" height="290" fill="#ffffff"/>
+  <line x1="78" y1="28" x2="78" y2="232" stroke="#111111" stroke-width="4"/>
+  <line x1="78" y1="232" x2="405" y2="232" stroke="#111111" stroke-width="4"/>
+  <line x1="135" y1="82" x2="350" y2="190" stroke="#d00000" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="135" cy="82" r="8" fill="#d00000"/>
+  <circle cx="350" cy="190" r="8" fill="#d00000"/>
+  <line x1="135" y1="190" x2="350" y2="82" stroke="#005ea8" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="135" cy="190" r="8" fill="#005ea8"/>
+  <circle cx="350" cy="82" r="8" fill="#005ea8"/>
+  <text x="118" y="266" font-family="Arial, sans-serif" font-size="26" font-weight="700">B1</text>
+  <text x="333" y="266" font-family="Arial, sans-serif" font-size="26" font-weight="700">B2</text>
+  <text x="365" y="202" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#d00000">A1</text>
+  <text x="365" y="91" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#005ea8">A2</text>
+  <text x="30" y="150" transform="rotate(-90 30 150)" font-family="Arial, sans-serif" font-size="23" font-weight="700">Outcome</text>
+</svg>

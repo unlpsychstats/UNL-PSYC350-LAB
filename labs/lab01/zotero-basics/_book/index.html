@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Emma Marshall">
+<meta name="author" content="PSYC 350 Laboratory">
 <meta name="description" content="All about the Zotero.">
 
 <title>UNL PSYC350 Lab: Using Zotero to Streamline Citations &amp; References</title>
@@ -46,14 +46,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-f80d041d52560d116700b62de5ed127e.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-5eb2ebf67b1b0ba7cd3f71a881ff5155.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-f80d041d52560d116700b62de5ed127e.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-18e8e243ae376a77494b7d8b21022cd3.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b31cf13543355e5e0633e965cd0951c5.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-18e8e243ae376a77494b7d8b21022cd3.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-9d567d8a798e5ed0173334c3f847db81.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-26c4233fb04e098ffa4d618246577e80.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-9d567d8a798e5ed0173334c3f847db81.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-65d16a8f4a58311972b9958983e873e6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-2b03896fe9f50cb4f68deab7e869978f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-65d16a8f4a58311972b9958983e873e6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -374,7 +374,6 @@ document.addEventListener("DOMContentLoaded", setupToc);
     <div class="sidebar-title mb-0 py-0">
       <a href="./">UNL PSYC350 Lab: Using Zotero to Streamline Citations &amp; References</a> 
         <div class="sidebar-tools-main">
-    <a href="./UNL-PSYC350-Lab--Using-Zotero-to-Streamline-Citations---References.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
     </div>
@@ -471,7 +470,7 @@ document.addEventListener("DOMContentLoaded", setupToc);
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Emma Marshall </p>
+             <p>PSYC 350 Laboratory </p>
           </div>
   </div>
     
@@ -486,13 +485,801 @@ document.addEventListener("DOMContentLoaded", setupToc);
 
 
 <section id="overview" class="level1 unnumbered">
-<h1 class="unnumbered">Overview</h1><p><img src="images/zotero.png" title="UNL PSYC350 Lab: Using Zotero to Streamline Citations &amp; References" class="quarto-cover-image nolightbox img-fluid"></p>
+<h1 class="unnumbered">Overview</h1><p><img src="images/zotero.png" title="UNL PSYC350 Lab: Using Zotero to Streamline Citations &amp; References" class="quarto-cover-image nolightbox img-fluid" alt="Zotero logo: a red Z inside a red-outlined square"></p>
 <p>This workbook and guide is intended to provide an overview of how to use Zotero for organizing and citing references in academic research for UNL PSYC 350 Lab students.</p>
 
 
 </section>
 
 </main> <!-- /main -->
+<script>
+
+/* update total correct if #webex-total_correct exists */
+update_total_correct = function() {
+  console.log("webex: update total_correct");
+
+  var t = document.getElementsByClassName("webex-total_correct");
+  for (var i = 0; i < t.length; i++) {
+    p = t[i].parentElement;
+    var correct = p.getElementsByClassName("webex-correct").length;
+    var solvemes = p.getElementsByClassName("webex-solveme").length;
+    var radiogroups = p.getElementsByClassName("webex-radiogroup").length;
+    var selects = p.getElementsByClassName("webex-select").length;
+
+    t[i].innerHTML = correct + " of " + (solvemes + radiogroups + selects) + " correct";
+  }
+}
+
+/* webex-solution button toggling function */
+b_func = function() {
+  console.log("webex: toggle hide");
+
+  var cl = this.parentElement.classList;
+  if (cl.contains('open')) {
+    cl.remove("open");
+  } else {
+    cl.add("open");
+  }
+}
+
+/* check answers */
+check_func = function() {
+  console.log("webex: check answers");
+
+  var cl = this.parentElement.classList;
+  if (cl.contains('unchecked')) {
+    cl.remove("unchecked");
+    this.innerHTML = "Hide Answers";
+  } else {
+    cl.add("unchecked");
+    this.innerHTML = "Show Answers";
+  }
+}
+
+/* strict numeric parsing shared by numeric and p-value checkers */
+webex_parse_number = function(value) {
+  var normalized = String(value).trim().replace(/\u2212/g, "-");
+  var number_pattern = /^[+-]?(?:\d+(?:\.\d*)?|\.\d+)(?:e[+-]?\d+)?$/i;
+  if (!number_pattern.test(normalized)) {
+    return null;
+  }
+
+  var parsed = Number(normalized);
+  return Number.isFinite(parsed) ? parsed : null;
+}
+
+webex_within_tolerance = function(actual, expected, abs_tolerance, rel_tolerance) {
+  var absolute = Math.max(0, Number(abs_tolerance) || 0);
+  var relative = Math.max(0, Number(rel_tolerance) || 0);
+  var scale = Math.max(Math.abs(actual), Math.abs(expected));
+  var limit = Math.max(absolute, relative * scale);
+  var epsilon = Number.EPSILON * Math.max(1, scale) * 4;
+  return Math.abs(actual - expected) <= limit + epsilon;
+}
+
+webex_numeric_answer_matches = function(value, real_answers, abs_tolerance, rel_tolerance) {
+  var actual = webex_parse_number(value);
+  if (actual === null) {
+    return false;
+  }
+
+  return real_answers.some(function(answer) {
+    var expected = webex_parse_number(answer);
+    return expected !== null && webex_within_tolerance(
+      actual,
+      expected,
+      abs_tolerance,
+      rel_tolerance
+    );
+  });
+}
+
+webex_parse_p_value = function(value) {
+  var normalized = String(value)
+    .trim()
+    .toLowerCase()
+    .replace(/\u2212/g, "-")
+    .replace(/\s+/g, "");
+  var number = "([+-]?(?:\\d+(?:\\.\\d*)?|\\.\\d+)(?:e[+-]?\\d+)?)";
+  var match = normalized.match(new RegExp("^(?:p)?(?:(<=|<|=))?" + number + "$", "i"));
+  if (match === null) {
+    return null;
+  }
+
+  var parsed = webex_parse_number(match[2]);
+  if (parsed === null || parsed < 0 || parsed > 1) {
+    return null;
+  }
+
+  return { operator: match[1] || "=", value: parsed };
+}
+
+webex_p_answer_matches = function(value, real_answers, abs_tolerance,
+                                  rel_tolerance, upper_bound) {
+  var actual = webex_parse_p_value(value);
+  if (actual === null) {
+    return false;
+  }
+
+  var upper = webex_parse_number(upper_bound);
+  if (upper !== null) {
+    if (actual.operator === "<" || actual.operator === "<=") {
+      return webex_within_tolerance(actual.value, upper, 0, 1e-12);
+    }
+    return actual.value < upper;
+  }
+
+  if (actual.operator !== "=") {
+    return false;
+  }
+  return webex_numeric_answer_matches(
+    actual.value,
+    real_answers,
+    abs_tolerance,
+    rel_tolerance
+  );
+}
+
+webex_solveme_status_message = function(element, state) {
+  var label = element.getAttribute("aria-label") || "Answer";
+  if (state === "correct") {
+    return "Correct: " + label + ".";
+  }
+  if (state === "incorrect") {
+    return "Incorrect: " + label + ". Try again.";
+  }
+  return "Answer cleared: " + label + ".";
+}
+
+webex_update_solveme_status = function(element, state) {
+  if (
+    !element.dataset.statusId ||
+    typeof document.getElementById !== "function"
+  ) {
+    return;
+  }
+  var status = document.getElementById(element.dataset.statusId);
+  if (status) {
+    status.textContent = webex_solveme_status_message(element, state);
+  }
+}
+
+webex_prepare_solveme_status = function(element, index) {
+  if (!element.id) {
+    element.id = "webex-solveme-" + String(index + 1);
+  }
+
+  var status_id = element.id + "-status";
+  var status = document.createElement("span");
+  status.id = status_id;
+  status.classList.add("webex-status", "visually-hidden");
+  status.setAttribute("role", "status");
+  status.setAttribute("aria-live", "polite");
+  status.setAttribute("aria-atomic", "true");
+  element.insertAdjacentElement("afterend", status);
+
+  var described_by = (element.getAttribute("aria-describedby") || "")
+    .split(/\s+/)
+    .filter(Boolean);
+  if (!described_by.includes(status_id)) {
+    described_by.push(status_id);
+  }
+  element.setAttribute("aria-describedby", described_by.join(" "));
+  element.dataset.statusId = status_id;
+}
+
+webex_set_solveme_state = function(element, state) {
+  var cl = element.classList;
+  cl.remove("webex-correct");
+  cl.remove("webex-incorrect");
+  element.dataset.answerState = state;
+
+  if (state === "correct") {
+    cl.add("webex-correct");
+    element.setAttribute("aria-invalid", "false");
+  } else if (state === "incorrect") {
+    cl.add("webex-incorrect");
+    element.setAttribute("aria-invalid", "true");
+  } else {
+    element.removeAttribute("aria-invalid");
+  }
+  webex_update_solveme_status(element, state);
+}
+
+/* shared accessible status helpers for select and radio controls */
+webex_assign_unique_id = function(element, prefix, index) {
+  if (element.id) {
+    var current_owner = document.getElementById(element.id);
+    if (current_owner === null || current_owner === element) {
+      return element.id;
+    }
+  }
+
+  var base_id = prefix + "-" + String(index + 1);
+  var candidate = base_id;
+  var suffix = 2;
+  while (
+    document.getElementById(candidate) !== null &&
+    document.getElementById(candidate) !== element
+  ) {
+    candidate = base_id + "-" + String(suffix);
+    suffix += 1;
+  }
+  element.id = candidate;
+  return candidate;
+}
+
+webex_add_description = function(element, description_id) {
+  var described_by = (element.getAttribute("aria-describedby") || "")
+    .split(/\s+/)
+    .filter(Boolean);
+  if (!described_by.includes(description_id)) {
+    described_by.push(description_id);
+  }
+  element.setAttribute("aria-describedby", described_by.join(" "));
+}
+
+webex_prepare_choice_status = function(element, prefix, index) {
+  webex_assign_unique_id(element, prefix, index);
+
+  var status = null;
+  if (element.dataset.statusId) {
+    status = document.getElementById(element.dataset.statusId);
+  }
+
+  if (status === null) {
+    var base_id = element.id + "-status";
+    var status_id = base_id;
+    var suffix = 2;
+    var existing = document.getElementById(status_id);
+    while (
+      existing !== null &&
+      existing.getAttribute("data-webex-status-for") !== element.id
+    ) {
+      status_id = base_id + "-" + String(suffix);
+      suffix += 1;
+      existing = document.getElementById(status_id);
+    }
+
+    status = existing;
+    if (status === null) {
+      status = document.createElement("span");
+      status.id = status_id;
+      status.classList.add("webex-status", "visually-hidden");
+      status.setAttribute("role", "status");
+      status.setAttribute("aria-live", "polite");
+      status.setAttribute("aria-atomic", "true");
+      status.setAttribute("data-webex-status-for", element.id);
+      element.insertAdjacentElement("afterend", status);
+    }
+    element.dataset.statusId = status.id;
+  }
+
+  webex_add_description(element, status.id);
+  return status;
+}
+
+webex_choice_label = function(element, fallback) {
+  var label = element.getAttribute("aria-label");
+  if (!label && element.labels && element.labels.length > 0) {
+    label = element.labels[0].textContent;
+  }
+  if (!label && typeof element.closest === "function") {
+    var fieldset = element.closest("fieldset");
+    var legend = fieldset ? fieldset.querySelector("legend") : null;
+    if (legend) {
+      label = legend.textContent;
+    }
+  }
+  label = String(label || fallback).replace(/\s+/g, " ").trim();
+  return label || fallback;
+}
+
+webex_choice_status_message = function(element, state, fallback) {
+  var label = webex_choice_label(element, fallback);
+  if (state === "correct") {
+    return "Correct: " + label + ".";
+  }
+  if (state === "incorrect") {
+    return "Incorrect: " + label + ". Try again.";
+  }
+  return "Answer cleared: " + label + ".";
+}
+
+webex_update_choice_status = function(element, state, fallback) {
+  if (!element.dataset.statusId) {
+    return;
+  }
+  var status = document.getElementById(element.dataset.statusId);
+  if (status) {
+    var message = webex_choice_status_message(element, state, fallback);
+    if (status.textContent !== message) {
+      status.textContent = message;
+    }
+  }
+}
+
+webex_set_select_state = function(element, state) {
+  var cl = element.classList;
+  cl.remove("webex-incorrect");
+  cl.remove("webex-correct");
+  element.dataset.answerState = state;
+
+  if (state === "correct") {
+    cl.add("webex-correct");
+    element.setAttribute("aria-invalid", "false");
+  } else if (state === "incorrect") {
+    cl.add("webex-incorrect");
+    element.setAttribute("aria-invalid", "true");
+  } else {
+    element.removeAttribute("aria-invalid");
+  }
+  webex_update_choice_status(element, state, "Answer choice");
+}
+
+webex_prepare_radiogroup_status = function(group, index) {
+  var status = webex_prepare_choice_status(
+    group,
+    "webex-radiogroup",
+    index
+  );
+  var group_descriptions = (group.getAttribute("aria-describedby") || "")
+    .split(/\s+/)
+    .filter(Boolean);
+  var radios = group.querySelectorAll('input[type="radio"]');
+  for (var i = 0; i < radios.length; i++) {
+    webex_assign_unique_id(radios[i], group.id + "-option", i);
+    for (var j = 0; j < group_descriptions.length; j++) {
+      webex_add_description(radios[i], group_descriptions[j]);
+    }
+  }
+  return status;
+}
+
+webex_set_radiogroup_state = function(group, state, checked_button) {
+  var labels = group.querySelectorAll("label");
+  for (var i = 0; i < labels.length; i++) {
+    labels[i].classList.remove("webex-incorrect");
+    labels[i].classList.remove("webex-correct");
+  }
+
+  group.dataset.answerState = state;
+  var radios = group.querySelectorAll('input[type="radio"]');
+  for (var j = 0; j < radios.length; j++) {
+    if (state === "correct") {
+      radios[j].setAttribute("aria-invalid", "false");
+    } else if (state === "incorrect") {
+      radios[j].setAttribute("aria-invalid", "true");
+    } else {
+      radios[j].removeAttribute("aria-invalid");
+    }
+  }
+
+  if (state === "correct") {
+    group.setAttribute("aria-invalid", "false");
+  } else if (state === "incorrect") {
+    group.setAttribute("aria-invalid", "true");
+  } else {
+    group.removeAttribute("aria-invalid");
+  }
+
+  if (checked_button && state !== "blank") {
+    var checked_label = typeof checked_button.closest === "function" ?
+      checked_button.closest("label") : checked_button.parentElement;
+    if (checked_label) {
+      checked_label.classList.add(
+        state === "correct" ? "webex-correct" : "webex-incorrect"
+      );
+    }
+  }
+  webex_update_choice_status(group, state, "Answer group");
+}
+
+webex_analysis_pair_groups = function(source) {
+  if (!source.dataset.pairGroup) {
+    return [];
+  }
+  var candidates = document.getElementsByClassName("webex-analysis-pair");
+  var groups = [];
+  for (var i = 0; i < candidates.length; i++) {
+    if (candidates[i].dataset.pairGroup === source.dataset.pairGroup) {
+      groups.push(candidates[i]);
+    }
+  }
+  return groups;
+}
+
+webex_update_analysis_pair_status = function(group, message) {
+  if (!group.dataset.statusId) {
+    return;
+  }
+  var status = document.getElementById(group.dataset.statusId);
+  if (status && status.textContent !== message) {
+    status.textContent = message;
+  }
+}
+
+webex_analysis_pair_message = function(reason, row) {
+  var label = "Analysis " + String(row) + ": ";
+  if (reason === "valid") {
+    return label + "this is a valid, distinct variable pair.";
+  }
+  if (reason === "incomplete") {
+    return label + "choose both variables.";
+  }
+  if (reason === "invalid-type") {
+    return label + "choose variables of the required types.";
+  }
+  if (reason === "self-pair") {
+    return label + "choose two different variables.";
+  }
+  if (reason === "duplicate") {
+    return label + "this repeats another analysis; choose a distinct pair.";
+  }
+  return label + "the pair checker is misconfigured.";
+}
+
+webex_validate_analysis_pair_group = function(source) {
+  var groups = webex_analysis_pair_groups(source);
+  if (groups.length === 0) {
+    return null;
+  }
+
+  var rows = {};
+  var unordered = source.dataset.pairUnordered === "true";
+  for (var i = 0; i < groups.length; i++) {
+    var group = groups[i];
+    var row_id = group.dataset.pairRow;
+    var side = group.dataset.pairSide;
+    if (!rows[row_id]) {
+      rows[row_id] = { groups: {}, checked: {}, reason: "valid", key: null };
+    }
+    rows[row_id].groups[side] = group;
+    rows[row_id].checked[side] = group.querySelector(
+      'input[type="radio"]:checked'
+    );
+    if (group.dataset.pairUnordered !== source.dataset.pairUnordered) {
+      rows[row_id].reason = "misconfigured";
+    }
+  }
+
+  var row_ids = Object.keys(rows).sort(function(a, b) {
+    return Number(a) - Number(b);
+  });
+  var keys = {};
+  for (var j = 0; j < row_ids.length; j++) {
+    var row = rows[row_ids[j]];
+    var left = row.checked.left;
+    var right = row.checked.right;
+    if (!row.groups.left || !row.groups.right) {
+      row.reason = "misconfigured";
+      continue;
+    }
+    if (!left || !right) {
+      row.reason = "incomplete";
+      continue;
+    }
+    var left_variable = left.dataset.pairVariable || "";
+    var right_variable = right.dataset.pairVariable || "";
+    if (left.value !== "answer" || right.value !== "answer") {
+      row.reason = "invalid-type";
+      continue;
+    }
+    if (left_variable === right_variable) {
+      row.reason = "self-pair";
+      continue;
+    }
+    var values = [left_variable, right_variable];
+    if (unordered) {
+      values.sort();
+    }
+    row.key = values.join("\r");
+    if (!keys[row.key]) {
+      keys[row.key] = [];
+    }
+    keys[row.key].push(row_ids[j]);
+  }
+
+  var key_names = Object.keys(keys);
+  for (var k = 0; k < key_names.length; k++) {
+    if (keys[key_names[k]].length > 1) {
+      for (var duplicate_index = 0;
+           duplicate_index < keys[key_names[k]].length;
+           duplicate_index++) {
+        rows[keys[key_names[k]][duplicate_index]].reason = "duplicate";
+      }
+    }
+  }
+
+  var all_valid = row_ids.length > 0;
+  for (var row_index = 0; row_index < row_ids.length; row_index++) {
+    var current_id = row_ids[row_index];
+    var current = rows[current_id];
+    var state = current.reason === "valid" ? "correct" :
+      (current.reason === "incomplete" ? "blank" : "incorrect");
+    all_valid = all_valid && state === "correct";
+    var sides = ["left", "right"];
+    for (var side_index = 0; side_index < sides.length; side_index++) {
+      var current_group = current.groups[sides[side_index]];
+      if (!current_group) {
+        continue;
+      }
+      webex_set_radiogroup_state(
+        current_group,
+        state,
+        current.checked[sides[side_index]] || null
+      );
+      webex_update_analysis_pair_status(
+        current_group,
+        webex_analysis_pair_message(current.reason, current_id)
+      );
+    }
+  }
+  return all_valid;
+}
+
+/* disclose the intentionally client-visible, formative checker model */
+webex_formative_notice_id = function() {
+  var base_id = "webex-formative-notice";
+  var candidate = base_id;
+  var suffix = 2;
+  while (document.getElementById(candidate) !== null) {
+    candidate = base_id + "-" + String(suffix);
+    suffix += 1;
+  }
+  return candidate;
+}
+
+webex_prepare_formative_notice = function() {
+  var controls = document.querySelectorAll(
+    "input.webex-solveme, select.webex-select, .webex-radiogroup"
+  );
+  if (controls.length === 0) {
+    return null;
+  }
+
+  var notice = document.querySelector("[data-webex-formative-notice]");
+  if (notice === null) {
+    notice = document.createElement("aside");
+    notice.id = webex_formative_notice_id();
+    notice.classList.add("webex-formative-notice");
+    notice.setAttribute("data-webex-formative-notice", "true");
+    notice.setAttribute("role", "note");
+    notice.setAttribute("aria-label", "About this practice checker");
+    notice.innerHTML =
+      "<p><strong>Practice checker.</strong> This is formative self-check practice, not a secure assessment. " +
+      "The accepted answers and checking rules are included in this page and are readable in your browser. " +
+      "A green result or screenshot shows only that the page accepted an entry; it is not independent evidence " +
+      "of mastery and does not by itself determine your grade.</p>" +
+      "<p>Your work belongs in the downloadable worksheet. If you cannot use the interactive controls, submit " +
+      "the worksheet and ask your instructor or TA for the same feedback in an accessible format without penalty.</p>";
+
+    var first_region = typeof controls[0].closest === "function" ?
+      controls[0].closest(".webex-check") : null;
+    if (first_region === null && typeof controls[0].closest === "function") {
+      first_region = controls[0].closest("section");
+    }
+    if (first_region && first_region.parentNode) {
+      first_region.parentNode.insertBefore(notice, first_region);
+    } else {
+      document.body.insertBefore(notice, document.body.firstChild);
+    }
+  }
+
+  for (var i = 0; i < controls.length; i++) {
+    webex_add_description(controls[i], notice.id);
+    if (controls[i].classList.contains("webex-radiogroup")) {
+      var radios = controls[i].querySelectorAll('input[type="radio"]');
+      for (var j = 0; j < radios.length; j++) {
+        webex_add_description(radios[j], notice.id);
+      }
+    }
+  }
+  return notice;
+}
+
+/* function for checking solveme answers */
+solveme_func = function(e) {
+  console.log("webex: check solveme");
+
+  var real_answers = JSON.parse(this.dataset.answer);
+  var my_answer = String(this.value);
+  var cl = this.classList;
+  if (cl.contains("ignorecase")) {
+    my_answer = my_answer.toLowerCase();
+  }
+  if (cl.contains("nospaces")) {
+    my_answer = my_answer.replace(/ /g, "");
+  }
+
+  if (my_answer.trim() === "") {
+    webex_set_solveme_state(this, "blank");
+    update_total_correct();
+    return;
+  }
+
+  var answer_type = this.dataset.answerType || "text";
+  var abs_tolerance = this.dataset.absTol || this.dataset.tol || 0;
+  var rel_tolerance = this.dataset.relTol || 0;
+  var is_correct = false;
+
+  if (answer_type === "p-value") {
+    is_correct = webex_p_answer_matches(
+      my_answer,
+      real_answers,
+      abs_tolerance,
+      rel_tolerance,
+      this.dataset.pUpper
+    );
+  } else if (
+    answer_type === "numeric" ||
+    answer_type === "integer" ||
+    this.dataset.tol !== undefined
+  ) {
+    is_correct = webex_numeric_answer_matches(
+      my_answer,
+      real_answers,
+      abs_tolerance,
+      rel_tolerance
+    );
+  } else {
+    is_correct = real_answers.includes(my_answer);
+  }
+
+  if (cl.contains("regex")) {
+    var answer_regex = RegExp(real_answers.join("|"));
+    is_correct = answer_regex.test(my_answer);
+  }
+
+  webex_set_solveme_state(this, is_correct ? "correct" : "incorrect");
+  update_total_correct();
+}
+
+/* function for checking select answers */
+select_func = function(e) {
+  console.log("webex: check select");
+
+  var state = this.value === "answer" ? "correct" :
+    (this.value === "blank" ? "blank" : "incorrect");
+  webex_set_select_state(this, state);
+
+  update_total_correct();
+}
+
+/* function for checking radiogroups answers */
+radiogroups_func = function(e) {
+  console.log("webex: check radiogroups");
+
+  var checked_button = this.querySelector('input[type="radio"]:checked');
+  var state = checked_button === null ? "blank" :
+    (checked_button.value === "answer" ? "correct" : "incorrect");
+  webex_set_radiogroup_state(this, state, checked_button);
+
+  if (this.classList.contains("webex-analysis-pair")) {
+    webex_validate_analysis_pair_group(this);
+  }
+
+  update_total_correct();
+}
+
+window.onload = function() {
+  console.log("webex onload");
+  /* set up solution buttons */
+  var buttons = document.getElementsByTagName("button");
+
+  for (var i = 0; i < buttons.length; i++) {
+    if (buttons[i].parentElement.classList.contains('webex-solution')) {
+      buttons[i].onclick = b_func;
+    }
+  }
+
+  var check_sections = document.getElementsByClassName("webex-check");
+  console.log("check:", check_sections.length);
+  for (var i = 0; i < check_sections.length; i++) {
+    check_sections[i].classList.add("unchecked");
+
+    let btn = document.createElement("button");
+    btn.innerHTML = "Show Answers";
+    btn.classList.add("webex-check-button");
+    btn.onclick = check_func;
+    check_sections[i].appendChild(btn);
+
+    let spn = document.createElement("span");
+    spn.classList.add("webex-total_correct");
+    check_sections[i].appendChild(spn);
+  }
+
+  webex_prepare_formative_notice();
+
+  /* set up webex-solveme inputs */
+  var solveme = document.getElementsByClassName("webex-solveme");
+
+  for (var i = 0; i < solveme.length; i++) {
+    /* make sure input boxes don't auto-anything */
+    solveme[i].setAttribute("autocomplete","off");
+    solveme[i].setAttribute("autocorrect", "off");
+    solveme[i].setAttribute("autocapitalize", "off");
+    solveme[i].setAttribute("spellcheck", "false");
+    solveme[i].value = "";
+
+    /* adjust answer for ignorecase or nospaces */
+    var cl = solveme[i].classList;
+    var real_answer = solveme[i].dataset.answer;
+    if (cl.contains("ignorecase")) {
+      real_answer = real_answer.toLowerCase();
+    }
+    if (cl.contains("nospaces")) {
+      real_answer = real_answer.replace(/ /g, "");
+    }
+    solveme[i].dataset.answer = real_answer;
+
+    /* attach checking function */
+    solveme[i].onkeyup = solveme_func;
+    solveme[i].onchange = solveme_func;
+
+    webex_prepare_solveme_status(solveme[i], i);
+    solveme[i].insertAdjacentHTML("afterend", " <span class='webex-icon'></span>")
+  }
+
+  /* set up radiogroups */
+  var radiogroups = document.getElementsByClassName("webex-radiogroup");
+  for (var i = 0; i < radiogroups.length; i++) {
+    webex_prepare_radiogroup_status(radiogroups[i], i);
+    radiogroups[i].onchange = radiogroups_func;
+  }
+
+  var pair_groups_seen = {};
+  for (var pair_index = 0; pair_index < radiogroups.length; pair_index++) {
+    var pair_name = radiogroups[pair_index].dataset.pairGroup;
+    if (pair_name && !pair_groups_seen[pair_name]) {
+      webex_validate_analysis_pair_group(radiogroups[pair_index]);
+      pair_groups_seen[pair_name] = true;
+    }
+  }
+
+  /* set up selects */
+  var selects = document.getElementsByClassName("webex-select");
+  for (var i = 0; i < selects.length; i++) {
+    webex_prepare_choice_status(selects[i], "webex-select", i);
+    selects[i].onchange = select_func;
+    if (!selects[i].dataset.webexIcon) {
+      selects[i].insertAdjacentHTML("afterend", " <span class='webex-icon'></span>")
+      selects[i].dataset.webexIcon = "true";
+    }
+  }
+
+  update_total_correct();
+}
+
+</script>
+<script>
+// open rdrr links externally ----
+
+var exlinks = document.querySelectorAll("a[href^='https://rdrr.io']");
+var exlink_func = function(){
+  window.open(this.href);
+  return false;
+};
+for (var i = 0; i < exlinks.length; i++) {
+    exlinks[i].addEventListener('click', exlink_func, false);
+}
+
+// visible second sidebar in mobile ----
+
+function move_sidebar() {
+  var toc = document.getElementById("TOC");
+  var small_sidebar = document.querySelector("#quarto-sidebar .sidebar-menu-container");
+  var right_sidebar = document.getElementById("quarto-margin-sidebar");
+
+  if (window.innerWidth < 768) {
+    small_sidebar.append(toc);
+  } else {
+    right_sidebar.append(toc);
+  }
+}
+move_sidebar();
+window.onresize = move_sidebar;
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
@@ -934,8 +1721,6 @@ document.addEventListener("DOMContentLoaded", setupToc);
 </div>
   </div>
 </footer>
-<script src="include/webex.js"></script>
-<script src="include/script.js"></script>
 
 
 
