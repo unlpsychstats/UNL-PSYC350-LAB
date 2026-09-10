@@ -1,8 +1,11 @@
 [
   {
+    "listing": "/project.html",
+    "items": []
+  },
+  {
     "listing": "/index.html",
     "items": [
-      "/labs/lab00/index.html",
       "/labs/lab01/index.html",
       "/labs/lab02/index.html",
       "/labs/lab03/index.html",
@@ -17,9 +20,5 @@
       "/labs/lab12/index.html",
       "/labs/lab13/index.html"
     ]
-  },
-  {
-    "listing": "/project.html",
-    "items": []
   }
 ]

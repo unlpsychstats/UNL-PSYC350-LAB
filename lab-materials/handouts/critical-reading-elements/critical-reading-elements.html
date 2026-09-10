@@ -42,9 +42,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="critical-reading-elements_files/libs/quarto-html/quarto-syntax-highlighting-18e8e243ae376a77494b7d8b21022cd3.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="critical-reading-elements_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="critical-reading-elements_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="critical-reading-elements_files/libs/bootstrap/bootstrap-f8dc29bdd5d65a1ac0251a96477f0ae3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="critical-reading-elements_files/libs/bootstrap/bootstrap-dark-264330715a2a6107cf5088a66516258c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="critical-reading-elements_files/libs/bootstrap/bootstrap-f8dc29bdd5d65a1ac0251a96477f0ae3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="critical-reading-elements_files/libs/bootstrap/bootstrap-7ddb0b6daac77d588abcadc54d77ba00.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="critical-reading-elements_files/libs/bootstrap/bootstrap-dark-a1997e8b51cfa2f8c24359190bfd1b7c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="critical-reading-elements_files/libs/bootstrap/bootstrap-7ddb0b6daac77d588abcadc54d77ba00.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
@@ -165,6 +165,380 @@ Response rate <span class="response-line" width="0.65in" style="--response-width
 
 </main>
 <!-- /main column -->
+<style>
+.course-skip-link {
+  position: fixed;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: 10000;
+  padding: 0.5rem 0.75rem;
+  color: #fff;
+  background: #000;
+  transform: translateY(-200%);
+}
+
+.course-skip-link:focus {
+  transform: translateY(0);
+}
+
+/* Keep wide data tables scrollable without making the whole page pan. */
+main, .cell, .cell-output-display, .panel-tabset, .tab-content, .tab-pane {
+  min-width: 0;
+  max-width: 100%;
+}
+main.content { width: 100%; max-width: 100%; }
+.course-light-only .quarto-color-scheme-toggle { display: none !important; }
+.course-table-scroll {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+}
+.course-table-scroll > table { display: table !important; overflow: visible; }
+main :is(p, li, h1, h2, h3, h4, h5, h6) { overflow-wrap: anywhere; }
+main :is(img, svg, iframe) { max-width: 100%; }
+a.glossary[aria-expanded="true"] .def {
+  display: inline-block;
+  position: static;
+  width: auto;
+  max-width: 100%;
+  margin: 0.25rem;
+}
+:is(a, button, input, select, textarea, [tabindex]):focus-visible {
+  outline: 3px solid var(--bs-body-color, #202020);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 6px var(--bs-body-bg, #fff);
+}
+.course-table-scroll:focus-visible { outline-offset: -3px; }
+.btn-downloads .downloadthis, a.btn {
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+/* Anchor links must fit after wrapped headings on narrow screens. */
+@media (max-width: 575px) {
+  .anchorjs-link { padding-left: 0 !important; margin-left: 0 !important; }
+}
+</style>
+
+<script>
+// Accessibility fixes for generated lab content.
+//
+// The psych350lab answer checkers and webexercises fill-in-the-blank
+// inputs/selects are generated without accessible labels. This script
+// assigns an aria-label to each unlabeled control based on:
+//   1. its table column header + row label (for controls in checker
+//      tables), or
+//   2. nearby preceding text (for standalone fill-in-the-blank inputs).
+//
+// It never overwrites an existing accessible name.
+document.addEventListener("DOMContentLoaded", function () {
+  "use strict";
+
+  function clean(text) {
+    return (text || "")
+      .replace(/\s+/g, " ")
+      .replace(/^[|:\s\u2013\u2014-]+|[|:\s]+$/g, "")
+      .trim()
+      .slice(0, 80);
+  }
+
+  function columnHeader(el) {
+    var cell = el.closest("td, th");
+    if (!cell) return "";
+    var table = el.closest("table");
+    if (!table) return "";
+    var idx = Array.prototype.indexOf.call(cell.parentNode.children, cell);
+    // Stacked ANOVA checkers repeat headings within tbody. Use the most
+    // recent heading row for this statistic, rather than the initial Type row.
+    var previous = cell.parentNode.previousElementSibling;
+    while (previous) {
+      if (previous.hasAttribute("data-checker-heading-row")) {
+        var local = previous.children[idx];
+        return local ? clean(local.textContent) : "";
+      }
+      previous = previous.previousElementSibling;
+    }
+    var headers = table.querySelectorAll("thead th");
+    return headers[idx] ? clean(headers[idx].textContent) : "";
+  }
+
+  function rowLabel(el) {
+    var row = el.closest("tr");
+    if (!row) return "";
+    var ownCell = el.closest("td, th");
+    var cells = row.querySelectorAll("th, td");
+    for (var i = 0; i < cells.length; i++) {
+      if (cells[i] !== ownCell && clean(cells[i].textContent)) {
+        return clean(cells[i].textContent);
+      }
+    }
+    return "";
+  }
+
+  function precedingText(el) {
+    // Walk previous siblings (then the parent's) for meaningful text.
+    var node = el;
+    for (var depth = 0; depth < 2 && node; depth++) {
+      var sib = node.previousSibling;
+      while (sib) {
+        var txt = clean(sib.textContent);
+        if (txt) return txt;
+        sib = sib.previousSibling;
+      }
+      node = node.parentNode;
+      if (node && node.tagName === "TR") break; // stay within the row
+    }
+    return "";
+  }
+
+  function hasAccessibleName(el) {
+    if (el.getAttribute("aria-label") || el.getAttribute("aria-labelledby")) {
+      return true;
+    }
+    if (el.id && document.querySelector('label[for="' + el.id + '"]')) {
+      return true;
+    }
+    return !!el.closest("label");
+  }
+
+  function addSkipLink() {
+    var main = document.querySelector("main, [role='main']");
+    if (!main || document.querySelector("a.course-skip-link")) return;
+    if (!main.id) main.id = "main-content";
+    main.setAttribute("tabindex", "-1");
+
+    var link = document.createElement("a");
+    link.className = "course-skip-link";
+    link.href = "#" + main.id;
+    link.textContent = "Skip to main content";
+    link.addEventListener("click", function () { main.focus(); });
+    document.body.insertBefore(link, document.body.firstChild);
+  }
+
+  function nearestHeading(table) {
+    var section = table.closest("section");
+    if (section) {
+      var sectionHeading = section.querySelector("h1, h2, h3, h4, h5, h6");
+      if (sectionHeading) return clean(sectionHeading.textContent);
+    }
+
+    var node = table.previousElementSibling;
+    while (node) {
+      if (/^H[1-6]$/.test(node.tagName)) return clean(node.textContent);
+      var nestedHeading = node.querySelector && node.querySelector("h1, h2, h3, h4, h5, h6");
+      if (nestedHeading) return clean(nestedHeading.textContent);
+      node = node.previousElementSibling;
+    }
+    return "";
+  }
+
+  function labelTables() {
+    document.querySelectorAll("table").forEach(function (table, index) {
+      if (
+        table.querySelector("caption") ||
+        table.getAttribute("aria-label") ||
+        table.getAttribute("aria-labelledby")
+      ) {
+        return;
+      }
+      var heading = nearestHeading(table);
+      var firstHeader = table.querySelector("th");
+      var fallback = firstHeader ? clean(firstHeader.textContent) : "";
+      table.setAttribute(
+        "aria-label",
+        heading || fallback || "Results table " + String(index + 1)
+      );
+    });
+  }
+
+  addSkipLink();
+  document.querySelectorAll("i[aria-label]").forEach(function (icon) {
+    if (!icon.hasAttribute("role")) icon.setAttribute("role", "img");
+  });
+  document.querySelectorAll("a.glossary:not([href])").forEach(function (term, index) {
+    var definition = term.querySelector(".def");
+    if (!definition) return;
+    var label = term.cloneNode(true);
+    label.querySelector(".def").remove();
+    term.setAttribute("aria-label", clean(label.textContent));
+    term.setAttribute("role", "button");
+    term.tabIndex = 0;
+    if (!definition.id) definition.id = "glossary-definition-" + index;
+    term.setAttribute("aria-controls", definition.id);
+    term.setAttribute("aria-describedby", definition.id);
+    term.setAttribute("aria-expanded", "false");
+    term.addEventListener("click", function () {
+      term.setAttribute("aria-expanded", String(term.getAttribute("aria-expanded") !== "true"));
+    });
+    term.addEventListener("keydown", function (event) {
+      if (event.key === "Enter" || event.key === " ") { event.preventDefault(); term.click(); }
+      if (event.key === "Escape") { event.preventDefault(); term.setAttribute("aria-expanded", "false"); }
+    });
+    term.addEventListener("blur", function () { term.setAttribute("aria-expanded", "false"); });
+  });
+  document.querySelectorAll("table").forEach(function (table, tableIndex) {
+    if (!table.querySelector("input[data-answer], select.webex-select")) return;
+    table.querySelectorAll("tbody tr").forEach(function (row, rowIndex) {
+      if (!row.firstElementChild || clean(row.firstElementChild.textContent) || row.querySelector("input, select, textarea")) return;
+      if (!clean(row.textContent)) return;
+      row.setAttribute("data-checker-heading-row", "true");
+      Array.from(row.children).forEach(function (cell, colIndex) {
+        if (!clean(cell.textContent)) return;
+        var header = document.createElement("th");
+        Array.from(cell.attributes).forEach(function (attr) { header.setAttribute(attr.name, attr.value); });
+        header.innerHTML = cell.innerHTML;
+        header.scope = "col";
+        if (!header.id) header.id = "checker-heading-" + tableIndex + "-" + rowIndex + "-" + colIndex;
+        cell.replaceWith(header);
+      });
+    });
+  });
+  labelTables();
+
+  document.querySelectorAll("button.navbar-toggler[role='menu']").forEach(function (button) {
+    button.removeAttribute("role");
+  });
+  // A light-only theme may still receive a Quarto theme toggle. Do not offer
+  // an action that cannot change the configured color scheme.
+  var darkSheet = document.querySelector("link.quarto-color-alternate[data-mode='dark']");
+  if (!darkSheet) {
+    document.documentElement.classList.add("course-light-only");
+  }
+
+  document.querySelectorAll("main table").forEach(function (table) {
+    if (table.closest(".course-table-scroll")) return;
+    var wrapper = table.closest(".table-scroll");
+    if (!wrapper) {
+      wrapper = document.createElement("div");
+      table.parentNode.insertBefore(wrapper, table);
+      wrapper.appendChild(table);
+    }
+    wrapper.classList.add("course-table-scroll");
+    function updateOverflow() {
+      var overflow = wrapper.scrollWidth > wrapper.clientWidth || wrapper.scrollHeight > wrapper.clientHeight;
+      if (overflow) {
+        wrapper.tabIndex = 0;
+        wrapper.setAttribute("role", "region");
+        wrapper.setAttribute("aria-label", (table.getAttribute("aria-label") || nearestHeading(table) || "Data table") + " — scroll horizontally");
+      } else {
+        wrapper.removeAttribute("tabindex");
+        wrapper.removeAttribute("role");
+        wrapper.removeAttribute("aria-label");
+      }
+    }
+    var observer = new ResizeObserver(updateOverflow);
+    observer.observe(wrapper);
+    observer.observe(table);
+    window.addEventListener("load", updateOverflow, { once: true });
+    updateOverflow();
+  });
+  // Flextable renders inside a shadow root; its outer scroll region must
+  // also be available to keyboard users.
+  document.querySelectorAll(".cell-output-display:has(.flextable-shadow-host)").forEach(function (output) {
+    output.tabIndex = 0;
+    output.setAttribute("role", "region");
+    output.setAttribute("aria-label", "Research project grading rubric — scroll horizontally");
+  });
+
+  var controls = document.querySelectorAll(
+    "input[data-answer], input.webex-solveme, select.webex-solveme, select.webex-select, .tinytable select, table select"
+  );
+
+  controls.forEach(function (el) {
+    if (hasAccessibleName(el)) return;
+
+    var parts = [];
+    var row = rowLabel(el);
+    var col = columnHeader(el);
+    if (row) parts.push(row);
+    if (col) parts.push(col);
+    var cell = el.closest("td, th");
+    if (cell) {
+      var prior = cell.parentNode.previousElementSibling;
+      while (prior && !prior.hasAttribute("data-checker-heading-row")) prior = prior.previousElementSibling;
+      var header = prior && prior.children[cell.cellIndex];
+      if (header && header.id) cell.setAttribute("headers", header.id);
+    }
+
+    if (!parts.length) {
+      var near = precedingText(el);
+      if (near) parts.push(near);
+    }
+
+    el.setAttribute(
+      "aria-label",
+      parts.length
+        ? parts.join(", ")
+        : el.tagName === "SELECT"
+          ? "Answer choice"
+          : "Answer"
+    );
+  });
+});
+
+// Collapsible Quarto callouts render their toggle as a plain <div> with
+// aria-expanded but no role, which is an invalid ARIA combination and is
+// not keyboard-operable. Give the header a button role, make it focusable,
+// and activate it with Enter/Space.
+document.addEventListener("DOMContentLoaded", function () {
+  "use strict";
+  document
+    .querySelectorAll(".callout div[data-bs-toggle='collapse']")
+    .forEach(function (header) {
+      if (!header.hasAttribute("role")) header.setAttribute("role", "button");
+      if (!header.hasAttribute("tabindex")) header.setAttribute("tabindex", "0");
+      header.addEventListener("keydown", function (event) {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          header.click();
+        }
+      });
+    });
+});
+
+// Lab pages keep their in-page navigation, but collapse it by default so it
+// does not cover or crowd the activity content. The control remains available
+// to keyboard and screen-reader users and reports its current state.
+document.addEventListener("DOMContentLoaded", function () {
+  "use strict";
+
+  if (!document.body.classList.contains("lab-page")) return;
+
+  var toc = document.querySelector("#quarto-margin-sidebar nav[role='doc-toc']");
+  if (!toc || toc.querySelector(".lab-toc-toggle")) return;
+
+  var title = toc.querySelector("#toc-title, .toc-title, h2");
+  var content = document.createElement("div");
+  content.id = "lab-toc-content";
+  content.className = "lab-toc-content";
+
+  Array.prototype.slice.call(toc.children).forEach(function (child) {
+    if (child !== title) content.appendChild(child);
+  });
+
+  var button = document.createElement("button");
+  button.type = "button";
+  button.className = "lab-toc-toggle";
+  button.setAttribute("aria-controls", content.id);
+
+  function setExpanded(expanded) {
+    button.setAttribute("aria-expanded", String(expanded));
+    button.textContent = expanded ? "Hide page contents" : "Show page contents";
+    content.hidden = !expanded;
+    toc.classList.toggle("is-collapsed", !expanded);
+  }
+
+  button.addEventListener("click", function () {
+    setExpanded(button.getAttribute("aria-expanded") !== "true");
+  });
+
+  if (title) title.insertAdjacentElement("afterend", button);
+  else toc.insertBefore(button, toc.firstChild);
+  toc.appendChild(content);
+  setExpanded(false);
+});
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

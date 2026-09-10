@@ -884,3 +884,6 @@
     print-color-adjust: exact !important;
   }
 }
+
+/* Keep unboxed schedule links above AA contrast on striped rows. */
+.lab-schedule .topic-section-uncategorized a { color: #004b6b; }

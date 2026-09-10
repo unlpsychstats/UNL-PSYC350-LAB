@@ -164,3 +164,42 @@ div.csl-entry a {
     background: var(--bs-primary);
   }
 
+
+/* Accessible shared dark-theme and footer overrides. */
+/* Quarto uses body.quarto-dark, including when dark styles layer on light. */
+body.quarto-dark main :is(h1, h2, h3, h4, h5, h6) { color: #ff8c96; }
+body.quarto-dark .btn-primary {
+  --bs-btn-bg: #b72433;
+  --bs-btn-border-color: #b72433;
+  --bs-btn-hover-bg: #98202d;
+  --bs-btn-hover-border-color: #98202d;
+  --bs-btn-active-bg: #98202d;
+  color: #fff;
+  background-color: #b72433;
+}
+body.quarto-dark .btn-primary:hover { background-color: #98202d; }
+body.quarto-dark .page-navigation .nav-page-text,
+body.quarto-dark .breadcrumb-item a { color: #bcc4d4; }
+body.quarto-dark .nav-tabs .nav-link { color: #9bd7ee; }
+body.quarto-dark .nav-tabs .nav-link.active { color: #fff; background-color: #2a2a4a; }
+body.quarto-dark .callout-body,
+body.quarto-dark .callout-body p,
+body.quarto-dark #webex-formative-notice { color: #e0e0e0; }
+.flextable-shadow-host { background-color: #fff; color: #1a1a1a; }
+
+.nav-footer, .nav-footer a { color: #fff; }
+
+body.quarto-dark .quarto-title-breadcrumbs .chapter-title { color: #bcc4d4; }
+body.quarto-dark .no-row-height p { color: #e0e0e0; }
+
+body.quarto-dark .button-61:not(:disabled) { background-color: #b72433; color: #fff; }
+
+body.quarto-dark .quarto-title-breadcrumbs .breadcrumb-item a { color: #bcc4d4; }
+body.quarto-dark a.glossary { color: #ff8c96; }
+body.quarto-dark a.glossary .def { color: #e0e0e0; background: #222240; }
+
+body.quarto-light .margin-aside,
+body.quarto-light .margin-aside p { color: #333; }
+/* Reactable renders its own light surfaces in both book themes. */
+.reactable, .reactable .rt-table, .reactable input { color: #1a1a1a; background-color: #fff; }
+.reactable a { color: #004b6b; }

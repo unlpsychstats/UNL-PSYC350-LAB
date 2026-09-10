@@ -123,7 +123,7 @@
     "href": "labs/lab09/index.html#lab-activities",
     "title": "Lab 09: Project Analyses",
     "section": "Lab Activities",
-    "text": "Lab Activities\nHow to use the Answer Checker!\n\nType your answer into each blank box. Round to 2 decimal places where appropriate.\nSelect your choice from the dropdown menu for interpretability\nThe box will turn green if your answer is correct\nThe box will turn red if your answer is incorrect - try again!\n\n\n1. Variable classification\n\nDecide whether each variable is qualitative (includes binary) or quantitative\n\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                Variable\n                Qualitative or Quantitative\n              \n        \n        \n        \n                \n                  Birth sex\n                  QualitativeQuantitative\n                \n                \n                  Greek\n                  QualitativeQuantitative\n                \n                \n                  FGPA\n                  QualitativeQuantitative\n                \n                \n                  SGPA\n                  QualitativeQuantitative\n                \n                \n                  Frnds\n                  QualitativeQuantitative\n                \n                \n                  Sfrnds\n                  QualitativeQuantitative\n                \n                \n                  Fevngs\n                  QualitativeQuantitative\n                \n                \n                  Sevngs\n                  QualitativeQuantitative\n                \n                \n                  Voted\n                  QualitativeQuantitative\n                \n        \n      \n    \n\n\n\n2. Univariate stats\n\n2. For each variable, tell the appropriate univariate descriptive statistics (mean & standard deviation vs. mode & # categories)\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                Variable\n                Appropriate Statistics\n              \n        \n        \n        \n                \n                  Birth sex\n                  Mean (SD)Mode (# of categories)\n                \n                \n                  Greek\n                  Mean (SD)Mode (# of categories)\n                \n                \n                  FGPA\n                  Mean (SD)Mode (# of categories)\n                \n                \n                  SGPA\n                  Mean (SD)Mode (# of categories)\n                \n                \n                  Frnds\n                  Mean (SD)Mode (# of categories)\n                \n                \n                  Sfrnds\n                  Mean (SD)Mode (# of categories)\n                \n                \n                  Fevngs\n                  Mean (SD)Mode (# of categories)\n                \n                \n                  Sevngs\n                  Mean (SD)Mode (# of categories)\n                \n                \n                  Voted\n                  Mean (SD)Mode (# of categories)\n                \n        \n      \n    \n\n\n\n\n3. Bivariate Analyses\n\nConsider which pairs of variables could be examined with which specific bivariate statistics\n\nA. Pearson’s Correlation – Tell me the variables for three correlations.\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                Correlation #\n                Variable 1\n                 \n                Variable 2\n              \n        \n        \n        \n                \n                  1\n                   Birth sex Greek FGPA SGPA Frnds Sfrnds Fevngs Sevngs Voted\n                  with\n                   Birth sex Greek FGPA SGPA Frnds Sfrnds Fevngs Sevngs Voted\n                \n                \n                  2\n                   Birth sex Greek FGPA SGPA Frnds Sfrnds Fevngs Sevngs Voted\n                  with\n                   Birth sex Greek FGPA SGPA Frnds Sfrnds Fevngs Sevngs Voted\n                \n                \n                  3\n                   Birth sex Greek FGPA SGPA Frnds Sfrnds Fevngs Sevngs Voted\n                  with\n                   Birth sex Greek FGPA SGPA Frnds Sfrnds Fevngs Sevngs Voted\n                \n        \n      \n    \n\n\nB. Pearson’s Chi Square -\nTell me the variables for 3 X² analyses.\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                Analysis #\n                Variable 1\n                 \n                Variable 2\n              \n        \n        \n        \n                \n                  1\n                   Birth sex Greek FGPA SGPA Frnds Sfrnds Fevngs Sevngs Voted\n                  with\n                   Birth sex Greek FGPA SGPA Frnds Sfrnds Fevngs Sevngs Voted\n                \n                \n                  2\n                   Birth sex Greek FGPA SGPA Frnds Sfrnds Fevngs Sevngs Voted\n                  with\n                   Birth sex Greek FGPA SGPA Frnds Sfrnds Fevngs Sevngs Voted\n                \n                \n                  3\n                   Birth sex Greek FGPA SGPA Frnds Sfrnds Fevngs Sevngs Voted\n                  with\n                   Birth sex Greek FGPA SGPA Frnds Sfrnds Fevngs Sevngs Voted\n                \n        \n      \n    \n\n\n\nC. BG ANOVA –\nTell me the variables for 3 BG ANOVAs (list the qualitative variable first)\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                ANOVA #\n                Qualitative Variable (IV)\n                 \n                Quantitative Variable (DV)\n              \n        \n        \n        \n                \n                  1\n                   Birth sex Greek FGPA SGPA Frnds Sfrnds Fevngs Sevngs Voted\n                  with\n                   Birth sex Greek FGPA SGPA Frnds Sfrnds Fevngs Sevngs Voted\n                \n                \n                  2\n                   Birth sex Greek FGPA SGPA Frnds Sfrnds Fevngs Sevngs Voted\n                  with\n                   Birth sex Greek FGPA SGPA Frnds Sfrnds Fevngs Sevngs Voted\n                \n                \n                  3\n                   Birth sex Greek FGPA SGPA Frnds Sfrnds Fevngs Sevngs Voted\n                  with\n                   Birth sex Greek FGPA SGPA Frnds Sfrnds Fevngs Sevngs Voted\n                \n        \n      \n    \n\n\n\nD. WG ANOVA –\nTell me the variables for 3 WG ANOVAs\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                ANOVA #\n                Quantitative Variable (DV1)\n                 \n                Quantitative Variable (DV2)\n              \n        \n        \n        \n                \n                  1\n                   Birth sex Greek FGPA SGPA Frnds Sfrnds Fevngs Sevngs Voted\n                  with\n                   Birth sex Greek FGPA SGPA Frnds Sfrnds Fevngs Sevngs Voted\n                \n                \n                  2\n                   Birth sex Greek FGPA SGPA Frnds Sfrnds Fevngs Sevngs Voted\n                  with\n                   Birth sex Greek FGPA SGPA Frnds Sfrnds Fevngs Sevngs Voted\n                \n                \n                  3\n                   Birth sex Greek FGPA SGPA Frnds Sfrnds Fevngs Sevngs Voted\n                  with\n                   Birth sex Greek FGPA SGPA Frnds Sfrnds Fevngs Sevngs Voted"
+    "text": "Lab Activities\nOpen the practice quiz in the slides\nUse the Superman practice data from Lab 07. Choose variable types, descriptive statistics, and analysis pairs using the definitions below. You do not need to run the analyses for this practice.\n\n\n\nVariable in SPSS\nDescription\n\n\n\n\nclark_grp\nClark actor: below 6 ft (1); 6 ft or taller (2)\n\n\ntomatometer\nRotten Tomatoes category: Rotten (1); Fresh (2)\n\n\nclark_height_in\nClark Kent/Superman actor height, in inches\n\n\nlois_height_in\nLois Lane actor height, in inches\n\n\nrt_critics_score\nRotten Tomatoes critics approval score, 0–100\n\n\nrt_audience_score\nRotten Tomatoes audience approval score, 0–100\n\n\n\nThe quiz uses shorter labels such as Clark height and Critics score. Heights and approval scores are paired within each row; blank SPSS cells are missing, not zero. Read the feedback and revise your choices as needed.\n\n1. Variable classification\n\nDecide whether each variable is qualitative (includes binary) or quantitative\n\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                Variable\n                Qualitative or Quantitative\n              \n        \n        \n        \n                \n                  Clark group\n                  QualitativeQuantitative\n                \n                \n                  Tomatometer\n                  QualitativeQuantitative\n                \n                \n                  Clark height\n                  QualitativeQuantitative\n                \n                \n                  Lois height\n                  QualitativeQuantitative\n                \n                \n                  Critics score\n                  QualitativeQuantitative\n                \n                \n                  Audience score\n                  QualitativeQuantitative\n                \n        \n      \n    \n\n\n\n2. Univariate stats\n\n2. For each variable, tell the appropriate univariate descriptive statistics (mean & standard deviation vs. mode & # categories)\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                Variable\n                Appropriate Statistics\n              \n        \n        \n        \n                \n                  Clark group\n                  Mean (SD)Mode (# of categories)\n                \n                \n                  Tomatometer\n                  Mean (SD)Mode (# of categories)\n                \n                \n                  Clark height\n                  Mean (SD)Mode (# of categories)\n                \n                \n                  Lois height\n                  Mean (SD)Mode (# of categories)\n                \n                \n                  Critics score\n                  Mean (SD)Mode (# of categories)\n                \n                \n                  Audience score\n                  Mean (SD)Mode (# of categories)\n                \n        \n      \n    \n\n\n\n\n3. Bivariate Analyses\n\nConsider which pairs of variables could be examined with which specific bivariate statistics\n\nA. Pearson’s Correlation – Choose three distinct correlation pairs\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                Correlation #\n                Variable 1\n                 \n                Variable 2\n              \n        \n        \n        \n                \n                  1\n                   Clark group Tomatometer Clark height Lois height Critics score Audience score\n                  with\n                   Clark group Tomatometer Clark height Lois height Critics score Audience score\n                \n                \n                  2\n                   Clark group Tomatometer Clark height Lois height Critics score Audience score\n                  with\n                   Clark group Tomatometer Clark height Lois height Critics score Audience score\n                \n                \n                  3\n                   Clark group Tomatometer Clark height Lois height Critics score Audience score\n                  with\n                   Clark group Tomatometer Clark height Lois height Critics score Audience score\n                \n        \n      \n    \n\n\nB. Pearson’s Chi Square -\nChoose one pair for a 2 × 2 chi-square test\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                Analysis #\n                Variable 1\n                 \n                Variable 2\n              \n        \n        \n        \n                \n                  1\n                   Clark group Tomatometer Clark height Lois height Critics score Audience score\n                  with\n                   Clark group Tomatometer Clark height Lois height Critics score Audience score\n                \n        \n      \n    \n\n\n\nC. BG ANOVA –\nChoose three distinct between-groups pairs, with the group variable first\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                ANOVA #\n                Qualitative Variable (IV)\n                 \n                Quantitative Variable (DV)\n              \n        \n        \n        \n                \n                  1\n                   Clark group Tomatometer Clark height Lois height Critics score Audience score\n                  with\n                   Clark group Tomatometer Clark height Lois height Critics score Audience score\n                \n                \n                  2\n                   Clark group Tomatometer Clark height Lois height Critics score Audience score\n                  with\n                   Clark group Tomatometer Clark height Lois height Critics score Audience score\n                \n                \n                  3\n                   Clark group Tomatometer Clark height Lois height Critics score Audience score\n                  with\n                   Clark group Tomatometer Clark height Lois height Critics score Audience score\n                \n        \n      \n    \n\n\n\nD. WG ANOVA –\nChoose two distinct within-groups pairs with comparable scales\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                ANOVA #\n                Quantitative Variable (DV1)\n                 \n                Quantitative Variable (DV2)\n              \n        \n        \n        \n                \n                  1\n                   Clark group Tomatometer Clark height Lois height Critics score Audience score\n                  with\n                   Clark group Tomatometer Clark height Lois height Critics score Audience score\n                \n                \n                  2\n                   Clark group Tomatometer Clark height Lois height Critics score Audience score\n                  with\n                   Clark group Tomatometer Clark height Lois height Critics score Audience score"
   },
   {
     "objectID": "labs/lab07/index.html",
@@ -200,7 +200,7 @@
     "href": "labs/lab05/index.html#materials",
     "title": "Lab 05: Project Planning",
     "section": "Lab Materials",
-    "text": "Lab Materials\n\n\nIntroduction to Research Project Data Sets and Project PlanningFinal Project Pre-proposal (select one)Finding references for your project\n\n\n\nProject Materials\nResearch Project Suggestions  (PDF)\nSelf-Descriptive Survey Materials (select one)\nSelf-Descriptive Content & Methods  (PDF)\nSelf-Descriptive Dataset (.sav)  (SPSS data file)\nInterpersonal Survey Materials\nInterpersonal Content & Methods  (PDF)\nInterpersonal Dataset (.sav)  (SPSS data file)\n\n\n\n\nSelf-Descriptive Pre-proposal  (Word document)\nInterpersonal Pre-proposal  (Word document)\n\n\n\n\nResearch Project References & Literature Review Worksheet  (Word document)"
+    "text": "Lab Materials\n\n\nIntroduction to Research Project Data Sets and Project PlanningFinal Project Pre-proposal (select one)Finding references for your project\n\n\n\nProject Materials\nResearch Project Suggestions  (PDF)\nSelf-Descriptive Survey Materials (select one)\nSelf-Descriptive Content & Methods  (PDF)\nSelf-Descriptive Dataset (.sav)  (SPSS data file)\nInterpersonal Survey Materials\nInterpersonal Content & Methods  (PDF)\nInterpersonal Dataset (.sav)  (SPSS data file)\n\n\n\n\nSelf-Descriptive Pre-proposal  (Word document)\nInterpersonal Pre-proposal  (Word document)\n\n\n\n\nResearch Project References & Literature Review Worksheet — lab schedule  (Web page)"
   },
   {
     "objectID": "labs/lab05/index.html#lab-activities",
@@ -242,7 +242,7 @@
     "href": "labs/lab03/index.html#materials",
     "title": "Lab 03: Reading Research Articles",
     "section": "Lab Materials",
-    "text": "Lab Materials\n\n\nCritically Reading Research ReportsContents of an APA Report: What Info is Where?Weekly Lab Assignment\n\n\n\nReading and Writing Research Reports  (Web page)\nReading and Writing Research Reports (pdf version)  (PDF)\nReading and Writing Research Reports slides (PowerPoint, editable)  (PowerPoint)\nReading and Writing Research Reports (PDF)  (PDF)\nElements of a Critical Reading (PDF)  (PDF)\n\n\n\n\nValidity Net - Visual (PDF)  (PDF)\n\n\n\n\nResearch Critique #1  (Word document)\nResearch Critique #2  (Word document)"
+    "text": "Lab Materials\n\n\nCritically Reading Research ReportsContents of an APA Report: What Info is Where?Weekly Lab Assignment\n\n\n\nReading and Writing Research Reports  (Web page)\nReading and Writing Research Reports (pdf version)  (PDF)\nReading and Writing Research Reports slides (PowerPoint, editable)  (PowerPoint)\nReading and Writing Research Reports (PDF)  (PDF)\nElements of a Critical Reading (PDF)  (PDF)\n\n\n\n\nValidity Net - Visual (PDF)  (PDF)\n\n\n\n\nResearch Critique #1 — lab schedule  (Web page)\nResearch Critique #2 — lab schedule  (Web page)"
   },
   {
     "objectID": "labs/lab03/index.html#lab-activities",
@@ -326,14 +326,14 @@
     "href": "labs/lab01/in-class.html",
     "title": "Walk-through",
     "section": "",
-    "text": "During today’s lab you will need to use Zotero to complete the Lab 1 Worksheet (linked to below). You may use either the lab computers or install the program on your own personal device. For installation and setup instructions, see the Zotero setup guide.\n Download Lab 02 Wks"
+    "text": "During today’s lab you will need to use Zotero to complete the Lab 1 Worksheet (linked to below). You may use either the lab computers or install the program on your own personal device. For installation and setup instructions, see the Zotero setup guide.\n Download Lab 01 Worksheet"
   },
   {
     "objectID": "labs/lab01/in-class.html#instructions",
     "href": "labs/lab01/in-class.html#instructions",
     "title": "Walk-through",
     "section": "",
-    "text": "During today’s lab you will need to use Zotero to complete the Lab 1 Worksheet (linked to below). You may use either the lab computers or install the program on your own personal device. For installation and setup instructions, see the Zotero setup guide.\n Download Lab 02 Wks"
+    "text": "During today’s lab you will need to use Zotero to complete the Lab 1 Worksheet (linked to below). You may use either the lab computers or install the program on your own personal device. For installation and setup instructions, see the Zotero setup guide.\n Download Lab 01 Worksheet"
   },
   {
     "objectID": "labs/lab01/in-class.html#step-1-create-a-new-collection",
@@ -375,7 +375,7 @@
     "href": "labs/lab01/in-class.html#step-7-add-another-journal-article-manually",
     "title": "Walk-through",
     "section": "Step 7: Add another journal article manually",
-    "text": "Step 7: Add another journal article manually\nLet’s add another journal article to our collection. Open the article record below and use UNL Library access to obtain a  copy.\nOpen the de Melo et al. article record\n\nAs before, save and drag this new  into your [Your name] APA Walk-Through collection in Zotero.\nThe  should appear in the middle panel. But this time, Zotero did not create a parent item for you. This means we have to create one before we can manually add in any metadata.\n\n\n\n\n\n\n\nTo create a parent item:\nRight-click on the item (middle panel) ➜ Create Parent Item...\n\n\n\n\n\n\nNow select Manual Entry\n\n\n\n\n\n\n\n\n\nZotero context menu with “Create Parent Item…” highlightedZotero “Create Parent Item” dialog with “Manual Entry” option selected\nNow that you have a parent item, enter the metadata manually.\nOnce you have entered all the information you need, ask Zotero to generate your third citation and check it below!\n\n\n\n\n\n\n\nTipHint\n\n\n\n\n\nMake sure you have spelled all the author’s names correctly. If their last name begins with a lower-case letter, make sure that is reflected in Zotero.\n\n\n\n\nPaste the APA 7 citation below\nThe APA 7 citation is:"
+    "text": "Step 7: Add another journal article manually\nLet’s add another journal article to our collection. Open the article record below and use UNL Library access to obtain a  copy.\nOpen the de Melo et al. article record\n\nAs before, save and drag this new  into your [Your name] APA Walk-Through collection in Zotero.\nThe  should appear in the middle panel. But this time, Zotero did not create a parent item for you. This means we have to create one before we can manually add in any metadata.\n\n\n\n\n\n\n\nTo create a parent item:\nRight-click on the item (middle panel) ➜ Create Parent Item...\n\nNow select Manual Entry\n\n\n\n\n\nNow that you have a parent item, enter the metadata manually.\nOnce you have entered all the information you need, ask Zotero to generate your third citation and check it below!\n\n\n\n\n\n\n\nTipHint\n\n\n\n\n\nMake sure you have spelled all the author’s names correctly. If their last name begins with a lower-case letter, make sure that is reflected in Zotero.\n\n\n\n\nPaste the APA 7 citation below\nThe APA 7 citation is:"
   },
   {
     "objectID": "labs/lab01/in-class.html#step-8-adding-items-with-doi-magic",
@@ -399,74 +399,25 @@
     "text": "Step 10: Generating APA 7 Style report and References page\nNow that you have a complete collection of sources, Zotero makes it easy to generate an APA 7 style References page or a report.\nGo to your Lab 1 worksheet. Use the collection you created here [Your Name] APA Walk-Through to generate a reportTo create a report, right-click (ctrl-click on macOS) an item or a selection of items in the center pane and select “Generate Report from Selected Item(s)…”. You can also right-click a collection in the left column and select “Generate Report from Collection”. from this collection. Copy/paste the report into the worksheet.\n\n\n\n\n\n\nThis is not the same as a full reference section. But you can copy/paste the full report in the window that pops up.\n\n\n\nNow, go on to the next page to start Part 2."
   },
   {
-    "objectID": "software.html",
-    "href": "software.html",
-    "title": "Software Used in This Course",
+    "objectID": "project.html",
+    "href": "project.html",
+    "title": "Final Project",
     "section": "",
-    "text": "You only need a few tools for PSYC 350 Lab, and all of them are free or provided by the university."
+    "text": "Choose one dataset and use the corresponding materials below."
   },
   {
-    "objectID": "software.html#spss",
-    "href": "software.html#spss",
-    "title": "Software Used in This Course",
-    "section": "SPSS",
-    "text": "SPSS\nSPSS is the statistical software we use for data analysis from Lab 06 onward. You do not need to buy it — SPSS is available to UNL students through campus computer labs and university remote access. If you are unsure how to reach it, ask your lab TA.\nStep-by-step SPSS handouts for every analysis we cover are linked from each week’s lab page (under Handouts & References) and from the weekly schedule. You can also browse them all in the SPSS Handouts book, which includes both styled and plain (screen-reader-friendly) PDF versions of each handout."
+    "objectID": "project.html#project-materials",
+    "href": "project.html#project-materials",
+    "title": "Final Project",
+    "section": "Project Materials",
+    "text": "Project Materials\n\nSelf-Descriptive SurveyInterpersonal SurveyShared Resources\n\n\n\n\n\n  PDF Open guide  Content and Methods \n\n\n  SPSS data Download data  Self-Descriptive Survey Dataset \n\n\n  Word Download worksheet  Self-Descriptive Pre-proposal \n\n\nNo matching items\n\n\n\n\n\n\n  PDF Open guide  Content and Methods \n\n\n  SPSS data Download data  Interpersonal Survey Dataset \n\n\n  Word Download worksheet  Interpersonal Pre-proposal \n\n\nNo matching items\n\n\n\n\n\n\n  PDF Open guide  Project Suggestions and FAQ \n\n\n  PDF Open rubric  Project Rubric \n\n\n  Word Download rubric  Editable Project Rubric \n\n\n  Word Download example  Example Project Report \n\n\n  Web Open APA Style  APA Style and Grammar Guidelines \n\n\n  PDF Open templates  APA Table Templates \n\n\n  Word Download templates  Editable APA Table Templates \n\n\n  Slides Open slides  Poster Guide Slides \n\n\n  PowerPoint Download template  Horizontal Poster Template \n\n\n  PowerPoint Download template  Square Poster Template \n\n\n  PowerPoint Download template  Vertical Poster Template \n\n\n  PowerPoint Download example  Example Poster \n\n\nNo matching items"
   },
   {
-    "objectID": "software.html#zotero",
-    "href": "software.html#zotero",
-    "title": "Software Used in This Course",
-    "section": "Zotero",
-    "text": "Zotero\nZotero is a free reference manager we use in Lab 01 to collect sources and build APA reference lists. Download the desktop app and the browser connector from zotero.org.\nThe course’s Zotero & APA workbook walks you through installation and everything you need for the Lab 01 worksheet."
-  },
-  {
-    "objectID": "software.html#canvas",
-    "href": "software.html#canvas",
-    "title": "Software Used in This Course",
-    "section": "Canvas",
-    "text": "Canvas\nCanvas is where you submit worksheets and project milestones and where your grades are posted. Take-home assignments are due in your lab section’s Canvas by 11:59pm the day before your lab meets."
-  },
-  {
-    "objectID": "software.html#computator",
-    "href": "software.html#computator",
-    "title": "Software Used in This Course",
-    "section": "Computator",
-    "text": "Computator\nThe Computator spreadsheets used in Labs 11–12 are linked from the weekly schedule and the relevant lab pages. Download the version for your lab before class."
-  },
-  {
-    "objectID": "software.html#this-website",
-    "href": "software.html#this-website",
-    "title": "Software Used in This Course",
-    "section": "This Website",
-    "text": "This Website\nThe weekly schedule and lab pages and homework checkers all live here and work in any modern browser. The homework checkers turn green when your answer is correct — take a screenshot of your correct answers to attach to your worksheet."
-  },
-  {
-    "objectID": "schedule.html",
-    "href": "schedule.html",
-    "title": "Weekly Lab Schedule",
-    "section": "",
-    "text": "Skip to lab schedule\n\n\n\n   Download PDF\n\n\n\n\n\nWeekly Lab Schedule\nThis table shows the weekly lab schedule including topics, activities, handouts, and assignment information."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "PSYC 350 Lab",
-    "section": "",
-    "text": "University of Nebraska–Lincoln\n\n\nResearch Methods & Data Analysis\nFall 2026 · Burnett 230\n Syllabus & Policies  Schedule"
-  },
-  {
-    "objectID": "index.html#labs",
-    "href": "index.html#labs",
-    "title": "PSYC 350 Lab",
-    "section": "Labs",
-    "text": "Labs\n\n\n  Lab 00  Welcome Welcome Welcome and course information for PSYC 350 Lab. \n  Lab 01  Citations APA Citations & Zotero APA citation style and managing references with Zotero. \n  Lab 02  Measurement Operationalization & Measurement Conceptual vs. operational definitions, measurement, and types of variables. \n  Lab 03  Reading Articles Reading Research Articles Reading, understanding, and critically evaluating psychology journal articles. \n  Lab 04  Lit Reviews Literature Reviews Forming logical, literature-based arguments and writing an APA-style literature review. \n  Lab 05  Project Planning Project Planning Developing a research question, hypotheses, and a plan for the class research project. \n  Lab 06  Univariate Stats Data Entry, Transforms & Univariates Entering data in SPSS, transforming and recoding variables, and running univariate statistics. \n  Lab 07  Bivariate Stats Bivariate Analyses Pearson’s correlations and chi-square analyses in SPSS. \n  Lab 08  Between-Groups and Within-Groups ANOVA Between-Groups and Within-Groups ANOVA Choose and interpret between-groups and within-groups ANOVA in SPSS. \n  Lab 09  Project Analyses Project Analyses Selecting appropriate statistics and running analyses for the class research project. \n  Lab 10  Peer Review Peer Review Giving and receiving constructive peer feedback on APA-style research reports. \n  Lab 11  Multi-group Tests Multi-group Analyses Comparing more than two groups and following up with post-hoc analyses. \n  Lab 12  Factorial ANOVA Factorial Designs & Analyses Factorial designs, main effects, and interactions. \n  Lab 13  Regression Multiple Regression Building and interpreting multiple regression models. \n\nNo matching items"
-  },
-  {
-    "objectID": "index.html#course-contact",
-    "href": "index.html#course-contact",
-    "title": "PSYC 350 Lab",
-    "section": "Course Contact",
-    "text": "Course Contact\nSection-specific instructor and contact details will be added before the course begins."
+    "objectID": "project.html#project-milestones",
+    "href": "project.html#project-milestones",
+    "title": "Final Project",
+    "section": "Project Milestones",
+    "text": "Project Milestones\n\n\n\n\n\n\n\n\nWeek\nLab\nMilestone\n\n\n\n\nSep 29 - Oct 02\nLab 05\nGiven: Submit to your lab section before week 6: Research Project Pre-proposal (only the one corresponding to your dataset) and Research Project References & Literature Review Worksheet\n\n\nOct 06 - Oct 09\nLab 06\nDue: Research Project Pre-proposal (only the one corresponding to your dataset)\n\n\nNov 03 - Nov 06\nLab 09\nGiven: Complete FULL DRAFT of Research Project Report (Intro Method Results Discussion)\n\n\nNov 10 - Nov 13\nLab 10\nGiven: Complete Research Project Report\n\n\nNov 10 - Nov 13\nLab 10\nDue: Complete DRAFT Research Project Report\n\n\nDec 08 - Dec 11\nLab 13\nGiven: Graded Research Project Reports will be returned\n\n\nDec 08 - Dec 11\nLab 13\nDue: Rewrites of Research Project Reports due"
   },
   {
     "objectID": "syllabus.html",
@@ -525,53 +476,74 @@
     "text": "Grade Range\n\n\n\n\n\n\n\n\n\n\nGrade\nRange\nGrade\nRange\n\n\n\n\nA\n93–100%\nC\n73–76%\n\n\nA−\n90–92%\nC−\n70–72%\n\n\nB+\n87–89%\nD+\n67–69%\n\n\nB\n83–86%\nD\n63–66%\n\n\nB−\n80–82%\nD−\n60–62%\n\n\nC+\n77–79%\nF\n&lt; 60%"
   },
   {
-    "objectID": "project.html",
-    "href": "project.html",
-    "title": "Final Project",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "PSYC 350 Lab",
     "section": "",
-    "text": "Choose one dataset and use the corresponding materials below."
+    "text": "University of Nebraska–Lincoln\n\n\nResearch Methods & Data Analysis\nFall 2026 · Burnett 230\n Syllabus & Policies  Schedule"
   },
   {
-    "objectID": "project.html#project-materials",
-    "href": "project.html#project-materials",
-    "title": "Final Project",
-    "section": "Project Materials",
-    "text": "Project Materials\n\nSelf-Descriptive SurveyInterpersonal SurveyShared Resources\n\n\n\n\n\n  PDF Open guide  Content and Methods \n\n\n  SPSS data Download data  Self-Descriptive Survey Dataset \n\n\n  Word Download worksheet  Self-Descriptive Pre-proposal \n\n\nNo matching items\n\n\n\n\n\n\n  PDF Open guide  Content and Methods \n\n\n  SPSS data Download data  Interpersonal Survey Dataset \n\n\n  Word Download worksheet  Interpersonal Pre-proposal \n\n\nNo matching items\n\n\n\n\n\n\n  PDF Open guide  Project Suggestions and FAQ \n\n\n  PDF Open rubric  Project Rubric \n\n\n  Word Download rubric  Editable Project Rubric \n\n\n  Word Download example  Example Project Report \n\n\n  Web Open APA Style  APA Style and Grammar Guidelines \n\n\n  PDF Open templates  APA Table Templates \n\n\n  Word Download templates  Editable APA Table Templates \n\n\n  Slides Open slides  Poster Guide Slides \n\n\n  PowerPoint Download template  Horizontal Poster Template \n\n\n  PowerPoint Download template  Square Poster Template \n\n\n  PowerPoint Download template  Vertical Poster Template \n\n\n  PowerPoint Download example  Example Poster \n\n\nNo matching items"
+    "objectID": "index.html#labs",
+    "href": "index.html#labs",
+    "title": "PSYC 350 Lab",
+    "section": "Labs",
+    "text": "Labs\n\n\n  Lab 01  Citations APA Citations & Zotero APA citation style and managing references with Zotero. \n  Lab 02  Measurement Operationalization & Measurement Conceptual vs. operational definitions, measurement, and types of variables. \n  Lab 03  Reading Articles Reading Research Articles Reading, understanding, and critically evaluating psychology journal articles. \n  Lab 04  Lit Reviews Literature Reviews Forming logical, literature-based arguments and writing an APA-style literature review. \n  Lab 05  Project Planning Project Planning Developing a research question, hypotheses, and a plan for the class research project. \n  Lab 06  Univariate Stats Data Entry, Transforms & Univariates Entering data in SPSS, transforming and recoding variables, and running univariate statistics. \n  Lab 07  Bivariate Stats Bivariate Analyses Pearson’s correlations and chi-square analyses in SPSS. \n  Lab 08  Between-Groups and Within-Groups ANOVA Between-Groups and Within-Groups ANOVA Choose and interpret between-groups and within-groups ANOVA in SPSS. \n  Lab 09  Project Analyses Project Analyses Selecting appropriate statistics and running analyses for the class research project. \n  Lab 10  Peer Review Peer Review Giving and receiving constructive peer feedback on APA-style research reports. \n  Lab 11  Multi-group Tests Multi-group Analyses Comparing more than two groups and following up with post-hoc analyses. \n  Lab 12  Factorial ANOVA Factorial Designs & Analyses Factorial designs, main effects, and interactions. \n  Lab 13  Regression Multiple Regression Building and interpreting multiple regression models. \n\nNo matching items"
   },
   {
-    "objectID": "project.html#project-milestones",
-    "href": "project.html#project-milestones",
-    "title": "Final Project",
-    "section": "Project Milestones",
-    "text": "Project Milestones\n\n\n\n\n\n\n\n\nWeek\nLab\nMilestone\n\n\n\n\nSep 29 - Oct 02\nLab 05\nGiven: Submit to your lab section before week 6: Research Project Pre-proposal (only the one corresponding to your dataset) and Research Project References & Literature Review Worksheet\n\n\nOct 06 - Oct 09\nLab 06\nDue: Research Project Pre-proposal (only the one corresponding to your dataset)\n\n\nNov 03 - Nov 06\nLab 09\nGiven: Complete FULL DRAFT of Research Project Report (Intro Method Results Discussion)\n\n\nNov 10 - Nov 13\nLab 10\nGiven: Complete Research Project Report\n\n\nNov 10 - Nov 13\nLab 10\nDue: Complete DRAFT Research Project Report\n\n\nDec 08 - Dec 11\nLab 13\nGiven: Graded Research Project Reports will be returned\n\n\nDec 08 - Dec 11\nLab 13\nDue: Rewrites of Research Project Reports due"
+    "objectID": "index.html#course-contact",
+    "href": "index.html#course-contact",
+    "title": "PSYC 350 Lab",
+    "section": "Course Contact",
+    "text": "Course Contact\nSection-specific instructor and contact details will be added before the course begins."
   },
   {
-    "objectID": "labs/lab00/index.html",
-    "href": "labs/lab00/index.html",
-    "title": "Lab 00: Welcome",
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Weekly Lab Schedule",
     "section": "",
-    "text": "Welcome to PSYC 350 Lab. Start here before Lab 01."
+    "text": "Skip to lab schedule\n\n\n\n   Download PDF\n\n\n\n\n\nWeekly Lab Schedule\nThis table shows the weekly lab schedule including topics, activities, handouts, and assignment information."
   },
   {
-    "objectID": "labs/lab00/index.html#welcome",
-    "href": "labs/lab00/index.html#welcome",
-    "title": "Lab 00: Welcome",
+    "objectID": "software.html",
+    "href": "software.html",
+    "title": "Software Used in This Course",
     "section": "",
-    "text": "Welcome to PSYC 350 Lab. Start here before Lab 01."
+    "text": "You only need a few tools for PSYC 350 Lab, and all of them are free or provided by the university."
   },
   {
-    "objectID": "labs/lab00/index.html#course-information",
-    "href": "labs/lab00/index.html#course-information",
-    "title": "Lab 00: Welcome",
-    "section": "Course Information",
-    "text": "Course Information\n Syllabus  Schedule  Software"
+    "objectID": "software.html#spss",
+    "href": "software.html#spss",
+    "title": "Software Used in This Course",
+    "section": "SPSS",
+    "text": "SPSS\nSPSS is the statistical software we use for data analysis from Lab 06 onward. You do not need to buy it — SPSS is available to UNL students through campus computer labs and university remote access. If you are unsure how to reach it, ask your lab TA.\nStep-by-step SPSS handouts for every analysis we cover are linked from each week’s lab page (under Handouts & References) and from the weekly schedule. You can also browse them all in the SPSS Handouts book, which includes both styled and plain (screen-reader-friendly) PDF versions of each handout."
   },
   {
-    "objectID": "labs/lab00/index.html#welcome-slides",
-    "href": "labs/lab00/index.html#welcome-slides",
-    "title": "Lab 00: Welcome",
-    "section": "Welcome Slides",
-    "text": "Welcome Slides\nOpen the welcome deck in full screen"
+    "objectID": "software.html#zotero",
+    "href": "software.html#zotero",
+    "title": "Software Used in This Course",
+    "section": "Zotero",
+    "text": "Zotero\nZotero is a free reference manager we use in Lab 01 to collect sources and build APA reference lists. Download the desktop app and the browser connector from zotero.org.\nThe course’s Zotero & APA workbook walks you through installation and everything you need for the Lab 01 worksheet."
+  },
+  {
+    "objectID": "software.html#canvas",
+    "href": "software.html#canvas",
+    "title": "Software Used in This Course",
+    "section": "Canvas",
+    "text": "Canvas\nCanvas is where you submit worksheets and project milestones and where your grades are posted. Take-home assignments are due in your lab section’s Canvas by 11:59pm the day before your lab meets."
+  },
+  {
+    "objectID": "software.html#computator",
+    "href": "software.html#computator",
+    "title": "Software Used in This Course",
+    "section": "Computator",
+    "text": "Computator\nThe Computator spreadsheets used in Labs 11–12 are linked from the weekly schedule and the relevant lab pages. Download the version for your lab before class."
+  },
+  {
+    "objectID": "software.html#this-website",
+    "href": "software.html#this-website",
+    "title": "Software Used in This Course",
+    "section": "This Website",
+    "text": "This Website\nThe weekly schedule and lab pages and homework checkers all live here and work in any modern browser. The homework checkers turn green when your answer is correct — take a screenshot of your correct answers to attach to your worksheet."
   },
   {
     "objectID": "labs/lab01/index.html",
@@ -641,7 +613,7 @@
     "href": "labs/lab02/index.html#materials",
     "title": "Lab 02: Operationalization & Measurement",
     "section": "Materials to Download",
-    "text": "Materials to Download\n\n\nGetting started with VariablesWeekly Lab Assignment\n\n\n\nIdentifying & understanding variables  (Web page)\n\n\n\n\nLab 02: Operationalization & Measurement Worksheet  (Word document)"
+    "text": "Materials to Download\n\n\nGetting started with VariablesWeekly Lab Assignment\n\n\n\nIdentifying & understanding variables  (Web page)\n\n\n\n\nLab 02: Operationalization & Measurement Worksheet — lab schedule  (Web page)"
   },
   {
     "objectID": "labs/lab02/index.html#lab-slides",
@@ -690,7 +662,7 @@
     "href": "labs/lab04/index.html#materials",
     "title": "Lab 04: Literature Reviews",
     "section": "Materials to Download",
-    "text": "Materials to Download\n\n\nScientific writing & synthesizing researchWriting Literature Reviews & Research ProposalsWeekly Lab Assignment\n\n\n\nHow to Improve your Writing  (Web page)\nHow to Improve your Writing (PowerPoint, editable)  (PowerPoint)\n\n\n\n\nAPA Style and Grammar Guidelines  (External link)\nAPA Table Templates (Word, editable)  (Word document)\nAPA Table Templates (PDF)  (PDF)\n\n\n\n\nLiterature Review Description  (Word document)\nArticle 1 for literature review & proposal  (PDF)\nArticle 2 for literature review & proposal  (PDF)\nLiterature review & proposal worksheet  (Word document)\nLiterature review & proposal HINTS sheet  (Word document)"
+    "text": "Materials to Download\n\n\nScientific writing & synthesizing researchWriting Literature Reviews & Research ProposalsWeekly Lab Assignment\n\n\n\nHow to Improve your Writing  (Web page)\nHow to Improve your Writing (PowerPoint, editable)  (PowerPoint)\n\n\n\n\nAPA Style and Grammar Guidelines  (External link)\nAPA Table Templates (Word, editable)  (Word document)\nAPA Table Templates (PDF)  (PDF)\n\n\n\n\nLiterature Review Description  (Word document)\nArticle 1 for literature review & proposal  (PDF)\nArticle 2 for literature review & proposal  (PDF)\nLiterature review & proposal worksheet — lab schedule  (Web page)\nLiterature review & proposal HINTS sheet  (Word document)"
   },
   {
     "objectID": "labs/lab04/index.html#lab-activities",
@@ -732,7 +704,7 @@
     "href": "labs/lab06/index.html#materials",
     "title": "Lab 06: Data Entry, Transforms & Univariates",
     "section": "Materials to Download",
-    "text": "Materials to Download\n\n\nData Entry & Univariate StatsWeekly Lab Assignment\n\n\n\nSPSS Handouts\nAbout ‘stats packages’ for Psyc350 - You are not required to purchase SPSS (or any statistical package) but you must ensure that you have ‘working access’ to the statistical package(s) you choose to use so that you consistently complete assignments in a timely fashion.\nData Entry  (PDF) (Opens in new tab)\nCompute & recode  (PDF) (Opens in new tab)\nSelecting Cases & Splitting Files  (PDF) (Opens in new tab)\nFrequencies & Univariate Statistics  (PDF) (Opens in new tab)\n\n\n\n\nData Entry & Univariate Stats worksheet  (Word document)\nUnivariate stats hw checker  (Web page)"
+    "text": "Materials to Download\n\n\nData Entry & Univariate StatsWeekly Lab Assignment\n\n\n\nSPSS Handouts\nAbout ‘stats packages’ for Psyc350 - You are not required to purchase SPSS (or any statistical package) but you must ensure that you have ‘working access’ to the statistical package(s) you choose to use so that you consistently complete assignments in a timely fashion.\nData Entry  (PDF) (Opens in new tab)\nCompute & recode  (PDF) (Opens in new tab)\nSelecting Cases & Splitting Files  (PDF) (Opens in new tab)\nFrequencies & Univariate Statistics  (PDF) (Opens in new tab)\n\n\n\n\nData Entry & Univariate Stats worksheet — lab schedule  (Web page)\nUnivariate stats hw checker  (Web page)"
   },
   {
     "objectID": "labs/lab06/index.html#lab-activities",
@@ -774,7 +746,7 @@
     "href": "labs/lab08/index.html#materials",
     "title": "Lab 08: Between-Groups and Within-Groups ANOVA",
     "section": "Materials to Download",
-    "text": "Materials to Download\n\n\nBetween Groups and Within-Groups One-Way ANOVAWeekly Lab Assignment\n\n\n\nSPSS Handouts\nChoosing Analyses for Project\nPractice Choosing Statistical Analyses Worksheet  (Word document)\n2BG ANOVA  (PDF) (Opens in new tab)\n2BG Bar Graph  (PDF) (Opens in new tab)\nWG ANOVA  (PDF) (Opens in new tab)\nWG t-test  (PDF) (Opens in new tab)\nWG Bar Graph  (PDF) (Opens in new tab)\nWG t-test (paired)  (PDF) (Opens in new tab)\nEffect Size and Sample Size How-To (PDF)  (PDF)\n\n\n\n\nsuperman_smes_data.sav  (SPSS data file)\nhotones_data.sav  (SPSS data file)\nANOVA Worksheet  (Word document)\nANOVA hw checker  (Web page)"
+    "text": "Materials to Download\n\n\nBetween Groups and Within-Groups One-Way ANOVAWeekly Lab Assignment\n\n\n\nSPSS Handouts\nChoosing Analyses for Project\nPractice Choosing Statistical Analyses  (Web page)\n2BG ANOVA  (PDF) (Opens in new tab)\n2BG Bar Graph  (PDF) (Opens in new tab)\nWG ANOVA  (PDF) (Opens in new tab)\nWG t-test  (PDF) (Opens in new tab)\nWG Bar Graph  (PDF) (Opens in new tab)\nWG t-test (paired)  (PDF) (Opens in new tab)\nEffect Size and Sample Size How-To (PDF)  (PDF)\n\n\n\n\nsuperman_smes_data.sav  (SPSS data file)\nhotones_data.sav  (SPSS data file)\nANOVA Worksheet  (Word document)\nANOVA hw checker  (Web page)"
   },
   {
     "objectID": "labs/lab08/index.html#lab-activities",
